@@ -11,7 +11,7 @@
   "version": "1.0.0",
   "publication_date": "2026-10-06",
   "access_right": "open",
-  "license": "MIT",
+  "license": "mit",
   "keywords": [
     "clinical machine learning",
     "structured clinical data",
@@ -27,7 +27,7 @@
     "statistical analysis"
   ],
   "language": "eng",
-  "notes": "This repository provides the reproducibility materials associated with a leakage-safe structured clinical machine-learning study. The archived release contains research software, experimental configurations, machine-readable results, and supporting documentation. Participant-level clinical data should be included only where redistribution is explicitly permitted.",
+  "notes": "This repository provides reproducibility materials associated with a leakage-safe structured clinical machine-learning study. The archived release contains research software, experimental configurations, machine-readable results, and supporting documentation. Participant-level clinical data are not distributed through this software release unless explicitly permitted by applicable ethical, institutional, privacy, and data-use requirements.",
   "related_identifiers": [
     {
       "identifier": "https://github.com/USERNAME/LeakageSafe-ClinicalML",
