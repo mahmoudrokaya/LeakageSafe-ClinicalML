@@ -575,20 +575,14 @@ A DOI assigned to a specific release should always refer to the exact archived v
 
 ---
 
-# DOI
+## DOI
 
-The repository is intended to be archived through Zenodo.
+The software is permanently archived on Zenodo.
 
-After the first public release is archived, DOI information should be added here.
+**Version:** v1.0.0  
+**DOI:** 10.5281/zenodo.23195503
 
-```text
-Version: v1.0.0
-DOI: To be assigned
-```
-
-Once available, the DOI badge may also be placed near the top of this README.
-
----
+[![DOI](https://zenodo.org/badge/1407620848.svg)](https://doi.org/10.5281/zenodo.23195503)
 
 # License
 
