@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this software or its associated reproducibility materials, please cite the archived software release."
+type: software
+
+title: "LeakageSafe-ClinicalML"
+
+abstract: >-
+  Reproducible research software for leakage-safe structured clinical
+  machine learning, including repeated-holdout evaluation, training-strategy
+  comparison, statistical analysis, subgroup fairness assessment, and
+  traceable experimental results.
+
+authors:
+  - family-names: "Rokaya"
+    given-names: "Mahmoud"
+
+version: 1.0.0
+
+date-released: 2026-10-06
+
+license: MIT
+
+keywords:
+  - clinical machine learning
+  - structured clinical data
+  - tabular machine learning
+  - leakage-safe evaluation
+  - data leakage
+  - repeated holdout
+  - reproducibility
+  - class imbalance
+  - oversampling
+  - fairness
+  - subgroup analysis
+  - statistical analysis
+
+repository-code: "https://github.com/USERNAME/LeakageSafe-ClinicalML"
+
+url: "https://github.com/USERNAME/LeakageSafe-ClinicalML"
