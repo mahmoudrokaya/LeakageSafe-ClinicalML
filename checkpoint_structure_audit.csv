@@ -1,0 +1,9 @@
+﻿file,inspection_method,object_type,key,shape,dtype,possible_output_dimension_51,status,error
+data\preprocessed\adj_matrix_fully_connected.npy,numpy_load_allow_pickle_false,ndarray,array,"[160, 160]",int32,0.0,INSPECTED,
+data\preprocessed\adj_matrix_knn.npy,numpy_load_allow_pickle_false,ndarray,array,"[160, 160]",int32,0.0,INSPECTED,
+data\preprocessed\contrastive_embeddings.npy,numpy_load_allow_pickle_false,ndarray,array,"[160, 32]",float32,0.0,INSPECTED,
+data\preprocessed\graph_features.npy,numpy_load_allow_pickle_false,ndarray,array,"[160, 32]",float32,0.0,INSPECTED,
+experiments\New_EXP2\encoder_pretrained.pth,torch_unavailable,,,,,,NOT_INSPECTED,"ModuleNotFoundError(""No module named 'torch'"")"
+models\classifiers\ensemble_model.pkl,not_unpickled_for_forensic_safety,,,,,0.0,SERIALIZED_PYTHON_OBJECT_PRESENT_REQUIRES_KNOWN_CLASS_FOR_SAFE_USE,
+utils\adj_matrix_batch.npy,numpy_load_allow_pickle_false,ndarray,array,"[5, 5]",float32,0.0,INSPECTED,
+utils\graph_features_batch.npy,numpy_load_allow_pickle_false,ndarray,array,"[5, 32]",float32,0.0,INSPECTED,

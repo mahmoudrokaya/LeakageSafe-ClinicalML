@@ -1,0 +1,7 @@
+﻿claim,required_conditions,reconstructable,verdict
+Full HGF compared against GAN-only,"[""full_hybrid"", ""gan_only""]",0,NOT_REPRODUCIBLE
+Full HGF compared against VAE-only,"[""full_hybrid"", ""vae_only""]",0,NOT_REPRODUCIBLE
+Full HGF compared against diffusion-only,"[""full_hybrid"", ""diffusion_only""]",0,NOT_REPRODUCIBLE
+Adaptive fusion compared against static fusion,"[""adaptive_fusion"", ""static_fusion""]",0,NOT_REPRODUCIBLE
+Fairness ON compared against fairness OFF,"[""fairness_on"", ""fairness_off""]",0,NOT_REPRODUCIBLE
+Scalability ON compared against scalability OFF,"[""scalability_on"", ""scalability_off""]",0,NOT_REPRODUCIBLE

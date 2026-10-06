@@ -1,0 +1,101 @@
+================================================================================
+HFAGM PROJECT - EXISTING RESULTS AUDIT V2
+================================================================================
+
+Generated: 2026-09-02T15:54:29
+
+Project root: D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project
+
+Total non-revision files audited: 40,113
+
+IMPORTANT COUNTS
+--------------------------------------------------------------------------------
+CSV/TSV tables: 19
+Prediction-like tables: 0
+Metric tables: 17
+Extracted metric rows: 1,794
+Prediction-related code files: 13
+Confusion-matrix code files: 1
+Fairness code files: 2
+Fidelity/Frechet code files: 0
+Runtime/memory code files: 0
+Ablation code files: 0
+
+MULTIMODAL AUDIT
+--------------------------------------------------------------------------------
+Raw image/label assets: 40,047
+Files with actual multimodal code evidence: 1
+
+CLAIM AUDIT
+--------------------------------------------------------------------------------
+Claims checked: 21
+Claims found in legitimate experimental evidence: 7
+Claims not found: 14
+
+EXPERIMENT REGISTRY
+--------------------------------------------------------------------------------
+Experiment: new_exp2
+  Datasets: ArSL
+  Files: 8
+  Metric tables: 5
+  Prediction tables: 0
+  Metrics: accuracy; macro_auc; macro_f1
+  Code evidence: none detected
+
+Experiment: new_exp3
+  Datasets: unknown
+  Files: 3
+  Metric tables: 1
+  Prediction tables: 0
+  Metrics: auc; f1
+  Code evidence: none detected
+
+Experiment: new_exps
+  Datasets: unknown
+  Files: 7
+  Metric tables: 5
+  Prediction tables: 0
+  Metrics: accuracy; accuracy_mean; accuracy_std; auc; auc_mean; auc_std; eod; eod_mean; eod_std; f1; f1_mean; f1_std
+  Code evidence: none detected
+
+
+CLAIMS NOT FOUND IN LEGITIMATE EVIDENCE
+--------------------------------------------------------------------------------
+FID_HGF_1_5: HGF/baseline fidelity reported around 1.5
+FID_LIGHTWEIGHT_1_6: Lightweight fidelity reported around 1.6
+FID_LIGHTWEIGHT_3_2: Lightweight fidelity reported as 3.2
+SPD_0: SPD reported as 0
+SPD_00514: SPD reported as 0.0514
+DI_1: DI reported as 1.0
+DI_0643: DI reported as 0.643
+DI_0209: DI reported as 0.209
+AUC_LIGHTWEIGHT_0801: Lightweight ROC-AUC around 0.801
+RUNTIME_25_PERCENT: Runtime improvement around 25%
+MEMORY_20_30_PERCENT: GPU-memory reduction 20-30%
+MEMORY_40_PERCENT: Hybrid memory increase around 40%
+SYNTHETIC_N_500: Synthetic workload N=500
+SYNTHETIC_N_100000: Synthetic workload N=100000
+
+NEXT FILES TO REVIEW
+--------------------------------------------------------------------------------
+1. experiment_registry.csv
+2. manuscript_claim_mapping_v2.csv
+3. all_metric_rows.csv
+4. prediction_tables.csv
+5. prediction_code_evidence.csv
+6. confusion_matrix_code_evidence.csv
+7. fairness_code_evidence.csv
+8. fidelity_code_evidence.csv
+9. runtime_memory_code_evidence.csv
+10. ablation_code_evidence.csv
+11. multimodal_code_evidence.csv
+12. json_config_values.csv
+13. save_statements.csv
+
+Interpretation rule:
+A manuscript claim is considered 'found' only when the matching value
+occurs in non-revision experimental/configuration/output evidence.
+Raw image filenames, label filenames, audit scripts, and revision files
+are not accepted as evidence.
+
+================================================================================

@@ -1,0 +1,209 @@
+================================================================================
+HFAGM PROJECT - EXISTING RESULTS AUDIT
+================================================================================
+
+Audit generated: 2026-09-02T15:37:16
+
+Project root:
+D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project
+
+Total files inventoried: 40,114
+
+CANDIDATE FILE COUNTS
+--------------------------------------------------------------------------------
+Prediction candidates: 0
+Confusion-matrix candidates: 0
+Metric/result candidates: 1,282
+Fairness candidates: 6
+Scalability candidates: 0
+Ablation candidates: 0
+Multimodal candidates: 40,066
+Log candidates: 0
+Model/checkpoint candidates: 2
+Figures/PDF candidates: 20,040
+
+CSV/TSV files inspected: 19
+Prediction-like CSV/TSV files: 0
+
+MANUSCRIPT CLAIM AUDIT
+--------------------------------------------------------------------------------
+Claims defined: 21
+Claims with candidate evidence: 21
+Claims without located evidence: 0
+
+CLAIMS WITH CANDIDATE EVIDENCE
+--------------------------------------------------------------------------------
+C40_FID_HGF_1_5
+  Description : HGF/baseline fidelity reported around 1.5
+  Values      : 1.5
+  Hits        : 18
+  Files       : 1
+  Status      : FOUND - SINGLE FILE
+
+C46_FID_LIGHTWEIGHT_1_6
+  Description : Lightweight fidelity reported around 1.6
+  Values      : 1.6
+  Hits        : 19
+  Files       : 1
+  Status      : FOUND - SINGLE FILE
+
+C46_FID_LIGHTWEIGHT_3_2
+  Description : Lightweight fidelity reported as 3.2
+  Values      : 3.2
+  Hits        : 13
+  Files       : 1
+  Status      : FOUND - SINGLE FILE
+
+C42_SPD_ZERO
+  Description : Fairness-audited model SPD reported as 0.0
+  Values      : 0.0; 1e-06
+  Hits        : 25
+  Files       : 1
+  Status      : FOUND - SINGLE FILE
+
+C42_SPD_BASELINE_00514
+  Description : Baseline SPD reported as 0.0514
+  Values      : 0.0514
+  Hits        : 10
+  Files       : 1
+  Status      : FOUND - SINGLE FILE
+
+C42_EOD_ONE
+  Description : Fairness-audited EOD reported as 1.0
+  Values      : 1.0
+  Hits        : 23
+  Files       : 5
+  Status      : FOUND - MULTIPLE FILES
+
+C44_DI_REAL_1
+  Description : Real-data disparate impact reported as 1.0
+  Values      : 1.0
+  Hits        : 156
+  Files       : 14
+  Status      : FOUND - MULTIPLE FILES
+
+C44_DI_BASELINE_0643
+  Description : Baseline synthetic DI reported as 0.643
+  Values      : 0.643
+  Hits        : 16
+  Files       : 1
+  Status      : FOUND - SINGLE FILE
+
+C44_DI_LIGHTWEIGHT_0209
+  Description : Lightweight synthetic DI reported as 0.209
+  Values      : 0.209
+  Hits        : 14
+  Files       : 1
+  Status      : FOUND - SINGLE FILE
+
+C41_ACC_REAL_0983
+  Description : Real-data accuracy reported around 0.983
+  Values      : 0.9815789473684211; 0.9825151325764452; 0.983; 0.9852253112226839
+  Hits        : 22
+  Files       : 3
+  Status      : FOUND - MULTIPLE FILES
+
+C41_ACC_BASELINE_0957
+  Description : Baseline synthetic accuracy reported around 0.957
+  Values      : 0.957
+  Hits        : 18
+  Files       : 1
+  Status      : FOUND - SINGLE FILE
+
+C46_ACC_LIGHTWEIGHT_094
+  Description : Lightweight accuracy reported around 0.94
+  Values      : 0.94; 0.9444444444444444; 0.9473684210526315; 0.9487179487179487
+  Hits        : 26
+  Files       : 3
+  Status      : FOUND - MULTIPLE FILES
+
+C46_ACC_LIGHTWEIGHT_0703
+  Description : Lightweight accuracy reported as 0.703
+  Values      : 0.703; 0.7034409081785196
+  Hits        : 12
+  Files       : 2
+  Status      : FOUND - MULTIPLE FILES
+
+C46_F1_LIGHTWEIGHT_091
+  Description : Lightweight F1 reported around 0.91
+  Values      : 0.91
+  Hits        : 14
+  Files       : 1
+  Status      : FOUND - SINGLE FILE
+
+C46_AUC_BASELINE_0996
+  Description : Baseline ROC-AUC reported around 0.996
+  Values      : 0.9947368421052631; 0.996; 0.9973684210526316
+  Hits        : 25
+  Files       : 4
+  Status      : FOUND - MULTIPLE FILES
+
+C46_AUC_LIGHTWEIGHT_0801
+  Description : Lightweight ROC-AUC reported around 0.801
+  Values      : 0.801
+  Hits        : 18
+  Files       : 1
+  Status      : FOUND - SINGLE FILE
+
+C47_RUNTIME_25_PERCENT
+  Description : Lightweight configuration reported about 25% faster
+  Values      : 25.0; 27.0
+  Hits        : 21
+  Files       : 2
+  Status      : FOUND - MULTIPLE FILES
+
+C47_MEMORY_20_30_PERCENT
+  Description : Lightweight GPU-memory reduction reported as 20-30%
+  Values      : 20.0; 25.0; 30.0
+  Hits        : 48
+  Files       : 1
+  Status      : FOUND - SINGLE FILE
+
+C47_HYBRID_MEMORY_40_PERCENT
+  Description : Hybrid model reported about 40% more GPU memory
+  Values      : 40.0
+  Hits        : 13
+  Files       : 1
+  Status      : FOUND - SINGLE FILE
+
+C45_SYNTHETIC_N_500
+  Description : Synthetic scalability workload includes N=500
+  Values      : 500.0
+  Hits        : 17
+  Files       : 1
+  Status      : FOUND - SINGLE FILE
+
+C45_SYNTHETIC_N_100000
+  Description : Synthetic scalability workload includes N=100000
+  Values      : 100000.0
+  Hits        : 16
+  Files       : 1
+  Status      : FOUND - SINGLE FILE
+
+CLAIMS WITHOUT LOCATED EVIDENCE
+--------------------------------------------------------------------------------
+
+IMPORTANT INTERPRETATION
+--------------------------------------------------------------------------------
+
+A hit means that a candidate file contains a value matching a
+manuscript claim near a relevant keyword.
+
+It does NOT prove that the value is correct.
+
+The next scripts must recompute accuracy/confusion matrices,
+fairness metrics, and fidelity metrics from underlying data.
+
+Highest-priority outputs to inspect next:
+
+1. manuscript_claim_mapping.csv
+2. claim_evidence_detailed.csv
+3. prediction_table_schemas.csv
+4. metric_value_hits.csv
+5. conflicting_claims.csv
+6. fairness_files.csv
+7. scalability_files.csv
+8. ablation_files.csv
+9. multimodal_files.csv
+
+================================================================================

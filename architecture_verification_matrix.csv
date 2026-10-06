@@ -1,0 +1,11 @@
+﻿criterion,passed,detail
+verified_gan_component,0,0 verified GAN class(es).
+verified_vae_component,0,0 verified VAE class(es).
+verified_diffusion_component,0,0 verified diffusion class(es).
+hybrid_generative_integration,0,0 file(s) contain multiple verified generative paradigms.
+explicit_51_feature_generator_output,0,No explicit 51-dimensional generative output found.
+latent_dimension_evidence,0,No latent dimension assignment found.
+latent_or_noise_sampling,0,No genuine latent/noise sampling found.
+explicit_generation_call,0,No explicit generative method call found.
+plausible_trained_generative_checkpoint,0,0 plausible generative checkpoint(s).
+checkpoint_linked_to_verified_generative_code,0,0 valid checkpoint/code link(s).

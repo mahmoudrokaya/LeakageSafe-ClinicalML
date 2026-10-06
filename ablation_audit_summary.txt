@@ -1,0 +1,122 @@
+====================================================================================================
+HFAGM - ABLATION REPRODUCIBILITY FORENSIC AUDIT
+====================================================================================================
+
+Generated: 2026-09-02T23:28:49
+
+PURPOSE
+----------------------------------------------------------------------------------------------------
+Determine whether the ablation conditions claimed or requested for the manuscript are recoverable from historical code, model artifacts, and numerical outputs.
+No missing condition is created by this script.
+
+SOURCE AUDIT
+----------------------------------------------------------------------------------------------------
+Files scanned: 20103
+Keyword evidence rows: 25
+Architecture evidence rows: 16
+Numerical result rows: 49030
+Checkpoint rows: 2
+
+CONDITION MATRIX
+----------------------------------------------------------------------------------------------------
+MISSING: Full HGF/HFAGM hybrid
+    keyword mentions = 25
+    implementation rows = 0
+    numerical result rows = 49
+    checkpoint rows = 0
+MISSING: GAN-only
+    keyword mentions = 0
+    implementation rows = 0
+    numerical result rows = 0
+    checkpoint rows = 0
+MISSING: VAE-only
+    keyword mentions = 0
+    implementation rows = 0
+    numerical result rows = 0
+    checkpoint rows = 0
+MISSING: Diffusion-only
+    keyword mentions = 0
+    implementation rows = 0
+    numerical result rows = 0
+    checkpoint rows = 0
+MISSING: Static fusion
+    keyword mentions = 0
+    implementation rows = 8
+    numerical result rows = 0
+    checkpoint rows = 0
+MISSING: Adaptive fusion
+    keyword mentions = 0
+    implementation rows = 8
+    numerical result rows = 0
+    checkpoint rows = 0
+MISSING: Fairness controller ON
+    keyword mentions = 0
+    implementation rows = 15
+    numerical result rows = 0
+    checkpoint rows = 0
+MISSING: Fairness controller OFF
+    keyword mentions = 0
+    implementation rows = 15
+    numerical result rows = 0
+    checkpoint rows = 0
+MISSING: Scalability mechanism ON
+    keyword mentions = 0
+    implementation rows = 0
+    numerical result rows = 0
+    checkpoint rows = 0
+MISSING: Scalability mechanism OFF
+    keyword mentions = 0
+    implementation rows = 0
+    numerical result rows = 0
+    checkpoint rows = 0
+
+PAIRWISE ABLATION CLAIMS
+----------------------------------------------------------------------------------------------------
+NOT_REPRODUCIBLE: Full HGF compared against GAN-only
+NOT_REPRODUCIBLE: Full HGF compared against VAE-only
+NOT_REPRODUCIBLE: Full HGF compared against diffusion-only
+NOT_REPRODUCIBLE: Adaptive fusion compared against static fusion
+NOT_REPRODUCIBLE: Fairness ON compared against fairness OFF
+NOT_REPRODUCIBLE: Scalability ON compared against scalability OFF
+
+FINAL VERDICT
+----------------------------------------------------------------------------------------------------
+ABLATION_STUDY_NOT_REPRODUCIBLE_FROM_RECOVERED_ARTIFACTS
+
+NEXT ACTION
+----------------------------------------------------------------------------------------------------
+REMOVE_UNSUPPORTED_ABLATION_CLAIMS
+
+MANUSCRIPT ACTION
+----------------------------------------------------------------------------------------------------
+Remove historical claims comparing full HGF with GAN-only, VAE-only, diffusion-only, static/adaptive fusion, fairness on/off, or scalability on/off unless independently preserved evidence is recovered. Do not generate replacement ablations and present them as the original study.
+
+INTERPRETATION
+----------------------------------------------------------------------------------------------------
+Ablation evidence requires an actual implemented variant plus a corresponding historical result or preserved trained artifact.
+Textual mentions, proposed methodology diagrams, or parameter names alone do not establish that an ablation experiment was executed.
+Classifier hyperparameter variants must not be relabeled as GAN/VAE/diffusion generator ablations.
+
+SAFETY CONFIRMATION
+----------------------------------------------------------------------------------------------------
+New models trained: NO
+New synthetic rows generated: NO
+New ablation variants created: NO
+Historical files modified: NO
+
+PRIMARY OUTPUTS
+----------------------------------------------------------------------------------------------------
+ablation_source_inventory.csv
+ablation_keyword_evidence.csv
+architecture_variant_evidence.csv
+fusion_ablation_evidence.csv
+fairness_ablation_evidence.csv
+scalability_ablation_evidence.csv
+numerical_ablation_results.csv
+checkpoint_ablation_linkage.csv
+ablation_condition_matrix.csv
+ablation_claim_reconstruction.csv
+ablation_verdict.csv
+ablation_provenance.csv
+
+====================================================================================================

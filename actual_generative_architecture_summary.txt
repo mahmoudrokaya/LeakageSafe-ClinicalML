@@ -1,0 +1,104 @@
+====================================================================================================
+HFAGM - ACTUAL GENERATIVE ARCHITECTURE VERIFICATION V2
+====================================================================================================
+
+Generated: 2026-09-02T22:56:06
+
+QUESTION
+----------------------------------------------------------------------------------------------------
+Does the recovered project actually implement a GAN, VAE, diffusion model, or hybrid generative architecture capable of producing the 51-feature structured COVID records?
+
+STRICT EVIDENCE RULES
+----------------------------------------------------------------------------------------------------
+A class name containing 'HFAGM' is NOT sufficient evidence of a generative model.
+pandas/DataFrame .sample() is NOT treated as synthetic-data generation.
+Encoder, classifier, graph, embedding, and adjacency artifacts are NOT classified as generator checkpoints.
+A checkpoint is useful only if it can be linked to verified generative code.
+
+SOURCE AUDIT
+----------------------------------------------------------------------------------------------------
+Python files scanned: 17
+Class definitions found: 5
+
+VERIFIED GENERATIVE COMPONENTS
+----------------------------------------------------------------------------------------------------
+Verified GAN classes: 0
+Verified VAE classes: 0
+Verified diffusion classes: 0
+Verified hybrid integration files: 0
+
+STRUCTURED OUTPUT
+----------------------------------------------------------------------------------------------------
+Explicit 51-feature output evidence: 0
+Latent dimension evidence: 0
+Latent/noise sampling evidence: 0
+Explicit generation call evidence: 0
+
+CHECKPOINTS
+----------------------------------------------------------------------------------------------------
+Plausible generative checkpoints: 0
+Valid checkpoint -> verified generative-code links: 0
+
+VERIFICATION MATRIX
+----------------------------------------------------------------------------------------------------
+MISSING: verified_gan_component
+    0 verified GAN class(es).
+MISSING: verified_vae_component
+    0 verified VAE class(es).
+MISSING: verified_diffusion_component
+    0 verified diffusion class(es).
+MISSING: hybrid_generative_integration
+    0 file(s) contain multiple verified generative paradigms.
+MISSING: explicit_51_feature_generator_output
+    No explicit 51-dimensional generative output found.
+MISSING: latent_dimension_evidence
+    No latent dimension assignment found.
+MISSING: latent_or_noise_sampling
+    No genuine latent/noise sampling found.
+MISSING: explicit_generation_call
+    No explicit generative method call found.
+MISSING: plausible_trained_generative_checkpoint
+    0 plausible generative checkpoint(s).
+MISSING: checkpoint_linked_to_verified_generative_code
+    0 valid checkpoint/code link(s).
+
+FINAL VERDICT
+----------------------------------------------------------------------------------------------------
+CLASSIFIER_OR_ENCODER_ONLY_NO_STRUCTURED_GENERATOR
+
+NEXT ACTION
+----------------------------------------------------------------------------------------------------
+DO_NOT_REGENERATE_REMOVE_UNSUPPORTED_GENERATIVE_FID_CLAIMS
+
+MANUSCRIPT CONSEQUENCE
+----------------------------------------------------------------------------------------------------
+Recovered implementation supports classifier/encoder/graph processing rather than a verified structured synthetic generator. The manuscript's structured generative-model claims and FID values are not supported by the recovered implementation.
+
+SAFETY CONFIRMATION
+----------------------------------------------------------------------------------------------------
+New training performed: NO
+New inference performed: NO
+New synthetic data generated: NO
+Arbitrary project modules executed: NO
+Unknown pickle/joblib models loaded: NO
+
+PRIMARY OUTPUTS
+----------------------------------------------------------------------------------------------------
+python_file_inventory.csv
+class_architecture_inventory.csv
+function_inventory.csv
+generative_semantic_evidence.csv
+gan_evidence.csv
+vae_evidence.csv
+diffusion_evidence.csv
+hybrid_integration_evidence.csv
+classifier_graph_evidence.csv
+structured_output_evidence.csv
+checkpoint_inventory_v2.csv
+checkpoint_generative_linkage.csv
+generation_save_evidence.csv
+architecture_verification_matrix.csv
+actual_generative_architecture_verdict.csv
+verification_provenance.csv
+
+====================================================================================================

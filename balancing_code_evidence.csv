@@ -1,0 +1,1026 @@
+﻿category,line_number,pattern,relative_path,statement
+balancing,36,balanced,preprocess_covid_clinical.py,# Optional: Balance classes by upsampling
+balancing,41,resample,preprocess_covid_clinical.py,"df_minority_upsampled = resample(df_minority,"
+balancing,48,balanced,preprocess_covid_clinical.py,"balanced_path = os.path.join(output_folder, 'covid_clinical_balanced.csv')"
+balancing,49,balanced,preprocess_covid_clinical.py,"df_balanced.to_csv(balanced_path, index=False)"
+balancing,50,balanced,preprocess_covid_clinical.py,"print(f""Saved balanced data to: {balanced_path}"")"
+balancing,52,balanced,preprocess_covid_clinical.py,"print(""Classes are already balanced."")"
+balancing,12,balanced,New_Code\02C_verify_split_and_leakage.py,1. Raw/preprocessed/balanced dataset sizes and schemas.
+balancing,18,balanced,New_Code\02C_verify_split_and_leakage.py,7. Whether balancing was performed before or after splitting.
+balancing,50,balanced,New_Code\02C_verify_split_and_leakage.py,balancing_code_evidence.csv
+balancing,152,balanced,New_Code\02C_verify_split_and_leakage.py,BALANCED_PATH = (
+balancing,290,balanced,New_Code\02C_verify_split_and_leakage.py,BALANCING_PATTERNS = {
+balancing,291,SMOTE,New_Code\02C_verify_split_and_leakage.py,"""SMOTE"":"
+balancing,294,ADASYN,New_Code\02C_verify_split_and_leakage.py,"""ADASYN"":"
+balancing,297,RandomOverSampler,New_Code\02C_verify_split_and_leakage.py,"""RandomOverSampler"":"
+balancing,297,oversample,New_Code\02C_verify_split_and_leakage.py,"""RandomOverSampler"":"
+balancing,298,oversample,New_Code\02C_verify_split_and_leakage.py,"r""\bRandomOverSampler\b"","
+balancing,300,RandomUnderSampler,New_Code\02C_verify_split_and_leakage.py,"""RandomUnderSampler"":"
+balancing,300,undersample,New_Code\02C_verify_split_and_leakage.py,"""RandomUnderSampler"":"
+balancing,301,undersample,New_Code\02C_verify_split_and_leakage.py,"r""\bRandomUnderSampler\b"","
+balancing,306,oversample,New_Code\02C_verify_split_and_leakage.py,"""oversample"":"
+balancing,307,oversample,New_Code\02C_verify_split_and_leakage.py,"r""oversampl"","
+balancing,309,undersample,New_Code\02C_verify_split_and_leakage.py,"""undersample"":"
+balancing,310,undersample,New_Code\02C_verify_split_and_leakage.py,"r""undersampl"","
+balancing,312,balanced,New_Code\02C_verify_split_and_leakage.py,"""balanced"":"
+balancing,1485,balanced,New_Code\02C_verify_split_and_leakage.py,"""balance"":"
+balancing,1486,SMOTE,New_Code\02C_verify_split_and_leakage.py,"r""(smote|adasyn|oversampl|undersampl|resample)"","
+balancing,1486,ADASYN,New_Code\02C_verify_split_and_leakage.py,"r""(smote|adasyn|oversampl|undersampl|resample)"","
+balancing,1486,oversample,New_Code\02C_verify_split_and_leakage.py,"r""(smote|adasyn|oversampl|undersampl|resample)"","
+balancing,1486,undersample,New_Code\02C_verify_split_and_leakage.py,"r""(smote|adasyn|oversampl|undersampl|resample)"","
+balancing,1645,balanced,New_Code\02C_verify_split_and_leakage.py,balancing_code: List[
+balancing,2036,balanced,New_Code\02C_verify_split_and_leakage.py,# F09 - Balancing
+balancing,2039,balanced,New_Code\02C_verify_split_and_leakage.py,if balancing_code:
+balancing,2046,balanced,New_Code\02C_verify_split_and_leakage.py,"""Balancing/resampling logic exists in project code."","
+balancing,2048,balanced,New_Code\02C_verify_split_and_leakage.py,"f""{len(balancing_code)} balancing-related """
+balancing,2052,balanced,New_Code\02C_verify_split_and_leakage.py,"""Must determine whether balancing occurred before """
+balancing,2064,balanced,New_Code\02C_verify_split_and_leakage.py,"""No explicit balancing implementation was detected in scanned Python code."","
+balancing,2065,balanced,New_Code\02C_verify_split_and_leakage.py,"""Balanced dataset exists but code provenance may be elsewhere."","
+balancing,2066,balanced,New_Code\02C_verify_split_and_leakage.py,"""Ordering of balancing relative to splitting remains uncertain."""
+balancing,2372,balanced,New_Code\02C_verify_split_and_leakage.py,balanced_df = (
+balancing,2374,balanced,New_Code\02C_verify_split_and_leakage.py,BALANCED_PATH
+balancing,2388,balanced,New_Code\02C_verify_split_and_leakage.py,"""balanced"":"
+balancing,2389,balanced,New_Code\02C_verify_split_and_leakage.py,"balanced_df,"
+balancing,2410,balanced,New_Code\02C_verify_split_and_leakage.py,"""balanced"":"
+balancing,2411,balanced,New_Code\02C_verify_split_and_leakage.py,"BALANCED_PATH,"
+balancing,2551,balanced,New_Code\02C_verify_split_and_leakage.py,balancing_code = []
+balancing,2577,balanced,New_Code\02C_verify_split_and_leakage.py,balancing_code.extend(
+balancing,2580,balanced,New_Code\02C_verify_split_and_leakage.py,"BALANCING_PATTERNS,"
+balancing,2581,balanced,New_Code\02C_verify_split_and_leakage.py,"""balancing"""
+balancing,2625,balanced,New_Code\02C_verify_split_and_leakage.py,"/ ""balancing_code_evidence.csv"","
+balancing,2626,balanced,New_Code\02C_verify_split_and_leakage.py,balancing_code
+balancing,2655,balanced,New_Code\02C_verify_split_and_leakage.py,"BALANCED_PATH,"
+balancing,2689,balanced,New_Code\02C_verify_split_and_leakage.py,"balancing_code=balancing_code,"
+balancing,2831,balanced,New_Code\02C_verify_split_and_leakage.py,"f""Balancing-related statements: """
+balancing,2832,balanced,New_Code\02C_verify_split_and_leakage.py,"f""{len(balancing_code)}"","
+balancing,2880,balanced,New_Code\02C_verify_split_and_leakage.py,"""preprocess_covid_clinical.py, classifier training code, balancing code,"","
+balancing,2889,oversample,New_Code\02C_verify_split_and_leakage.py,"""3. Oversampling/balancing did not use or create derivatives of test rows."","
+balancing,2889,balanced,New_Code\02C_verify_split_and_leakage.py,"""3. Oversampling/balancing did not use or create derivatives of test rows."","
+balancing,2902,balanced,New_Code\02C_verify_split_and_leakage.py,"""6. balancing_code_evidence.csv"","
+balancing,3022,balanced,New_Code\02C_verify_split_and_leakage.py,"/ ""balancing_code_evidence.csv"""
+balancing,378,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\compat\numpy\function.py,"f""Use .resample(...).{method}() instead"""
+balancing,9384,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\generic.py,def resample(
+balancing,9416,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\generic.py,Use frame.T.resample(...) instead.
+balancing,9522,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\generic.py,>>> series.resample('3min').sum()
+balancing,9536,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\generic.py,">>> series.resample('3min', label='right').sum()"
+balancing,9545,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\generic.py,">>> series.resample('3min', label='right', closed='right').sum()"
+balancing,9554,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\generic.py,>>> series.resample('30s').asfreq()[0:5]   # Select first 5 rows
+balancing,9565,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\generic.py,>>> series.resample('30s').ffill()[0:5]
+balancing,9576,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\generic.py,>>> series.resample('30s').bfill()[0:5]
+balancing,9589,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\generic.py,>>> series.resample('3min').apply(custom_resampler)
+balancing,9614,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\generic.py,">>> df.resample('ME', on='week_starting').mean()"
+balancing,9642,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\generic.py,">>> df2.resample('D', level=0).sum()"
+balancing,9666,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\generic.py,>>> ts.resample('17min').sum()
+balancing,9674,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\generic.py,">>> ts.resample('17min', origin='epoch').sum()"
+balancing,9682,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\generic.py,">>> ts.resample('17min', origin='2000-01-01').sum()"
+balancing,9692,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\generic.py,">>> ts.resample('17min', origin='start').sum()"
+balancing,9699,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\generic.py,">>> ts.resample('17min', offset='23h30min').sum()"
+balancing,9708,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\generic.py,">>> ts.resample('17min', origin='end').sum()"
+balancing,9719,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\generic.py,">>> ts.resample('17min', origin='end_day').sum()"
+balancing,9733,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\generic.py,"""`frame.T.resample(...)` without axis instead."","
+balancing,126,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,It's easiest to use obj.resample(...) to use Resampler.
+balancing,273,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> df.resample('2D').pipe(lambda x: x.max() - x.min())
+balancing,314,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> r = s.resample('2s')
+balancing,389,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> resampled = s.resample('15min')
+balancing,555,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> ser.resample('MS').ffill()
+balancing,563,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> ser.resample('W').ffill()
+balancing,577,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> ser.resample('W').ffill(limit=1)
+balancing,631,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> s.resample('15min').nearest()
+balancing,641,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> s.resample('15min').nearest(limit=1)
+balancing,701,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> s.resample('30min').bfill()
+balancing,709,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> s.resample('15min').bfill(limit=2)
+balancing,732,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> df.resample('30min').bfill()
+balancing,740,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> df.resample('15min').bfill(limit=2)
+balancing,815,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,">>> s.resample(""30min"").asfreq()"
+balancing,823,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,">>> s.resample('30min').fillna(""backfill"")"
+balancing,831,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,">>> s.resample('15min').fillna(""backfill"", limit=2)"
+balancing,843,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,">>> s.resample('30min').fillna(""pad"")"
+balancing,851,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,">>> s.resample('30min').fillna(""nearest"")"
+balancing,869,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> sm.resample('30min').fillna('backfill')
+balancing,877,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> sm.resample('30min').fillna('pad')
+balancing,885,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> sm.resample('30min').fillna('nearest')
+balancing,905,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,">>> df.resample('30min').fillna(""bfill"")"
+balancing,1044,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,">>> series.resample(""2s"").interpolate(""linear"")"
+balancing,1052,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,">>> series.resample(""500ms"").interpolate(""linear"")"
+balancing,1069,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,">>> series.resample(""400ms"").interpolate(""linear"")"
+balancing,1131,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> ser.resample('MS').asfreq()
+balancing,1177,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> ser.resample('MS').sum()
+balancing,1225,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> ser.resample('MS').prod()
+balancing,1259,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> ser.resample('MS').min()
+balancing,1294,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> ser.resample('MS').max()
+balancing,1377,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> ser.resample('MS').mean()
+balancing,1425,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> ser.resample('MS').std()
+balancing,1474,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> ser.resample('MS').var()
+balancing,1479,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> ser.resample('MS').var(ddof=0)
+balancing,1613,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> ser.resample('MS').quantile()
+balancing,1618,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\resample.py,>>> ser.resample('MS').quantile(.25)
+balancing,671,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\groupby\generic.py,>>> ser.resample('MS').nunique()
+balancing,848,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\groupby\groupby.py,>>> ser.resample('MS').groups
+balancing,902,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\groupby\groupby.py,>>> ser.resample('MS').indices
+balancing,1087,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\groupby\groupby.py,>>> ser.resample('MS').get_group('2023-01-01')
+balancing,1190,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\groupby\groupby.py,">>> for x, y in ser.resample('MS'):"
+balancing,2318,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\groupby\groupby.py,>>> ser.resample('MS').count()
+balancing,2527,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\groupby\groupby.py,>>> ser.resample('MS').median()
+balancing,2968,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\groupby\groupby.py,>>> ser.resample('MS').sem()
+balancing,3038,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\groupby\groupby.py,>>> ser.resample('MS').size()
+balancing,3551,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\groupby\groupby.py,>>> ser.resample('MS').ohlc()
+balancing,3615,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\groupby\groupby.py,"def resample(self, rule, *args, include_groups: bool = True, **kwargs) -> Resampler:"
+balancing,3681,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\groupby\groupby.py,">>> df.groupby('a').resample('3min', include_groups=False).sum()"
+balancing,3690,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\groupby\groupby.py,">>> df.groupby('a').resample('30s', include_groups=False).sum()"
+balancing,3704,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\groupby\groupby.py,">>> df.groupby('a').resample('ME', include_groups=False).sum()"
+balancing,3715,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\groupby\groupby.py,"...     .resample('3min', closed='right', include_groups=False)"
+balancing,3730,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\core\groupby\groupby.py,"...     .resample('3min', closed='right', label='right', include_groups=False)"
+balancing,252,balanced,New_Code\.venv_sklearn152\Lib\site-packages\pandas\plotting\_misc.py,influence of each dimension can be interpreted as a balance between the
+balancing,92,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\plotting\_matplotlib\timeseries.py,"ser_d = ser_ts.resample(""D"").last().dropna()"
+balancing,93,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\plotting\_matplotlib\timeseries.py,ser_freq = ser_d.resample(ax_freq).last().dropna()
+balancing,2091,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\frame\test_stack_unstack.py,"unst.resample(""W-THU"").mean()"
+balancing,2092,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\frame\test_stack_unstack.py,"down = unst.resample(""W-THU"").mean(numeric_only=True)"
+balancing,2096,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\frame\test_stack_unstack.py,".resample(""W-THU"")"
+balancing,126,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\frame\methods\test_asfreq.py,# we test if .asfreq() and .resample() set the correct value for .freq
+balancing,131,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\frame\methods\test_asfreq.py,# testing the settings before calling .asfreq() and .resample()
+balancing,138,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\frame\methods\test_asfreq.py,# does .resample() set .freq correctly?
+balancing,139,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\frame\methods\test_asfreq.py,"assert obj.resample(""D"").asfreq().index.freq == ""D"""
+balancing,71,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\frame\methods\test_asof.py,"expected = df.resample(""25s"", closed=""right"").ffill().reindex(dates)"
+balancing,90,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\generic\test_frame.py,"result = df.resample(""1min"")"
+balancing,114,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\generic\test_series.py,"result = ts.resample(""1min"").mean()"
+balancing,117,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\generic\test_series.py,"result = ts.resample(""1min"").min()"
+balancing,120,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\generic\test_series.py,"result = ts.resample(""1min"").apply(lambda x: x.sum())"
+balancing,3216,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\groupby\test_groupby.py,"tm.assert_frame_equal(g.resample(""D"").mean(), g_exp.resample(""D"").mean())"
+balancing,3217,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\groupby\test_groupby.py,"tm.assert_frame_equal(g.resample(""D"").ohlc(), g_exp.resample(""D"").ohlc())"
+balancing,108,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\groupby\test_groupby_subclass.py,# GH28330 -- preserve subclass through groupby.resample()
+balancing,126,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\groupby\test_groupby_subclass.py,# Confirm groupby.resample() preserves dataframe type
+balancing,134,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\groupby\test_groupby_subclass.py,"result = df.groupby(""Buyer"").resample(""5D"").sum()"
+balancing,120,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\groupby\test_timegrouper.py,"result1 = df.resample(""5D"").sum()"
+balancing,386,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\groupby\test_timegrouper.py,.resample(freq)
+balancing,376,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\groupby\aggregate\test_aggregate.py,"result = df.resample(""3min"").agg("
+balancing,382,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\groupby\aggregate\test_aggregate.py,"[df.resample(""3min"").A.quantile(q=q).values for q in [0.9999, 0.1111]]"
+balancing,398,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\groupby\aggregate\test_aggregate.py,"result = df.resample(""3min"").agg("
+balancing,414,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\groupby\aggregate\test_aggregate.py,"[df.resample(""3min"").A.quantile(q=q).values for q in [0.9999, 0.1111]]"
+balancing,417,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\groupby\aggregate\test_aggregate.py,"[df.resample(""3min"").A.ohlc(), non_ohlc_expected_values]"
+balancing,92,oversample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\groupby\methods\test_sample.py,def test_groupby_sample_oversample():
+balancing,822,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\io\excel\test_writers.py,"xp = df.resample(""ME"").mean().to_period(""M"")"
+balancing,160,balanced,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\io\parser\test_quoting.py,"@pytest.mark.parametrize(""balanced"", [True, False])"
+balancing,161,balanced,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\io\parser\test_quoting.py,"def test_unbalanced_quoting(all_parsers, balanced, request):"
+balancing,166,balanced,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\io\parser\test_quoting.py,"if parser.engine == ""pyarrow"" and not balanced:"
+balancing,170,balanced,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\io\parser\test_quoting.py,if balanced:
+balancing,171,balanced,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\io\parser\test_quoting.py,# Re-balance the quoting and read in without errors.
+balancing,485,balanced,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\io\parser\test_read_fwf.py,Account                 Name  Balance     CreditLimit   AccountCreated
+balancing,504,balanced,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\io\parser\test_read_fwf.py,Account               Name    Balance     CreditLimit   AccountCreated
+balancing,523,balanced,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\io\parser\test_read_fwf.py,Account          Name             Balance     Credit Limit   Account Created
+balancing,1532,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\plotting\test_datetimelike.py,"ts.resample(""D"").mean().plot(secondary_y=True, ax=ax)"
+balancing,496,balanced,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\plotting\test_misc.py,"""balance"": [-1432.32, 10.43, 30000.00],"
+balancing,59,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_base.py,result = obj.resample(freq).asfreq()
+balancing,73,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_base.py,"result = ser.resample(""1h"").asfreq()"
+balancing,81,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_base.py,"result = frame.resample(""1h"").asfreq(fill_value=4.0)"
+balancing,96,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_base.py,"result = df.resample(""1min"").asfreq().interpolate()"
+balancing,97,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_base.py,"expected = df.resample(""1min"").interpolate()"
+balancing,109,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_base.py,"xp.resample(""YE"")"
+balancing,124,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_base.py,ser.resample(freq)
+balancing,135,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_base.py,rs = ser.resample(freq)
+balancing,170,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_base.py,rs = ser.resample(freq)
+balancing,197,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_base.py,ser.resample(freq)
+balancing,208,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_base.py,rs = ser.resample(freq)
+balancing,231,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_base.py,"df.resample(freq, group_keys=False)"
+balancing,242,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_base.py,"rs = df.resample(freq, group_keys=False)"
+balancing,280,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_base.py,empty_frame_dti.resample(freq)
+balancing,291,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_base.py,rs = empty_frame_dti.resample(freq)
+balancing,314,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_base.py,empty_frame_dti.resample(freq)
+balancing,325,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_base.py,rs = empty_frame_dti.resample(freq)
+balancing,358,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_base.py,"rs = empty_series_dti.resample(""d"", group_keys=False)"
+balancing,379,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_base.py,empty_series_dti.resample(freq)
+balancing,391,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_base.py,"rs = ser.resample(freq, group_keys=False)"
+balancing,395,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_base.py,"expected = ser.resample(freq).apply(""sum"")"
+balancing,414,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_base.py,resampled = series.resample(freq)
+balancing,432,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_base.py,result = ser.resample(freq).quantile(q)
+balancing,433,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_base.py,expected = ser.resample(freq).agg(lambda x: x.quantile(q)).rename(ser.name)
+balancing,453,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_base.py,"rs = df.resample(""ME"")"
+balancing,150,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = s.resample(""5min"", closed=closed, label=""right"").mean()"
+balancing,161,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = ts.resample(""3min"").sum()"
+balancing,169,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = ts.resample(""3min"").mean()"
+balancing,181,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = s.resample(""5Min"").last()"
+balancing,204,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"series.resample(""5min"", **({keyword: value}))"
+balancing,228,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"s.resample(""5min"", closed=""right"", label=""right""), downsample_method"
+balancing,259,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = s.resample(""5min"", closed=""right"", label=""right"").ohlc()"
+balancing,276,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"df_standard = df.resample(""ME"").apply(fn)"
+balancing,277,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"df_lambda = df.resample(""ME"").apply(lambda x: str(type(x)))"
+balancing,278,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"df_partial = df.resample(""ME"").apply(partial(fn))"
+balancing,279,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"df_partial2 = df.resample(""ME"").apply(partial(fn, a=2))"
+balancing,280,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"df_class = df.resample(""ME"").apply(FnClass())"
+balancing,316,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.resample(""6s"").sum()"
+balancing,323,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.resample(""7s"").sum()"
+balancing,330,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.resample(""11s"").sum()"
+balancing,337,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.resample(""13s"").sum()"
+balancing,344,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.resample(""17s"").sum()"
+balancing,361,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = s.resample(""w-sun"").last()"
+balancing,369,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = s.resample(""W-MON"").last()"
+balancing,375,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = s.resample(""W-TUE"").last()"
+balancing,381,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = s.resample(""W-WED"").last()"
+balancing,387,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = s.resample(""W-THU"").last()"
+balancing,393,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = s.resample(""W-FRI"").last()"
+balancing,400,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = s.resample(""B"").last()"
+balancing,415,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = series.resample(""D"").mean()"
+balancing,431,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = s.resample(""D"").count()"
+balancing,434,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result1 = s.resample(""D"").sum()"
+balancing,435,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result2 = s.resample(""D"").mean()"
+balancing,464,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,result = df.resample(freq).mean()
+balancing,465,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"tm.assert_series_equal(result[""A""], df[""A""].resample(freq).mean())"
+balancing,478,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"df.resample(freq, kind=""period"").mean()"
+balancing,490,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = s.resample(""Min"").ffill()"
+balancing,524,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"tm.assert_series_equal(s.resample(""10s"").mean(), expected)"
+balancing,534,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.resample(""BME"").last()"
+balancing,542,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = ts.resample(""min"").ffill(limit=2)"
+balancing,556,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,result = ts.resample(rule).nearest(limit=2)
+balancing,567,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = s.resample(""5Min"").ohlc()"
+balancing,591,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"a = s.loc[:""4-15-2000""].resample(""30min"").ohlc()"
+balancing,594,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"b = s.loc[:""4-14-2000""].resample(""30min"").ohlc()"
+balancing,611,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.resample(""B"").mean()"
+balancing,635,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"res = df.resample(""h"").ohlc()"
+balancing,637,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"[df[""VOLUME""].resample(""h"").ohlc(), df[""PRICE""].resample(""h"").ohlc()],"
+balancing,645,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"res = df.resample(""h"").ohlc()"
+balancing,675,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.resample(""QE"", axis=1).mean()"
+balancing,689,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"bs = s.resample(""B"", closed=""right"", label=""right"").mean()"
+balancing,690,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = bs.resample(""8h"").mean()"
+balancing,712,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = ts.resample(freq, kind=""period"").mean()"
+balancing,713,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,expected = ts.resample(freq).mean()
+balancing,727,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"resampled = ts.resample(""5min"", closed=""right"", label=""right"").ohlc()"
+balancing,743,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = ts.resample(""ME"").mean()"
+balancing,772,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.resample(""ME"", axis=1).mean()"
+balancing,773,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"expected = df.T.resample(""ME"").mean().T"
+balancing,787,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = ts[2:].resample(freq, closed=""left"", label=""left"").mean()"
+balancing,788,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"expected = ts.resample(freq, closed=""left"", label=""left"").mean()"
+balancing,798,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"tm.assert_series_equal(ts.resample(""ME"").sum(), ts.resample(""ME"").apply(mysum))"
+balancing,811,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = s.resample(""D"").apply(lambda x: np.std(x))"
+balancing,821,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"resampled = ts.resample(""5min"", offset=""2min"").mean()"
+balancing,848,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"resampled = ts.resample(""5min"", **kwargs).mean()"
+balancing,864,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"ts.resample(""5min"", origin=origin)"
+balancing,873,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"ts.resample(""5min"", offset=offset)"
+balancing,885,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"resampled = ts.resample(""17min"").mean()"
+balancing,887,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"resampled = ts.resample(""17min"", origin=""start_day"").mean()"
+balancing,893,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"resampled = ts.resample(""17min"", origin=""start"").mean()"
+balancing,895,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"resampled = ts.resample(""17min"", offset=""23h30min"").mean()"
+balancing,897,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"resampled = ts.resample(""17min"", origin=""start_day"", offset=""23h30min"").mean()"
+balancing,903,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"resampled = ts.resample(""17min"", origin=""epoch"").mean()"
+balancing,909,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"resampled = ts.resample(""17min"", origin=""2000-01-01"").mean()"
+balancing,926,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"resampled = ts.resample(""5min"", origin=""1999-12-31 23:57:00+00:00"").mean()"
+balancing,930,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"resampled = ts.resample(""5min"", origin=""1999-12-31 12:02:00+03:00"").mean()"
+balancing,933,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"resampled = ts.resample(""5min"", origin=""epoch"", offset=""2m"").mean()"
+balancing,937,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"ts.resample(""5min"", origin=""12/31/1999 23:57:00"").mean()"
+balancing,943,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"ts.resample(""5min"", origin=""12/31/1999 23:57:00+03:00"").mean()"
+balancing,953,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result_1 = ts_1.resample(""D"", origin=""epoch"").mean()"
+balancing,954,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result_2 = ts_1.resample(""24h"", origin=""epoch"").mean()"
+balancing,959,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result_3 = ts_no_tz.resample(""D"", origin=""epoch"").mean()"
+balancing,960,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result_4 = ts_no_tz.resample(""24h"", origin=""epoch"").mean()"
+balancing,968,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result_5 = ts_2.resample(""D"", origin=""epoch"").mean()"
+balancing,969,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result_6 = ts_2.resample(""24h"", origin=""epoch"").mean()"
+balancing,994,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = ts.resample(""D"", origin=origin).sum()"
+balancing,1005,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = ts.resample(""D"", origin=""start"", offset=""-2h"").sum()"
+balancing,1010,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = ts.resample(""24h"", origin=""start"", offset=""-2h"").sum()"
+balancing,1015,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = ts.resample(""D"", origin=""start"", offset=""2h"").sum()"
+balancing,1020,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = ts.resample(""D"", origin=""start"", offset=""-1h"").sum()"
+balancing,1025,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = ts.resample(""D"", origin=""start"", offset=""1h"").sum()"
+balancing,1034,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = ts[2:].resample(""D"", closed=""left"", label=""left"").mean()"
+balancing,1035,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"expected = ts.resample(""D"", closed=""left"", label=""left"").mean()"
+balancing,1047,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = ts.resample(""ME"", kind=""period"").mean()"
+balancing,1060,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"expected = s2.to_timestamp().resample(""D"").mean().to_period()"
+balancing,1063,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"rs = s2.resample(""D"")"
+balancing,1084,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.groupby(""ID"").resample(""5min"").sum()"
+balancing,1087,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"expected = df.groupby(""ID"").apply(lambda x: x.resample(""5min"").sum())"
+balancing,1103,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.resample(""1D"").ffill()"
+balancing,1108,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.groupby(""group"").resample(""1D"").ffill()"
+balancing,1119,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"expected = df.astype(""float64"").resample(""h"").mean()[""a""].interpolate(""cubic"")"
+balancing,1121,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.resample(""h"")[""a""].mean().interpolate(""cubic"")"
+balancing,1124,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.resample(""h"").mean()[""a""].interpolate(""cubic"")"
+balancing,1133,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"resampled = ts.resample(""W"").mean()"
+balancing,1134,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"expected = ts.resample(""W-SUN"").mean()"
+balancing,1143,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"ts.resample(""ME"")"
+balancing,1153,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,r = ts.resample(pd.tseries.offsets.Nano(100))
+balancing,1168,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.resample(""ME"").mean()"
+balancing,1171,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"expected = df.resample(""ME"", kind=""period"").mean().to_timestamp(how=""end"")"
+balancing,1177,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.resample(""ME"", closed=""left"").mean()"
+balancing,1180,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"exp = df.shift(1, freq=""D"").resample(""ME"", kind=""period"").mean()"
+balancing,1193,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.resample(""QE"").mean()"
+balancing,1196,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"expected = df.resample(""QE"", kind=""period"").mean().to_timestamp(how=""end"")"
+balancing,1203,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.resample(""QE"", closed=""left"").mean()"
+balancing,1207,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"df.shift(1, freq=""D"").resample(""QE"", kind=""period"", closed=""left"").mean()"
+balancing,1220,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"resampled = ts.resample(""ME"").mean()"
+balancing,1228,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,ts.resample(freq).mean()
+balancing,1246,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = s.resample(""2200ms"", label=label).mean()"
+balancing,1256,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = ts.resample(""5min"", closed=""right"", label=""left"").mean()"
+balancing,1267,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = ts.resample(""ME"", kind=""period"").mean()"
+balancing,1276,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"ts.resample(""d"").mean()"
+balancing,1285,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = ts.resample(""20min"").aggregate([""mean"", ""sum""])"
+balancing,1295,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = ts.resample(""D"").sum()"
+balancing,1296,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"exp = ts.sort_index().resample(""D"").sum()"
+balancing,1325,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.resample(""min"").apply(lambda x: x.mean())"
+balancing,1329,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.resample(""min"").median()"
+balancing,1338,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = ts.resample(""ME"").apply(lambda x: x.mean())"
+balancing,1339,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"exp = ts.resample(""ME"").mean()"
+balancing,1342,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"foo_exp = ts.resample(""ME"").mean()"
+balancing,1344,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"bar_exp = ts.resample(""ME"").std()"
+balancing,1347,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = ts.resample(""ME"").apply([lambda x: x.mean(), lambda x: x.std(ddof=1)])"
+balancing,1354,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = ts.resample(""ME"").aggregate("
+balancing,1370,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"df.resample(""YS"").sum()"
+balancing,1381,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,# Upsample by factor 3 with reindex() and resample() methods:
+balancing,1387,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"r10_2 = s.resample(""10Min"").bfill(limit=2)"
+balancing,1388,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"r10 = s.resample(""10Min"").bfill()"
+balancing,1416,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.set_index(""A"").resample(""ME"").count()"
+balancing,1436,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.set_index(""A"").resample(""ME"").count()"
+balancing,1471,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"r = df.resample(""D"")"
+balancing,1480,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.ID.resample(""D"").nunique()"
+balancing,1498,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.resample(""1h"").nunique()"
+balancing,1518,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"r = s.resample(""ME"")"
+balancing,1535,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"left = ts.resample(""30min"").nunique()"
+balancing,1563,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"left = ts.resample(""7min"").size()"
+balancing,1601,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.resample(rule=""h"").sum()"
+balancing,1633,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"tm.assert_frame_equal(df.resample(rule=""D"").sum(), expected)"
+balancing,1634,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"df.resample(rule=""MS"").sum()"
+balancing,1636,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"df.resample(rule=""MS"").sum(),"
+balancing,1654,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"rs = df.resample(""W-MON"")"
+balancing,1672,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"rs2 = df.resample(""2W-MON"")"
+balancing,1690,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"rs3 = df.resample(""MS"")"
+balancing,1704,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"rs4 = df.resample(""2MS"")"
+balancing,1719,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"rs_d = df_daily.resample(""D"")"
+balancing,1743,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = Series(5, index=dates).resample(""h"").mean()"
+balancing,1760,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.resample(""1W"").sum()"
+balancing,1776,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = s.resample(""W"").mean()"
+balancing,1821,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"tm.assert_frame_equal(frame.resample(""1s"").mean(), frame_1s)"
+balancing,1827,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"tm.assert_frame_equal(frame.resample(""2s"").mean(), frame_2s)"
+balancing,1831,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"tm.assert_frame_equal(frame.resample(""3s"").mean(), frame_3s)"
+balancing,1833,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"tm.assert_frame_equal(frame.resample(""60s"").mean(), frame_3s)"
+balancing,1851,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"res = df.resample(""2D"").first()[""timestamp""]"
+balancing,1853,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"res = df[""timestamp""].resample(""2D"").first()"
+balancing,1865,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = series.resample(""D"").apply(f, multiplier)"
+balancing,1866,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"expected = series.resample(""D"").mean().multiply(multiplier)"
+balancing,1870,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = series.resample(""D"").apply(f, add_arg=multiplier)"
+balancing,1871,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"expected = series.resample(""D"").mean().multiply(multiplier)"
+balancing,1885,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.groupby(""A"").resample(""D"").agg(f, multiplier).astype(float)"
+balancing,1888,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"expected = df.groupby(""A"").resample(""D"").mean().multiply(multiplier)"
+balancing,1915,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,result1 = ser.resample(str(n1_) + freq1).mean()
+balancing,1916,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,result2 = ser.resample(str(n2_) + freq2).mean()
+balancing,1958,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.resample(""QE"").apply(np.prod)"
+balancing,2011,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,result = ts.resample(freq_out).ffill()
+balancing,2024,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = getattr(ser.resample(""QE""), func)(min_count=2)"
+balancing,2044,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.resample(""D"").max()"
+balancing,2060,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = ser.resample(""200YE"").mean()"
+balancing,2086,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = df.resample(""2MS"", on=""ts"", closed=""left"", label=""left"", origin=""start"")["
+balancing,2115,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,expected = s.resample(freq).mean()
+balancing,2117,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,result = s.resample(freq_depr).mean()
+balancing,2135,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,expected = s.resample(freq).mean()
+balancing,2137,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,result = s.resample(freq_depr).mean()
+balancing,2145,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"grouped = df.resample(""MS"", closed=""right"")"
+balancing,2162,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"grouped = df.resample(freq, closed=""right"")"
+balancing,2192,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = ser.resample(""B"", closed=""right"", label=""right"").mean()"
+balancing,2230,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_datetime_index.py,"result = expected.resample(""1D"").mean()"
+balancing,78,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,expected = obj.to_timestamp().resample(freq).asfreq()
+balancing,86,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = obj.resample(freq, kind=kind).asfreq()"
+balancing,101,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = s.resample(""1h"", kind=""timestamp"").asfreq(fill_value=4.0)"
+balancing,113,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = frame.resample(""1h"", kind=""timestamp"").asfreq(fill_value=3.0)"
+balancing,135,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"df.resample(freq, kind=kind, **kwargs)"
+balancing,153,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = getattr(ts.resample(period, convention=conv), meth)()"
+balancing,160,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = ts.resample(""Y-DEC"").mean()"
+balancing,167,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"tm.assert_series_equal(ts.resample(""Y-DEC"").mean(), result)"
+balancing,168,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"tm.assert_series_equal(ts.resample(""Y"").mean(), result)"
+balancing,187,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,ts.resample(rule).mean()
+balancing,192,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = ts.resample(""Y-DEC"").mean()"
+balancing,196,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"resampled = result.resample(freq, convention=""end"").ffill()"
+balancing,207,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = ts.resample(""M"", convention=""end"").ffill(limit=2)"
+balancing,214,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"rdf = df.resample(""D"").ffill()"
+balancing,215,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"exp = df[""a""].resample(""D"").ffill()"
+balancing,222,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = ts.resample(""M"").ffill()"
+balancing,244,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = ts.resample(period, convention=convention).ffill()"
+balancing,260,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = ts.resample(target, convention=convention).ffill()"
+balancing,280,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = s.to_period().resample(""min"", kind=""period"").mean()"
+balancing,283,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result2 = s.resample(""min"", kind=""period"").mean()"
+balancing,292,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,result = series.resample(freq).count()
+balancing,304,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = getattr(series.resample(""M""), resample_method)()"
+balancing,314,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"rs = ser.resample(""W"")"
+balancing,340,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = series.resample(""D"", kind=""period"").mean()"
+balancing,362,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = ser.resample(""D"").mean()"
+balancing,380,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = expected.resample(""900s"").mean()"
+balancing,408,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = expected.resample(""30min"").mean()"
+balancing,417,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"last = s.resample(""ME"").ffill()"
+balancing,418,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"both = s.resample(""ME"").ffill().resample(""ME"").last().astype(""int64"")"
+balancing,434,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = ts.resample(target, convention=convention).ffill()"
+balancing,444,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = ts.resample(""Y-DEC"", kind=""timestamp"").mean()"
+balancing,445,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"expected = ts.to_timestamp(how=""start"").resample(""YE-DEC"").mean()"
+balancing,451,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"quar_ts = ts.resample(f""Q-{month}"").ffill()"
+balancing,471,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = ts.resample(""Q-MAR"", convention=how).ffill()"
+balancing,477,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,# expected = expected.resample('Q-MAR').ffill()
+balancing,487,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"filled = s.resample(""Y"").ffill()"
+balancing,488,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"expected = stamps.resample(""YE"").ffill().to_period(""Y"")"
+balancing,496,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"s.resample(""Y"").ffill()"
+balancing,503,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,expected = ts.to_timestamp().resample(freq).mean()
+balancing,508,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = ts.resample(freq, kind=kind).mean()"
+balancing,514,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = ts.resample(""D"").asfreq()"
+balancing,521,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = ts.resample(""h"", convention=""s"").asfreq()"
+balancing,532,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = subset.resample(""10min"").apply(len)"
+balancing,533,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"expected = s.resample(""10min"").apply(len).loc[result.index]"
+balancing,540,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = ts.resample(""W-THU"").asfreq()"
+balancing,544,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = ts.resample(""W-THU"").asfreq().ffill()[:-1]"
+balancing,555,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = ts_local.resample(""W"").mean()"
+balancing,560,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"exp = ts_local_naive.resample(""W"").mean().tz_localize(""America/Los_Angeles"")"
+balancing,566,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = ts_local.resample(""D"").mean()"
+balancing,575,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = s.resample(""D"", closed=""right"", label=""right"").mean()"
+balancing,584,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = s.resample(""D"", kind=""period"").mean()"
+balancing,599,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"""first"": ts.resample(""YE"").sum()[""first""],"
+balancing,600,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"""second"": ts.resample(""YE"").mean()[""second""],"
+balancing,605,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"ts.resample(""YE"")"
+balancing,619,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = s.resample(""10min"", closed=""left"", label=""right"").mean()"
+balancing,620,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"exp = s[1:].resample(""10min"", closed=""left"", label=""right"").mean()"
+balancing,623,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = s.resample(""10min"", closed=""left"", label=""left"").mean()"
+balancing,624,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"exp = s[1:].resample(""10min"", closed=""left"", label=""left"").mean()"
+balancing,635,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = ts.resample(""Y"").mean()"
+balancing,636,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"exp = ts.to_timestamp().resample(""YE"").mean().to_period()"
+balancing,647,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"df.resample(""W-MON"", closed=""left"", label=""left"").first()"
+balancing,657,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = df.resample(""12h"", closed=""right"", label=""right"").last().ffill()"
+balancing,691,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"res1 = timeseries.resample(""BMS"").mean()"
+balancing,692,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"res2 = timeseries.resample(""BMS"").mean().resample(""B"").mean()"
+balancing,706,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = ts.resample(""D"").mean()"
+balancing,717,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,resampled = df.resample(to_freq).mean()
+balancing,719,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"resampled, df.resample(to_freq, closed=""right"", label=""right"").mean()"
+balancing,730,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,resampled = df.resample(to_freq).mean()
+balancing,732,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"resampled, df.resample(to_freq, closed=""left"", label=""left"").mean()"
+balancing,740,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = ser.resample(""Y"").mean()"
+balancing,751,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = df.resample(""5D"").mean()"
+balancing,798,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = df.resample(""7D"").count()"
+balancing,814,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = df.resample(""7D"").sum()"
+balancing,823,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,expected = s.to_timestamp().resample(freq).ohlc().to_period(freq)
+balancing,831,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = s.resample(freq, kind=kind).ohlc()"
+balancing,883,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,rs = frame.resample(freq)
+balancing,893,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = frame.resample(""1s"").mean()"
+balancing,922,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"rs = ser.resample(end_freq, offset=offset)"
+balancing,926,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"expected = ser.to_timestamp().resample(end_freq, offset=offset).mean()"
+balancing,935,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"rs = ser.resample(""M"", offset=""3h"")"
+balancing,938,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"expected = ser.to_timestamp().resample(""ME"", offset=""3h"").mean()"
+balancing,983,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"rs = s.resample(""Q"")"
+balancing,1006,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = ser.resample(""T"").mean()"
+balancing,1032,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,result = ser.resample(freq_depr_res).mean()
+balancing,1071,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,obj.resample(freq_depr)
+balancing,1080,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,"result = len0pts.resample(""Y-DEC"").mean()"
+balancing,1100,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_period_index.py,obj.resample(freq_depr)
+balancing,38,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"rs = s.resample(""D"")"
+balancing,70,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"return x.set_index(""date"").resample(""D"").asfreq()"
+balancing,77,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"result = df.set_index(""date"").groupby(""id"").resample(""D"").asfreq()"
+balancing,89,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"return x.resample(""1D"").ffill()"
+balancing,96,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"result = df.groupby(""group"").resample(""1D"").ffill()"
+balancing,103,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"expected = g.B.apply(lambda x: x.resample(""2s"").mean())"
+balancing,105,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"result = g.resample(""2s"").B.mean()"
+balancing,108,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"result = g.B.resample(""2s"").mean()"
+balancing,113,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"result = g.resample(""2s"").mean().B"
+balancing,122,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"r = df.groupby(""id"").resample(""1D"")"
+balancing,142,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"exp = df.set_index(""date"").groupby(""id"").resample(""2D"")[""data""].sum()"
+balancing,143,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"result = df.groupby(""id"").resample(""2D"", on=""date"")[""data""].sum()"
+balancing,192,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"result = Series(range(3), index=index).resample(""20s"").nearest()"
+balancing,235,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"r = g.resample(""2s"")"
+balancing,242,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"expected = g.apply(lambda x: getattr(x.resample(""2s""), f)())"
+balancing,249,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"r = g.resample(""2s"")"
+balancing,251,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"expected = g.B.apply(lambda x: x.resample(""2s"").nunique())"
+balancing,258,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"r = g.resample(""2s"")"
+balancing,264,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"expected = g.apply(lambda x: getattr(x.resample(""2s""), f)(ddof=1))"
+balancing,270,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"r = g.resample(""2s"")"
+balancing,275,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"expected = g.resample(""2s"").sum()"
+balancing,278,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"return x.resample(""2s"").sum()"
+balancing,286,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"return x.resample(""2s"").apply(lambda y: y.sum())"
+balancing,309,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"result = df.resample(""ME"").apply(f)"
+balancing,314,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"result = df[""col1""].resample(""ME"").apply(f)"
+balancing,324,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"result = df.resample(""h"").apply(lambda x: agg_dict[x.name](x))"
+balancing,346,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"result = data.resample(""D"").apply(weighted_quantile, weights=weights, q=0.5)"
+balancing,360,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"result = df.groupby(""col0"").resample(""1W"", label=""left"").sum()"
+balancing,383,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"result = df.groupby(""A"").resample(""2s"").mean()"
+balancing,402,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"expected = df2.resample(""5s"").median()"
+balancing,403,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"result = df.resample(""5s"").median()"
+balancing,416,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"result = df.resample(""h"").apply(lambda group: group.col.sum())"
+balancing,423,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"result = df.resample(""h"").apply(lambda group: group[""col""].sum())"
+balancing,456,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"resampled = df.groupby(""cat"").resample(""YE"", on=""date"")"
+balancing,467,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"resampled = df.groupby(""class"").resample(""ME"")[""value""]"
+balancing,483,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"result = df.groupby(keys).resample(rule=pd.to_timedelta(""00:00:01"")).mean()"
+balancing,508,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"result = df.groupby([""key""]).resample(""W"", on=""date"").min()"
+balancing,538,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"result = df.groupby(""group"").resample(""2D"", on=""date"")[[""val""]].mean()"
+balancing,560,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"result = df.groupby(keys).resample(rule=pd.to_timedelta(""00:00:01"")).mean()"
+balancing,580,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"result = df.groupby([0, 0, 1]).resample(rule=pd.to_timedelta(""06:00:00"")).mean()"
+balancing,609,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"result = df.groupby(""A"").resample(""D"").size()"
+balancing,634,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"result = df.groupby(""group"").resample(""2D"")[[""val""]].mean()"
+balancing,659,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"result = df.groupby(""group"").resample(""2D"")[[""first_val"", ""second_val""]].mean()"
+balancing,687,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"rs = gb.resample(""2D"")"
+balancing,705,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resampler_grouper.py,"result = df.groupby(""group"")[""value""].resample(""D"", kind=kind).last()"
+balancing,36,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"r = _test_series.resample(""h"")"
+balancing,42,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"r = _test_series.resample(""h"", origin=""2000-01-01"")"
+balancing,50,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"r = _test_series.resample(""h"")"
+balancing,55,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"r = _test_series.to_frame().resample(""h"")"
+balancing,63,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,# .groupby(...).resample(...) hitting warnings
+balancing,82,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"result = df.groupby(""group"").apply(lambda x: x.resample(""1D"").ffill())[[""val""]]"
+balancing,88,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,# .groupby(...).resample(on=...) results in an unexpected
+balancing,98,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"expected = df.set_index(""dates"").groupby(""key"").resample(""D"").mean()"
+balancing,99,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"result = df.groupby(""key"").resample(""D"", on=""dates"").mean()"
+balancing,108,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"g = df.resample(""5D"", group_keys=False)"
+balancing,113,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"g = df.resample(""5D"")"
+balancing,124,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"g = df.resample(""5D"", group_keys=True)"
+balancing,133,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"r = _test_series.resample(""h"")"
+balancing,139,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"r = test_frame.resample(""h"")"
+balancing,146,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"r = test_frame.resample(""h"")"
+balancing,149,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"r = test_frame.resample(""h"")[""B""]"
+balancing,153,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"r = test_frame.resample(""h"")[""A"", ""B""]"
+balancing,156,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"r = test_frame.resample(""h"")[""A"", ""B""]"
+balancing,162,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"g = test_frame.resample(""h"")"
+balancing,171,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"r = test_frame.resample(""h"")"
+balancing,181,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"rs = ts.resample(""30s"")"
+balancing,194,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"r = df.resample(""h"")"
+balancing,211,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"result = ts.resample(""20s"").asfreq()"
+balancing,221,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,# ts2.resample('2s').mean().ffill()
+balancing,228,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"result = ts2.resample(""2s"").mean().ffill()"
+balancing,275,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"r = _test_series.resample(""20min"")"
+balancing,295,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"r = df.resample(""20min"", on=on)"
+balancing,304,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"r = ts.resample(""s"")"
+balancing,329,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"lambda x: x.resample(""20min"", group_keys=False),"
+balancing,342,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"grouped = _test_series.to_frame(name=""foo"").resample(""20min"", group_keys=False)"
+balancing,356,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"r = df.resample(""3min"")"
+balancing,371,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"r = df.resample(""3min"")"
+balancing,413,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"return df.resample(""2D"")[""A""].mean()"
+balancing,418,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"return df.resample(""2D"")[""A""].std()"
+balancing,423,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"return df.resample(""2D"")[""A""].sum()"
+balancing,428,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"return df.resample(""2D"")[""B""].mean()"
+balancing,433,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"return df.resample(""2D"")[""B""].std()"
+balancing,438,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"return df.resample(""2D"")[""B""].sum()"
+balancing,443,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"return df.resample(""2D"")"
+balancing,448,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"return df_col.resample(""2D"", on=""date"")"
+balancing,453,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"return df_mult.resample(""2D"", level=""date"")"
+balancing,636,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"res = df.resample(""ME"", axis=1)"
+balancing,654,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"r = df.resample(""2D"")"
+balancing,657,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"df_col.resample(""2D"", on=""date""),"
+balancing,658,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"df_mult.resample(""2D"", level=""date""),"
+balancing,689,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"df.resample(""30min"").agg({""x"": [""mean""], ""y"": [""median""], ""z"": [""sum""]})"
+balancing,706,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"df.resample(""D"").agg([foo1, foo2], 3, b=3, c=4)"
+balancing,708,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"result = df.resample(""D"").agg([foo1, foo2], 3, c=4)"
+balancing,734,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"df.resample(""2D"", level=""v"")"
+balancing,738,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"df.resample(""2D"", on=""date"", level=""d"")"
+balancing,742,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"df.resample(""2D"", on=[""a"", ""date""])"
+balancing,746,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"df.resample(""2D"", level=[""a"", ""date""])"
+balancing,754,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"df.resample(""2D"", level=""d"").asfreq()"
+balancing,756,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"df.resample(""2D"", on=""date"").asfreq()"
+balancing,758,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"exp = df_exp.resample(""2D"").sum()"
+balancing,760,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"result = df.resample(""2D"", on=""date"").sum()"
+balancing,765,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"df.resample(""2D"", level=""d"").sum()"
+balancing,766,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"result = df.resample(""2D"", level=""d"").sum(numeric_only=True)"
+balancing,786,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"result = df.resample(""1d"").aggregate([""mean""])"
+balancing,802,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"rs = ser.resample(""1D"")"
+balancing,887,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"res = ts.resample(resample_freq, origin=origin, closed=closed).sum()"
+balancing,941,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"resampled = df.resample(""YE"")"
+balancing,992,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"resampled = df.resample(""YE"")"
+balancing,1031,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"resampled = df.resample(""30min"")"
+balancing,1060,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"df.resample(""ME"", axis=1)"
+balancing,1069,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"df.resample(""ME"", axis=0)"
+balancing,1078,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"_test_series.resample(""h"", axis=0)"
+balancing,1098,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_resample_api.py,"result = df.resample(""8h"").mean()"
+balancing,19,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_timedelta.py,"result = df.resample(""1min"").asfreq()"
+balancing,30,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_timedelta.py,"result = DataFrame({""value"": [2, 3, 5]}, index).resample(""1s"").mean()"
+balancing,42,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_timedelta.py,"result = df.resample(""2min"").asfreq()"
+balancing,58,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_timedelta.py,"result = df.resample(""30min"").sum()"
+balancing,63,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_timedelta.py,"result = s.resample(""30min"").sum()"
+balancing,69,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_timedelta.py,"result = s.resample(""2s"").sum()"
+balancing,78,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_timedelta.py,"result = series.resample(""10ms"").mean()"
+balancing,88,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_timedelta.py,"with_base = ts.resample(""2s"", offset=""5s"").mean()"
+balancing,89,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_timedelta.py,"without_base = ts.resample(""2s"").mean()"
+balancing,102,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_timedelta.py,"result = df.resample(""10s"").agg(lambda x: (x.value_counts().index[0]))"
+balancing,127,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_timedelta.py,"res = df.resample(""2D"").first()[""time""]"
+balancing,129,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_timedelta.py,"res = df[""time""].resample(""2D"").first()"
+balancing,151,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_timedelta.py,result = s.resample(resample_freq).min()
+balancing,169,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_timedelta.py,"result = df.loc[""1s"":, :].resample(""3s"").apply(lambda x: len(x))"
+balancing,187,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_timedelta.py,"result = df.resample(""2D"").quantile(0.99)"
+balancing,204,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_timedelta.py,"result = ser.resample(""min"", closed=""right"", label=""right"").sum()"
+balancing,219,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_timedelta.py,"result = expected.resample(""1D"").mean()"
+balancing,53,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_time_grouper.py,"result = test_series.resample(""YE"").count()"
+balancing,59,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_time_grouper.py,"result = test_series.resample(""YE"", closed=""right"").prod()"
+balancing,200,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_time_grouper.py,"result = methodcaller(method, **method_args)(ser.resample(""2d""))"
+balancing,329,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_time_grouper.py,"resampled = ser.resample(""30min"")"
+balancing,353,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\resample\test_time_grouper.py,".resample(""1D"")"
+balancing,101,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\reshape\concat\test_datetimes.py,"result = concat([df1.resample(""h"").mean(), df2.resample(""h"").mean()], sort=True)"
+balancing,93,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\series\methods\test_asof.py,"r = s.resample(""2h"").mean()"
+balancing,246,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\window\test_apply.py,"ser = series[::2].resample(""B"").mean()"
+balancing,258,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\window\test_apply.py,"frm = frame[::2].resample(""B"").mean()"
+balancing,994,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\window\test_rolling.py,"df.resample(""1s"").ffill().rolling(""3s"", closed=""left"", min_periods=3).mean()"
+balancing,94,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\window\test_rolling_functions.py,"ser = series[::2].resample(""B"").mean()"
+balancing,122,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\window\test_rolling_functions.py,"frm = frame[::2].resample(""B"").mean()"
+balancing,382,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\window\test_rolling_functions.py,"x = series.resample(""D"").max().rolling(window=1, step=step).max()"
+balancing,402,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\window\test_rolling_functions.py,"x = series.resample(""D"").max().rolling(window=1, step=step).max()"
+balancing,410,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\window\test_rolling_functions.py,"x = series.resample(""D"").median().rolling(window=1, step=step).max()"
+balancing,419,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\window\test_rolling_functions.py,"x = series.resample(""D"").mean().rolling(window=1, step=step).max()"
+balancing,439,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\window\test_rolling_functions.py,"r = series.resample(""D"").min().rolling(window=1, step=step)"
+balancing,459,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\window\test_rolling_functions.py,"x = series.resample(""D"").median().rolling(window=1).median()"
+balancing,62,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\window\test_rolling_quantile.py,"ser = series[::2].resample(""B"").mean()"
+balancing,75,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\window\test_rolling_quantile.py,"frm = frame[::2].resample(""B"").mean()"
+balancing,48,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\window\test_rolling_skew_kurt.py,"ser = series[::2].resample(""B"").mean()"
+balancing,63,resample,New_Code\.venv_sklearn152\Lib\site-packages\pandas\tests\window\test_rolling_skew_kurt.py,"frm = frame[::2].resample(""B"").mean()"
+balancing,423,balanced,New_Code\.venv_sklearn152\Lib\site-packages\pip\_vendor\rich\_emoji_codes.py,"""balance_scale"": ""⚖"","
+balancing,182,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\interpolate\tests\test_ndgriddata.py,"opts = {'balanced_tree': False, 'compact_nodes': False}"
+balancing,1553,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_basic.py,Compute a diagonal similarity transformation for row/column balancing.
+balancing,1555,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_basic.py,The balancing tries to equalize the row and column 1-norms by applying
+balancing,1563,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_basic.py,The balanced matrix satisfies the following equality
+balancing,1575,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_basic.py,Square data matrix for the balancing.
+balancing,1593,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_basic.py,Balanced matrix
+balancing,1611,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_basic.py,there are corner cases where balancing can actually worsen the
+balancing,1615,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_basic.py,balancing.
+balancing,1621,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_basic.py,".. [1] B.N. Parlett and C. Reinsch, ""Balancing a Matrix for"
+balancing,1624,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_basic.py,".. [2] R. James, J. Langou, B.R. Lowery, ""On matrix balancing and"
+balancing,1626,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_basic.py,.. [3] D.S. Watkins. A case where balancing is harmful.
+balancing,1652,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_basic.py,raise ValueError('The data matrix for balancing should be square.')
+balancing,327,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_solvers.py,"def solve_continuous_are(a, b, q, r, e=None, s=None, balanced=True):"
+balancing,370,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_solvers.py,"balanced : bool, optional"
+balancing,371,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_solvers.py,The boolean that indicates whether a balancing step is performed
+balancing,407,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_solvers.py,through a balancing step where the sum of absolute values of
+balancing,409,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_solvers.py,the sum) is balanced following the recipe given in [3]_.
+balancing,424,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_solvers.py,".. [3] P. Benner, ""Symplectic Balancing of Hamiltonian Matrices"", 2001,"
+balancing,466,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_solvers.py,if balanced:
+balancing,515,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_solvers.py,if balanced:
+balancing,532,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_solvers.py,"def solve_discrete_are(a, b, q, r, e=None, s=None, balanced=True):"
+balancing,574,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_solvers.py,balanced : bool
+balancing,575,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_solvers.py,The boolean that indicates whether a balancing step is performed
+balancing,611,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_solvers.py,through a balancing step where the sum of absolute values of
+balancing,613,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_solvers.py,is balanced following the recipe given in [3]_. If the data has small
+balancing,614,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_solvers.py,"numerical noise, balancing may amplify their effects and some clean up"
+balancing,630,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_solvers.py,".. [3] P. Benner, ""Symplectic Balancing of Hamiltonian Matrices"", 2001,"
+balancing,672,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_solvers.py,if balanced:
+balancing,724,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\_solvers.py,if balanced:
+balancing,52,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\__init__.py,matrix_balance - Balance matrix entries with a similarity transformation
+balancing,1770,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\linalg\tests\test_basic.py,# 1000 / 32 ~= 1 * 32 hence balanced with 2 ** 5.
+balancing,342,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\optimize\_remove_redundancy.py,# It would be nice to have a heuristic that balances sparsity with
+balancing,134,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\optimize\tests\test_isotonic_regression.py,# Test balance property: sum(y) == sum(x)
+balancing,162,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\optimize\_trustregion_constr\minimize_trustregion_constr.py,balancing the requirements of decreasing the objective function
+balancing,159,oversample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\signal\_short_time_fft.py,``mfft=200`` in `ShortTimeFFT` causes the spectrum to be oversampled
+balancing,890,oversample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\signal\_short_time_fft.py,parameter ``mfft=800`` (oversampling factor 16) and the `hop` interval
+balancing,1132,oversample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\signal\_short_time_fft.py,Note that the FFT can be oversampled by zero-padding. This is achieved
+balancing,3048,resample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\signal\_signaltools.py,"def resample(x, num, t=None, axis=0, window=None, domain='time'):"
+balancing,3125,resample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\signal\_signaltools.py,">>> f = signal.resample(y, 100)"
+balancing,3326,resample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\signal\_signaltools.py,">>> f_fft = signal.resample(y, 100)"
+balancing,39,oversample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\signal\tests\test_czt.py,# Check that zoom_fft with oversampling is equivalent to zero padding
+balancing,1252,resample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\signal\tests\test_signaltools.py,"signal.resample(sig2, num, axis=-1, window=win)"
+balancing,1263,resample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\signal\tests\test_signaltools.py,"assert_allclose(signal.resample(y, num, window=window),"
+balancing,1264,resample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\signal\tests\test_signaltools.py,"signal.resample(y + 0j, num, window=window).real)"
+balancing,1269,resample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\signal\tests\test_signaltools.py,"signal.resample(y, num, axis=1, window=window),"
+balancing,1270,resample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\signal\tests\test_signaltools.py,"signal.resample(y_complex, num, axis=1, window=window).real,"
+balancing,1279,resample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\signal\tests\test_signaltools.py,"signal.resample(fsig, num, domain='freq'),"
+balancing,1280,resample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\signal\tests\test_signaltools.py,"signal.resample(tsig, num, domain='time'),"
+balancing,1288,resample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\signal\tests\test_signaltools.py,"y = signal.resample(x, ny)"
+balancing,1339,resample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\signal\tests\test_signaltools.py,"y_resamps = signal.resample(x, rate_to, axis=-1)"
+balancing,1378,resample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\signal\tests\test_signaltools.py,"y_resamp = signal.resample(x, rate_to)"
+balancing,1389,resample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\signal\tests\test_signaltools.py,"y1_test = signal.resample(x1, 4)"
+balancing,1394,resample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\signal\tests\test_signaltools.py,"y2_test = signal.resample(x2, 2)  # downsampling a real array"
+balancing,723,resample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\signal\tests\test_windows.py,"resample(sig, len(sig) * osfactor, window=win)"
+balancing,329,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\sparse\csgraph\_laplacian.py,while the balanced min-cut partitions the graph
+balancing,214,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\sparse\linalg\_expm_multiply.py,"def _expm_multiply_simple(A, B, t=1.0, traceA=None, balance=False):"
+balancing,230,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\sparse\linalg\_expm_multiply.py,balance : bool
+balancing,231,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\sparse\linalg\_expm_multiply.py,Indicates whether or not to apply balancing.
+balancing,243,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\sparse\linalg\_expm_multiply.py,if balance:
+balancing,277,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\sparse\linalg\_expm_multiply.py,"return _expm_multiply_simple_core(A, B, t, mu, m_star, s, tol, balance)"
+balancing,280,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\sparse\linalg\_expm_multiply.py,"def _expm_multiply_simple_core(A, B, t, mu, m_star, s, tol=None, balance=False):"
+balancing,284,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\sparse\linalg\_expm_multiply.py,if balance:
+balancing,597,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\sparse\linalg\_expm_multiply.py,"endpoint=None, traceA=None, balance=False,"
+balancing,623,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\sparse\linalg\_expm_multiply.py,balance : bool
+balancing,624,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\sparse\linalg\_expm_multiply.py,Indicates whether or not to apply balancing.
+balancing,643,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\sparse\linalg\_expm_multiply.py,if balance:
+balancing,254,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\sparse\linalg\tests\test_matfuncs.py,"# Cleve's Corner: A Balancing Act for the Matrix Exponential,"
+balancing,232,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\spatial\_kdtree.py,"balanced_tree : bool, optional"
+balancing,354,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\spatial\_kdtree.py,"balanced_tree=True, boxsize=None):"
+balancing,361,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\spatial\_kdtree.py,"balanced_tree, boxsize)"
+balancing,648,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\spatial\tests\test_kdtree.py,"too_many, balanced_tree=False, compact_nodes=False)"
+balancing,838,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\spatial\tests\test_kdtree.py,"T3 = kdtree_type(points, balanced_tree=False).query(points, k=5)[-1]"
+balancing,840,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\spatial\tests\test_kdtree.py,"balanced_tree=False).query(points, k=5)[-1]"
+balancing,1219,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\spatial\tests\test_kdtree.py,"for balanced, compact in itertools.product((False, True), repeat=2):"
+balancing,1220,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\spatial\tests\test_kdtree.py,"kdtree = kdtree_type(data, balanced_tree=balanced,"
+balancing,1327,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\spatial\tests\test_kdtree.py,"@pytest.mark.parametrize(""balanced_tree, compact_nodes"","
+balancing,1332,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\spatial\tests\test_kdtree.py,"def test_kdtree_empty_input(kdtree_type, balanced_tree, compact_nodes):"
+balancing,1339,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\spatial\tests\test_kdtree.py,"tree = kdtree_type(empty_v3, balanced_tree=balanced_tree,"
+balancing,1486,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\spatial\tests\test_kdtree.py,"t = KDTree(coords, balanced_tree=False, compact_nodes=False)"
+balancing,1496,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\spatial\tests\test_kdtree.py,"KDTree(coords, balanced_tree=True, compact_nodes=False)"
+balancing,1498,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\spatial\tests\test_kdtree.py,"KDTree(coords, balanced_tree=False, compact_nodes=True)"
+balancing,1500,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\spatial\tests\test_kdtree.py,"KDTree(coords, balanced_tree=True, compact_nodes=True)"
+balancing,1502,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\spatial\tests\test_kdtree.py,"KDTree(coords, balanced_tree=False, compact_nodes=False)"
+balancing,336,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\spatial\tests\test_slerp.py,"# can pass at atol=0 here, but on balance we will accept"
+balancing,587,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\special\tests\test_data.py,"# already balanced) so the error bound is slightly better. Again,"
+balancing,450,resample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\stats\_kde.py,"def resample(self, size=None, seed=None):"
+balancing,1522,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\stats\_qmc.py,guarantees the balance properties of the sequence.
+balancing,1579,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\stats\_qmc.py,Sobol' sequences are a quadrature rule and they lose their balance
+balancing,1758,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\stats\_qmc.py,"warnings.warn(""The balance properties of Sobol' points require"""
+balancing,1785,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\stats\_qmc.py,ensuring the balance properties of the sequence.
+balancing,1802,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\stats\_qmc.py,"raise ValueError(""The balance properties of Sobol' points require """
+balancing,594,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\stats\_sensitivity_analysis.py,"""The balance properties of Sobol' points require 'n' """
+balancing,5908,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\stats\_stats_py.py,been shown to provide the best balance between important and
+balancing,538,resample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\stats\tests\test_kdeoth.py,samp1 = gkde_trail.resample(n_sample)
+balancing,539,resample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\stats\tests\test_kdeoth.py,samp2 = gkde_trail.resample(n_sample)
+balancing,545,resample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\stats\tests\test_kdeoth.py,"samp1 = gkde_trail.resample(n_sample, seed=seed)"
+balancing,546,resample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\stats\tests\test_kdeoth.py,"samp2 = gkde_trail.resample(n_sample, seed=seed)"
+balancing,550,resample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\stats\tests\test_kdeoth.py,"samp1 = gkde_trail.resample(n_sample, seed=rstate1)"
+balancing,552,resample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\stats\tests\test_kdeoth.py,"samp2 = gkde_trail.resample(n_sample, seed=rstate2)"
+balancing,559,resample,New_Code\.venv_sklearn152\Lib\site-packages\scipy\stats\tests\test_kdeoth.py,"gkde_trail.resample(n_sample, seed=rng)"
+balancing,827,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\stats\tests\test_qmc.py,"with pytest.warns(UserWarning, match=r""The balance properties of """
+balancing,842,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\stats\tests\test_qmc.py,"with pytest.raises(ValueError, match=r""The balance properties of """
+balancing,254,balanced,New_Code\.venv_sklearn152\Lib\site-packages\scipy\stats\tests\test_sensitivity_analysis.py,"message = r""The balance properties of Sobol'"""
+balancing,70,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\kernel_approximation.py,"balance is typically achieved around `n_components` = 10 * `n_features`,"
+balancing,51,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\cluster\_bicluster.py,# deviation reduction and balancing algorithms.
+balancing,146,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\cluster\_bicluster.py,"kwargs[""n_oversamples""] = self.n_svd_vecs"
+balancing,241,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\cluster\_bicluster.py,to `ncv` when `svd_method=arpack` and `n_oversamples` when
+balancing,411,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\cluster\_bicluster.py,to `ncv` when `svd_method=arpack` and `n_oversamples` when
+balancing,139,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\datasets\_samples_generator.py,"classes are balanced. Note that if ``len(weights) == n_classes - 1``,"
+balancing,73,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\decomposition\_incremental_pca.py,balance between approximation accuracy and memory consumption.
+balancing,959,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\decomposition\_nmf.py,`H` to keep their impact balanced with respect to one another and to the data fit
+balancing,1385,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\decomposition\_nmf.py,`H` to keep their impact balanced with respect to one another and to the data fit
+balancing,233,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\decomposition\_pca.py,"n_oversamples : int, default=10"
+balancing,402,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\decomposition\_pca.py,"""n_oversamples"": [Interval(Integral, 1, None, closed=""left"")],"
+balancing,416,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\decomposition\_pca.py,"n_oversamples=10,"
+balancing,426,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\decomposition\_pca.py,self.n_oversamples = n_oversamples
+balancing,767,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\decomposition\_pca.py,"n_oversamples=self.n_oversamples,"
+balancing,69,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\decomposition\_truncated_svd.py,"n_oversamples : int, default=10"
+balancing,70,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\decomposition\_truncated_svd.py,Number of oversamples for randomized SVD solver. Not used by ARPACK.
+balancing,167,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\decomposition\_truncated_svd.py,"""n_oversamples"": [Interval(Integral, 1, None, closed=""left"")],"
+balancing,179,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\decomposition\_truncated_svd.py,"n_oversamples=10,"
+balancing,187,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\decomposition\_truncated_svd.py,self.n_oversamples = n_oversamples
+balancing,250,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\decomposition\_truncated_svd.py,"n_oversamples=self.n_oversamples,"
+balancing,928,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\decomposition\tests\test_pca.py,def test_pca_randomized_svd_n_oversamples():
+balancing,929,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\decomposition\tests\test_pca.py,"""""""Check that exposing and setting `n_oversamples` will provide accurate results"
+balancing,939,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\decomposition\tests\test_pca.py,# The default value of `n_oversamples` will lead to inaccurate results
+balancing,944,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\decomposition\tests\test_pca.py,"n_oversamples=n_features,"
+balancing,28,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\decomposition\tests\test_truncated_svd.py,"svd = TruncatedSVD(30, algorithm=solver, random_state=42, n_oversamples=100)"
+balancing,189,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_forest.py,"elif class_weight == ""balanced_subsample"":"
+balancing,190,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_forest.py,"curr_sample_weight *= compute_sample_weight(""balanced"", y, indices=indices)"
+balancing,852,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_forest.py,"valid_presets = (""balanced"", ""balanced_subsample"")"
+balancing,857,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_forest.py,"'""balanced"" and ""balanced_subsample"".'"
+balancing,862,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_forest.py,"'class_weight presets ""balanced"" or '"
+balancing,863,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_forest.py,"'""balanced_subsample"" are '"
+balancing,866,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_forest.py,"'""balanced"" weights, use compute_class_weight '"
+balancing,867,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_forest.py,"'(""balanced"", classes, y). In place of y you can use '"
+balancing,874,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_forest.py,"if self.class_weight != ""balanced_subsample"" or not self.bootstrap:"
+balancing,875,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_forest.py,"if self.class_weight == ""balanced_subsample"":"
+balancing,876,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_forest.py,"class_weight = ""balanced"""
+balancing,1313,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_forest.py,"class_weight : {""balanced"", ""balanced_subsample""}, dict or list of dicts, \"
+balancing,1326,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_forest.py,"The ""balanced"" mode uses the values of y to automatically adjust"
+balancing,1330,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_forest.py,"The ""balanced_subsample"" mode is the same as ""balanced"" except that"
+balancing,1486,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_forest.py,"StrOptions({""balanced_subsample"", ""balanced""}),"
+balancing,2054,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_forest.py,"class_weight : {""balanced"", ""balanced_subsample""}, dict or list of dicts, \"
+balancing,2067,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_forest.py,"The ""balanced"" mode uses the values of y to automatically adjust"
+balancing,2071,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_forest.py,"The ""balanced_subsample"" mode is the same as ""balanced"" except that"
+balancing,2216,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_forest.py,"StrOptions({""balanced_subsample"", ""balanced""}),"
+balancing,1172,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\tests\test_forest.py,"# Iris is balanced, so no effect expected for using 'balanced' weights"
+balancing,1175,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\tests\test_forest.py,"clf2 = ForestClassifier(class_weight=""balanced"", random_state=0)"
+balancing,1181,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\tests\test_forest.py,# Create user-defined weights that should balance over the outputs
+balancing,1192,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\tests\test_forest.py,"# Check against multi-output ""balanced"" which should also have no effect"
+balancing,1193,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\tests\test_forest.py,"clf4 = ForestClassifier(class_weight=""balanced"", random_state=0)"
+balancing,1220,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\tests\test_forest.py,"clf = ForestClassifier(class_weight=""balanced"", random_state=0)"
+balancing,1226,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\tests\test_forest.py,# smoke test for balanced subsample
+balancing,1227,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\tests\test_forest.py,"clf = ForestClassifier(class_weight=""balanced_subsample"", random_state=0)"
+balancing,1238,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\tests\test_forest.py,"clf = ForestClassifier(class_weight=""balanced"", warm_start=True, random_state=0)"
+balancing,1699,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\tests\test_forest.py,"@pytest.mark.parametrize(""class_weight"", [""balanced_subsample"", None])"
+balancing,1057,resample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_hist_gradient_boosting\gradient_boosting.py,indices = resample(
+balancing,2006,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_hist_gradient_boosting\gradient_boosting.py,"class_weight : dict or 'balanced', default=None"
+balancing,2009,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_hist_gradient_boosting\gradient_boosting.py,"The ""balanced"" mode uses the values of y to automatically adjust"
+balancing,2081,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_hist_gradient_boosting\gradient_boosting.py,"""class_weight"": [dict, StrOptions({""balanced""}), None],"
+balancing,138,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_hist_gradient_boosting\tests\test_binning.py,# Check that the binned data is approximately balanced across bins.
+balancing,1073,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_hist_gradient_boosting\tests\test_gradient_boosting.py,# make sure dataset is balanced so that the baseline_prediction doesn't
+balancing,1410,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_hist_gradient_boosting\tests\test_gradient_boosting.py,"# class_weight=""balanced"" is the same as sample_weights to be"
+balancing,1412,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\ensemble\_hist_gradient_boosting\tests\test_gradient_boosting.py,"clf_balanced = clone(clf).set_params(class_weight=""balanced"")"
+balancing,336,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\externals\_scipy\sparse\csgraph\_laplacian.py,while the balanced min-cut partitions the graph
+balancing,179,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_logistic.py,"class_weight : dict or 'balanced', default=None"
+balancing,183,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_logistic.py,"The ""balanced"" mode uses the values of y to automatically adjust"
+balancing,306,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_logistic.py,"# are assigned to the original labels. If it is ""balanced"", then"
+balancing,331,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_logistic.py,"if class_weight == ""balanced"":"
+balancing,654,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_logistic.py,class_weight : dict or 'balanced'
+balancing,658,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_logistic.py,"The ""balanced"" mode uses the values of y to automatically adjust"
+balancing,884,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_logistic.py,"class_weight : dict or 'balanced', default=None"
+balancing,888,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_logistic.py,"The ""balanced"" mode uses the values of y to automatically adjust"
+balancing,896,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_logistic.py,*class_weight='balanced'*
+balancing,1111,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_logistic.py,"""class_weight"": [dict, StrOptions({""balanced""}), None],"
+balancing,1584,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_logistic.py,"class_weight : dict or 'balanced', default=None"
+balancing,1588,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_logistic.py,"The ""balanced"" mode uses the values of y to automatically adjust"
+balancing,1596,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_logistic.py,class_weight == 'balanced'
+balancing,1976,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_logistic.py,"if class_weight == ""balanced"":"
+balancing,91,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_passive_aggressive.py,"class_weight : dict, {class_label: weight} or ""balanced"" or None, \"
+balancing,98,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_passive_aggressive.py,"The ""balanced"" mode uses the values of y to automatically adjust"
+balancing,254,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_passive_aggressive.py,"if self.class_weight == ""balanced"":"
+balancing,256,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_passive_aggressive.py,"""class_weight 'balanced' is not supported for """
+balancing,257,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_passive_aggressive.py,"""partial_fit. For 'balanced' weights, use """
+balancing,259,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_passive_aggressive.py,"""`class_weight='balanced'`. In place of y you """
+balancing,99,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_perceptron.py,"class_weight : dict, {class_label: weight} or ""balanced"", default=None"
+balancing,105,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_perceptron.py,"The ""balanced"" mode uses the values of y to automatically adjust"
+balancing,1398,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_ridge.py,"class_weight : dict or 'balanced', default=None"
+balancing,1402,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_ridge.py,"The ""balanced"" mode uses the values of y to automatically adjust"
+balancing,1511,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_ridge.py,"""class_weight"": [dict, StrOptions({""balanced""}), None],"
+balancing,2719,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_ridge.py,"class_weight : dict or 'balanced', default=None"
+balancing,2723,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_ridge.py,"The ""balanced"" mode uses the values of y to automatically adjust"
+balancing,2812,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_ridge.py,"""class_weight"": [dict, StrOptions({""balanced""}), None],"
+balancing,528,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py,"""class_weight"": [StrOptions({""balanced""}), dict, None],"
+balancing,795,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py,# to ensure proper balancing of the classes.
+balancing,880,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py,"if self.class_weight == ""balanced"":"
+balancing,883,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py,"""partial_fit. In order to use 'balanced' weights,"""
+balancing,1120,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py,"class_weight : dict, {class_label: weight} or ""balanced"", default=None"
+balancing,1126,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py,"The ""balanced"" mode uses the values of y to automatically adjust"
+balancing,90,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_common.py,# This is known as balance property or unconditional calibration/unbiasedness.
+balancing,139,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_common.py,# Assert balance property.
+balancing,731,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_logistic.py,"@pytest.mark.parametrize(""class_weight"", [""weight"", ""balanced""])"
+balancing,863,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_logistic.py,"class_weight = compute_class_weight(""balanced"", classes=classes, y=y)"
+balancing,880,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_logistic.py,"clf1 = LogisticRegression(class_weight=""balanced"", **params)"
+balancing,900,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_logistic.py,"clf1 = LogisticRegression(class_weight=""balanced"", **params)"
+balancing,2012,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_logistic.py,"@pytest.mark.parametrize(""class_weight"", [{0: 1.0, 1: 10.0, 2: 1.0}, ""balanced""])"
+balancing,169,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_passive_aggressive.py,# partial_fit with class_weight='balanced' not supported
+balancing,170,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_passive_aggressive.py,"clf = PassiveAggressiveClassifier(class_weight=""balanced"", max_iter=100)"
+balancing,181,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_passive_aggressive.py,"# Already balanced, so ""balanced"" weights should have no effect"
+balancing,182,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_passive_aggressive.py,"clf_balanced = PassiveAggressiveClassifier(C=0.1, tol=None, class_weight=""balanced"")"
+balancing,1382,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_ridge.py,# check if class_weight = 'balanced' can handle negative labels.
+balancing,1383,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_ridge.py,"reg = RidgeClassifier(class_weight=""balanced"")"
+balancing,1387,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_ridge.py,"# class_weight = 'balanced', and class_weight = None should return"
+balancing,1393,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_ridge.py,"rega = RidgeClassifier(class_weight=""balanced"")"
+balancing,1404,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_ridge.py,"# Iris is balanced, so no effect expected for using 'balanced' weights"
+balancing,1407,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_ridge.py,"reg2 = reg(class_weight=""balanced"")"
+balancing,617,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_sgd.py,"# partial_fit with class_weight='balanced' not supported"""""""
+balancing,619,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_sgd.py,"r""class_weight 'balanced' is not supported for """
+balancing,620,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_sgd.py,"r""partial_fit\. In order to use 'balanced' weights, """
+balancing,621,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_sgd.py,"r""use compute_class_weight\('balanced', classes=classes, y=y\). """
+balancing,629,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_sgd.py,"klass(class_weight=""balanced"").partial_fit(X, Y, classes=np.unique(Y))"
+balancing,923,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_sgd.py,# compute reference metrics on iris dataset that is quite balanced by
+balancing,936,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_sgd.py,# make the same prediction using balanced class_weight
+balancing,938,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_sgd.py,"alpha=0.0001, max_iter=1000, class_weight=""balanced"", shuffle=False"
+balancing,943,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_sgd.py,# Make sure that in the balanced case it does not change anything
+balancing,944,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_sgd.py,"# to use ""balanced"""
+balancing,960,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_sgd.py,# fit a model with balanced class_weight enabled
+balancing,961,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_sgd.py,"clf = klass(max_iter=1000, class_weight=""balanced"", shuffle=False)"
+balancing,299,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\linear_model\tests\test_sparse_coordinate_descent.py,# balance property
+balancing,205,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\_classification.py,balanced_accuracy_score : Compute the balanced accuracy to deal with
+balancing,946,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\_classification.py,regarded as a balanced measure which can be used even if the classes are of
+balancing,1142,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\_classification.py,"""""""Compute the F1 score, also known as balanced F-score or F-measure."
+balancing,2342,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\_classification.py,balanced_accuracy_score : Compute balanced accuracy to deal with imbalanced
+balancing,2407,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\_classification.py,"def balanced_accuracy_score(y_true, y_pred, *, sample_weight=None, adjusted=False):"
+balancing,2408,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\_classification.py,"""""""Compute the balanced accuracy."
+balancing,2410,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\_classification.py,The balanced accuracy in binary and multiclass classification problems to
+balancing,2416,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\_classification.py,Read more in the :ref:`User Guide <balanced_accuracy_score>`.
+balancing,2438,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\_classification.py,balanced_accuracy : float
+balancing,2439,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\_classification.py,Balanced accuracy score.
+balancing,2452,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\_classification.py,Some literature promotes alternative definitions of balanced accuracy. Our
+balancing,2453,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\_classification.py,definition is equivalent to :func:`accuracy_score` with class-balanced
+balancing,2455,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\_classification.py,See the :ref:`User Guide <balanced_accuracy_score>`.
+balancing,2460,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\_classification.py,The balanced accuracy and its posterior distribution.
+balancing,2470,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\_classification.py,>>> from sklearn.metrics import balanced_accuracy_score
+balancing,2473,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\_classification.py,">>> balanced_accuracy_score(y_true, y_pred)"
+balancing,905,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\_ranking.py,The first precision and recall values are precision=class balance and recall=1.0
+balancing,46,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\_scorer.py,"balanced_accuracy_score,"
+balancing,792,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\_scorer.py,balanced_accuracy_scorer = make_scorer(balanced_accuracy_score)
+balancing,889,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\_scorer.py,"balanced_accuracy=balanced_accuracy_scorer,"
+balancing,6,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\__init__.py,"balanced_accuracy_score,"
+balancing,100,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\__init__.py,"""balanced_accuracy_score"","
+balancing,18,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\tests\test_classification.py,"balanced_accuracy_score,"
+balancing,2778,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\tests\test_classification.py,"balanced_accuracy_score([0, 0, 0], [0, 0, 1])"
+balancing,2795,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\tests\test_classification.py,"balanced = balanced_accuracy_score(y_true, y_pred)"
+balancing,2796,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\tests\test_classification.py,assert balanced == pytest.approx(macro_recall)
+balancing,2797,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\tests\test_classification.py,"adjusted = balanced_accuracy_score(y_true, y_pred, adjusted=True)"
+balancing,2798,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\tests\test_classification.py,"chance = balanced_accuracy_score(y_true, np.full_like(y_true, y_true[0]))"
+balancing,2799,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\tests\test_classification.py,assert adjusted == (balanced - chance) / (1 - chance)
+balancing,13,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\tests\test_common.py,"balanced_accuracy_score,"
+balancing,127,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\tests\test_common.py,"""balanced_accuracy_score"": balanced_accuracy_score,"
+balancing,128,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\tests\test_common.py,"""adjusted_balanced_accuracy_score"": partial(balanced_accuracy_score, adjusted=True),"
+balancing,493,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\tests\test_common.py,"""balanced_accuracy_score"","
+balancing,914,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\tests\test_ranking.py,"# (p=1.0, r=class balance) on a non-balanced dataset [1:]"
+balancing,26,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\tests\test_score_objects.py,"balanced_accuracy_score,"
+balancing,88,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\tests\test_score_objects.py,"""balanced_accuracy"","
+balancing,399,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\metrics\tests\test_score_objects.py,"(""balanced_accuracy"", balanced_accuracy_score),"
+balancing,638,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\_classification_threshold.py,"scoring : str or callable, default=""balanced_accuracy"""
+balancing,764,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\_classification_threshold.py,"...     classifier, scoring=""balanced_accuracy"""
+balancing,805,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\_classification_threshold.py,"scoring=""balanced_accuracy"","
+balancing,32,resample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\_search_successive_halving.py,train_idx = resample(
+balancing,39,resample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\_search_successive_halving.py,test_idx = resample(
+balancing,543,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\_split.py,The folds are approximately balanced in the sense that the number of
+balancing,868,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\_split.py,the former attempts to create balanced folds such that the number of
+balancing,16,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\tests\test_classification_threshold.py,"balanced_accuracy_score,"
+balancing,48,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\tests\test_classification_threshold.py,"balanced_accuracy_score,"
+balancing,62,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\tests\test_classification_threshold.py,# balanced accuracy should be between 0.5 and 1 when it is not adjusted
+balancing,67,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\tests\test_classification_threshold.py,"balanced_accuracy_score,"
+balancing,75,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\tests\test_classification_threshold.py,# balanced accuracy should be between 0.5 and 1 when it is not adjusted
+balancing,80,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\tests\test_classification_threshold.py,"balanced_accuracy_score,"
+balancing,142,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\tests\test_classification_threshold.py,"score_func=balanced_accuracy_score,"
+balancing,176,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\tests\test_classification_threshold.py,"score_func=balanced_accuracy_score,"
+balancing,212,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\tests\test_classification_threshold.py,"score_func=balanced_accuracy_score,"
+balancing,260,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\tests\test_classification_threshold.py,"score_func=balanced_accuracy_score,"
+balancing,362,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\tests\test_classification_threshold.py,# make the problem completely imbalanced such that the balanced accuracy is low
+balancing,374,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\tests\test_classification_threshold.py,"scoring=""balanced_accuracy"","
+balancing,379,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\tests\test_classification_threshold.py,"score_optimized = balanced_accuracy_score(y, model.fit(X, y).predict(X))"
+balancing,380,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\tests\test_classification_threshold.py,"score_baseline = balanced_accuracy_score(y, lr.predict(X))"
+balancing,413,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\tests\test_classification_threshold.py,"make_scorer(balanced_accuracy_score),"
+balancing,485,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\tests\test_split.py,# Check that KFold returns folds with balanced sizes
+balancing,496,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\tests\test_split.py,# Check that KFold returns folds with balanced sizes (only when
+balancing,624,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\tests\test_split.py,# as possible (while respecting the balanced class constraints)
+balancing,626,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\tests\test_split.py,# the CV score either. As the digits dataset is approximately balanced
+balancing,754,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\model_selection\tests\test_validation.py,# F1 score (class are balanced so f1_score should be equal to zero/one
+balancing,2698,resample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\preprocessing\_data.py,X = resample(
+balancing,244,resample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\preprocessing\_discretization.py,X = resample(
+balancing,91,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\svm\_base.py,"""class_weight"": [StrOptions({""balanced""}), dict, None],"
+balancing,1105,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\svm\_base.py,"class_weight : dict or 'balanced', default=None"
+balancing,1111,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\svm\_base.py,"The ""balanced"" mode uses the values of y to automatically adjust"
+balancing,118,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\svm\_classes.py,"class_weight : dict or 'balanced', default=None"
+balancing,122,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\svm\_classes.py,"The ""balanced"" mode uses the values of y to automatically adjust"
+balancing,242,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\svm\_classes.py,"""class_weight"": [None, dict, StrOptions({""balanced""})],"
+balancing,693,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\svm\_classes.py,"class_weight : dict or 'balanced', default=None"
+balancing,697,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\svm\_classes.py,"The ""balanced"" mode uses the values of y to automatically adjust"
+balancing,958,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\svm\_classes.py,"class_weight : {dict, 'balanced'}, default=None"
+balancing,961,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\svm\_classes.py,"weight one. The ""balanced"" mode uses the values of y to automatically"
+balancing,653,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\svm\tests\test_svm.py,"# class_weight=""balanced"""
+balancing,661,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\svm\tests\test_svm.py,"class_weights = compute_class_weight(""balanced"", classes=classes, y=y[unbalanced])"
+balancing,669,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\svm\tests\test_svm.py,# check that score is better when class='balanced' is set.
+balancing,671,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\svm\tests\test_svm.py,"clf.set_params(class_weight=""balanced"")"
+balancing,129,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\tests\test_common.py,"class_weight=""balanced"","
+balancing,133,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\tests\test_common.py,"""LogisticRegression(class_weight='balanced',random_state=1,"""
+balancing,784,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\tests\test_multiclass.py,# Remove the last sample to make the classes not exactly balanced and make
+balancing,217,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\tests\test_public_functions.py,"""sklearn.metrics.balanced_accuracy_score"","
+balancing,801,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\tree\_classes.py,"class_weight : dict, list of dict or ""balanced"", default=None"
+balancing,813,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\tree\_classes.py,"The ""balanced"" mode uses the values of y to automatically adjust"
+balancing,942,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\tree\_classes.py,"""class_weight"": [dict, list, StrOptions({""balanced""}), None],"
+balancing,1531,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\tree\_classes.py,"class_weight : dict, list of dict or ""balanced"", default=None"
+balancing,1543,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\tree\_classes.py,"The ""balanced"" mode uses the values of y to automatically adjust"
+balancing,1022,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\tree\tests\test_tree.py,"sample_weight = compute_sample_weight(""balanced"", unbalanced_y)"
+balancing,1150,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\tree\tests\test_tree.py,"# Iris is balanced, so no effect expected for using 'balanced' weights"
+balancing,1153,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\tree\tests\test_tree.py,"clf2 = TreeClassifier(class_weight=""balanced"", random_state=0)"
+balancing,1159,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\tree\tests\test_tree.py,# Create user-defined weights that should balance over the outputs
+balancing,1171,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\tree\tests\test_tree.py,"clf4 = TreeClassifier(class_weight=""balanced"", random_state=0)"
+balancing,15,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\class_weight.py,"""class_weight"": [dict, StrOptions({""balanced""}), None],"
+balancing,26,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\class_weight.py,"class_weight : dict, ""balanced"" or None"
+balancing,27,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\class_weight.py,"If ""balanced"", class weights will be given by"
+balancing,47,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\class_weight.py,"The ""balanced"" heuristic is inspired by"
+balancing,55,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\class_weight.py,">>> compute_class_weight(class_weight=""balanced"", classes=np.unique(y), y=y)"
+balancing,66,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\class_weight.py,"elif class_weight == ""balanced"":"
+balancing,98,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\class_weight.py,"""class_weight"": [dict, list, StrOptions({""balanced""}), None],"
+balancing,109,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\class_weight.py,"class_weight : dict, list of dicts, ""balanced"", or None"
+balancing,121,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\class_weight.py,"The `""balanced""` mode uses the values of y to automatically adjust"
+balancing,134,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\class_weight.py,"sample weight will be calculated over the full sample. Only `""balanced""`"
+balancing,146,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\class_weight.py,">>> compute_sample_weight(class_weight=""balanced"", y=y)"
+balancing,157,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\class_weight.py,"if indices is not None and class_weight != ""balanced"":"
+balancing,159,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\class_weight.py,"""The only valid class_weight for subsampling is 'balanced'. """
+balancing,166,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\class_weight.py,"""string 'balanced'."""
+balancing,185,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\class_weight.py,"if class_weight == ""balanced"" or n_outputs == 1:"
+balancing,3191,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\estimator_checks.py,"classifier.set_params(class_weight=""balanced"")"
+balancing,3219,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\estimator_checks.py,"classifier.set_params(class_weight=""balanced"")"
+balancing,3236,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\estimator_checks.py,"err_msg=""Classifier %s is not computing class_weight=balanced properly."" % name,"
+balancing,351,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\extmath.py,"""n_oversamples"": [Interval(Integral, 0, None, closed=""left"")],"
+balancing,365,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\extmath.py,"n_oversamples=10,"
+balancing,386,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\extmath.py,"n_oversamples : int, default=10"
+balancing,389,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\extmath.py,used to find the range of `M` is `n_components + n_oversamples`. Smaller
+balancing,402,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\extmath.py,users should rather increase `n_oversamples` before increasing `n_iter`
+balancing,470,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\extmath.py,"increase `n_oversamples`, up to `2*k-n_components` where k is the"
+balancing,472,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\extmath.py,so increasing `n_oversamples` up to `n_components` should be enough.
+balancing,506,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\extmath.py,n_random = n_components + n_oversamples
+balancing,564,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\extmath.py,"n_oversamples=10,"
+balancing,589,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\extmath.py,"n_oversamples : int, default=10"
+balancing,592,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\extmath.py,used to find the range of M is n_components + n_oversamples. Smaller
+balancing,605,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\extmath.py,users should rather increase `n_oversamples` before increasing `n_iter`
+balancing,642,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\extmath.py,"increase `n_oversamples`, up to `2*k-n_components` where k is the"
+balancing,644,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\extmath.py,so increasing `n_oversamples` up to `n_components` should be enough.
+balancing,689,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\extmath.py,"n_oversamples=n_oversamples,"
+balancing,417,resample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\_indexing.py,"def resample(*arrays, replace=True, n_samples=None, random_state=None, stratify=None):"
+balancing,474,resample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\_indexing.py,">>> X, X_sparse, y = resample(X, X_sparse, y, random_state=0)"
+balancing,492,resample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\_indexing.py,">>> resample(y, n_samples=2, random_state=0)"
+balancing,498,resample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\_indexing.py,">>> resample(y, n_samples=5, replace=False, stratify=y,"
+balancing,570,resample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\_indexing.py,"This is a convenience alias to ``resample(*arrays, replace=False)`` to do"
+balancing,633,resample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\_indexing.py,return resample(
+balancing,18,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"cw = compute_class_weight(""balanced"", classes=classes, y=y)"
+balancing,30,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"""balanced"","
+balancing,43,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"""balanced"","
+balancing,95,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"# Test that results with class_weight=""balanced"" is invariant wrt"
+balancing,97,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,# The test uses a balanced two class dataset with 100 datapoints.
+balancing,101,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,# and one where there are 100 points of each class (this one is balanced
+balancing,103,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"# With balancing class weights, all three should give the same model."
+balancing,115,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"logreg1 = LogisticRegression(class_weight=""balanced"").fit(X_1, y_1)"
+balancing,116,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"logreg0 = LogisticRegression(class_weight=""balanced"").fit(X_0, y_0)"
+balancing,117,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"logreg = LogisticRegression(class_weight=""balanced"").fit(X_, y_)"
+balancing,124,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,# Test with balanced class labels.
+balancing,128,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"cw = compute_class_weight(""balanced"", classes=classes, y=y)"
+balancing,135,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"cw = compute_class_weight(""balanced"", classes=classes, y=y)"
+balancing,147,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"cw = compute_class_weight(""balanced"", classes=classes, y=y)"
+balancing,177,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,# Test with balanced classes
+balancing,179,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"sample_weight = compute_sample_weight(""balanced"", y)"
+balancing,186,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,# Test with column vector of balanced classes
+balancing,188,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"sample_weight = compute_sample_weight(""balanced"", y)"
+balancing,193,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"sample_weight = compute_sample_weight(""balanced"", y)"
+balancing,203,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,# Test with multi-output of balanced classes
+balancing,205,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"sample_weight = compute_sample_weight(""balanced"", y)"
+balancing,215,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"sample_weight = compute_sample_weight(""balanced"", y)"
+balancing,221,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,# Test with balanced classes and all samples present
+balancing,223,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"sample_weight = compute_sample_weight(""balanced"", y, indices=range(6))"
+balancing,226,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,# Test with column vector of balanced classes and all samples present
+balancing,228,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"sample_weight = compute_sample_weight(""balanced"", y, indices=range(6))"
+balancing,233,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"sample_weight = compute_sample_weight(""balanced"", y, indices=range(4))"
+balancing,238,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"sample_weight = compute_sample_weight(""balanced"", y, indices=[0, 1, 1, 2, 2, 3])"
+balancing,244,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"sample_weight = compute_sample_weight(""balanced"", y, indices=[0, 1, 1, 2, 2, 3])"
+balancing,249,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"sample_weight = compute_sample_weight(""balanced"", y, indices=range(6))"
+balancing,254,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"sample_weight = compute_sample_weight(""balanced"", y, indices=range(6))"
+balancing,265,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"""The only valid class_weight for subsampling is 'balanced'."","
+balancing,296,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"weight = compute_sample_weight(""balanced"", y, indices=indices)"
+balancing,315,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_class_weight.py,"sample_weight = compute_sample_weight(""balanced"", y)"
+balancing,273,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_estimator_checks.py,# Intentionally modify the balanced class_weight
+balancing,275,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_estimator_checks.py,"if self.class_weight == ""balanced"":"
+balancing,1127,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_estimator_checks.py,# check that ill-computed balanced weights raises an exception
+balancing,1128,balanced,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_estimator_checks.py,"msg = ""Classifier estimator_name is not computing class_weight=balanced properly"""
+balancing,224,oversample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_extmath.py,"n_oversamples=20,"
+balancing,486,resample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_indexing.py,assert resample() is None
+balancing,490,resample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_indexing.py,"resample([0], [0, 1])"
+balancing,492,resample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_indexing.py,"resample([0, 1], [0, 1], replace=False, n_samples=3)"
+balancing,495,resample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_indexing.py,"assert len(resample([1, 2], n_samples=5)) == 5"
+balancing,506,resample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_indexing.py,"_, y_not_stratified = resample(X, y, n_samples=10, random_state=0, stratify=None)"
+balancing,509,resample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_indexing.py,"_, y_stratified = resample(X, y, n_samples=10, random_state=0, stratify=y)"
+balancing,521,resample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_indexing.py,"X_replace, _ = resample("
+balancing,524,resample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_indexing.py,"X_no_replace, _ = resample("
+balancing,532,resample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_indexing.py,"X_replace, _ = resample("
+balancing,545,resample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_indexing.py,"X, y = resample(X, y, n_samples=50, random_state=rng, stratify=y)"
+balancing,558,resample,New_Code\.venv_sklearn152\Lib\site-packages\sklearn\utils\tests\test_indexing.py,"X, y = resample(X, y, n_samples=50, random_state=rng, stratify=stratify)"

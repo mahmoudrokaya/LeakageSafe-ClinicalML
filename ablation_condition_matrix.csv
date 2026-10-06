@@ -1,0 +1,11 @@
+﻿condition,display,keyword_mentions,implementation_rows,numerical_result_rows,plausible_checkpoint_rows,implementation_found,numerical_result_found,checkpoint_found,reproducible_condition,status
+full_hybrid,Full HGF/HFAGM hybrid,25,0,49,0,0,1,0,0,NOT_REPRODUCIBLE
+gan_only,GAN-only,0,0,0,0,0,0,0,0,NOT_REPRODUCIBLE
+vae_only,VAE-only,0,0,0,0,0,0,0,0,NOT_REPRODUCIBLE
+diffusion_only,Diffusion-only,0,0,0,0,0,0,0,0,NOT_REPRODUCIBLE
+static_fusion,Static fusion,0,8,0,0,1,0,0,0,NOT_REPRODUCIBLE
+adaptive_fusion,Adaptive fusion,0,8,0,0,1,0,0,0,NOT_REPRODUCIBLE
+fairness_on,Fairness controller ON,0,15,0,0,1,0,0,0,NOT_REPRODUCIBLE
+fairness_off,Fairness controller OFF,0,15,0,0,1,0,0,0,NOT_REPRODUCIBLE
+scalability_on,Scalability mechanism ON,0,0,0,0,0,0,0,0,NOT_REPRODUCIBLE
+scalability_off,Scalability mechanism OFF,0,0,0,0,0,0,0,0,NOT_REPRODUCIBLE
