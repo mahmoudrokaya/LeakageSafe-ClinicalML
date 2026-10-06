@@ -1,0 +1,38 @@
+{
+  "title": "LeakageSafe-ClinicalML",
+  "description": "Reproducible research software for leakage-safe structured clinical machine learning, including repeated-holdout evaluation, training-strategy comparison, statistical analysis, subgroup fairness assessment, and traceable experimental results.",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Rokaya, Mahmoud",
+      "affiliation": "Taif University"
+    }
+  ],
+  "version": "1.0.0",
+  "publication_date": "2026-10-06",
+  "access_right": "open",
+  "license": "MIT",
+  "keywords": [
+    "clinical machine learning",
+    "structured clinical data",
+    "tabular machine learning",
+    "leakage-safe evaluation",
+    "data leakage",
+    "repeated holdout",
+    "reproducibility",
+    "class imbalance",
+    "oversampling",
+    "fairness",
+    "subgroup analysis",
+    "statistical analysis"
+  ],
+  "language": "eng",
+  "notes": "This repository provides the reproducibility materials associated with a leakage-safe structured clinical machine-learning study. The archived release contains research software, experimental configurations, machine-readable results, and supporting documentation. Participant-level clinical data should be included only where redistribution is explicitly permitted.",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/USERNAME/LeakageSafe-ClinicalML",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
