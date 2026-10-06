@@ -1,0 +1,393 @@
+LeakageSafe-ClinicalML/
+├── configs/
+├── data/
+│   └── README.md
+├── docs/
+│   ├── DATA_DESCRIPTION.md
+│   ├── REPRODUCIBILITY.md
+│   └── RESULTS.md
+├── experiments/
+│   ├── baseline_comparison/
+│   │   └── 06_scalability_benchmark.py
+│   ├── fairness_analysis/
+│   │   ├── 03_recompute_fairness_metrics.py
+│   │   ├── evaluate_fairness.py
+│   │   └── evaluate_fairness1.py
+│   ├── leakage_safe_evaluation/
+│   │   ├── 02C_verify_split_and_leakage.py
+│   │   ├── 02D_correct_leakage_safe_evaluation.py
+│   │   ├── 02E_repeated_leakage_safe_evaluation.py
+│   │   ├── 02F_audit_feature_chronology_and_proxy_leakage.py
+│   │   ├── 02F_v2_audit_feature_chronology_and_proxy_leakage.py
+│   │   └── split_and_standardize.py
+│   ├── repeated_holdout/
+│   └── statistical_analysis/
+│       ├── 08_statistical_claim_audit.py
+│       └── 08_statistical_claim_audit_v2.py
+├── figures/
+│   ├── fairness_plot_Gender.png
+│   ├── fairness_plot_Nationality.png
+│   ├── fairness_report.pdf
+│   └── IMG_20210609_185131_jpg.rf.694078212c691632597bcaa1fdf1841a.jpg
+├── models/
+│   ├── encoder_pretrained.pth
+│   ├── ensemble_model.pkl
+│   ├── model_training_only_oversampled.joblib
+│   └── model_unbalanced_training.joblib
+├── reproducibility/
+│   ├── copied_file_manifest.csv
+│   ├── detected_dependencies.csv
+│   ├── environment_info.txt
+│   ├── experiment_manifest.csv
+│   ├── hardcoded_paths.csv
+│   ├── missing_items.csv
+│   ├── result_provenance.csv
+│   ├── seeds.csv
+│   └── skipped_files.csv
+├── results/
+│   ├── baselines/
+│   │   ├── schema_comparison.csv
+│   │   └── variant_comparison.csv
+│   ├── fairness/
+│   │   ├── fairness_ablation_evidence.csv
+│   │   ├── fairness_aggregated_summary_v2.csv
+│   │   ├── fairness_bounds_audit.csv
+│   │   ├── fairness_code_evidence.csv
+│   │   ├── fairness_files.csv
+│   │   ├── fairness_interpretation_audit.csv
+│   │   ├── fairness_metric_long.csv
+│   │   ├── fairness_metric_summary.csv
+│   │   ├── fairness_metrics_summary.csv
+│   │   ├── fairness_paired_difference_summary.csv
+│   │   ├── fairness_paired_differences.csv
+│   │   ├── fairness_per_seed_pairwise.csv
+│   │   ├── fairness_per_seed_reference.csv
+│   │   ├── fairness_provenance.csv
+│   │   ├── fairness_source_resolution.csv
+│   │   ├── fairness_source_rows_v2.csv
+│   │   ├── fairness_summary.txt
+│   │   ├── fairness_summary_pairwise.csv
+│   │   ├── fairness_summary_reference.csv
+│   │   ├── prediction_input_audit.csv
+│   │   ├── predictions_with_sensitive_attributes.csv
+│   │   ├── sensitive_attribute_inventory.csv
+│   │   ├── sensitive_attribute_missingness.csv
+│   │   ├── subgroup_counts_per_seed.csv
+│   │   └── subgroup_performance_per_seed.csv
+│   ├── primary/
+│   │   ├── ablation_audit_summary.txt
+│   │   ├── ablation_claim_reconstruction.csv
+│   │   ├── ablation_condition_matrix.csv
+│   │   ├── ablation_files.csv
+│   │   ├── ablation_keyword_evidence.csv
+│   │   ├── ablation_provenance.csv
+│   │   ├── ablation_source_inventory.csv
+│   │   ├── ablation_verdict.csv
+│   │   ├── actual_generative_architecture_summary.txt
+│   │   ├── actual_generative_architecture_verdict.csv
+│   │   ├── all_metric_rows.csv
+│   │   ├── architecture_variant_evidence.csv
+│   │   ├── architecture_verification_matrix.csv
+│   │   ├── array_candidates.csv
+│   │   ├── audit_summary.txt
+│   │   ├── audit_summary_v2.txt
+│   │   ├── balancing_code_evidence.csv
+│   │   ├── checkpoint_ablation_linkage.csv
+│   │   ├── checkpoint_candidate_summary.csv
+│   │   ├── checkpoint_code_linkage.csv
+│   │   ├── checkpoint_inventory.csv
+│   │   ├── checkpoint_inventory_v2.csv
+│   │   ├── checkpoint_structure_audit.csv
+│   │   ├── claim_evidence_detailed.csv
+│   │   ├── claim_evidence_v2.csv
+│   │   ├── claims_to_remove_or_majorly_reframe.csv
+│   │   ├── claims_to_remove_or_majorly_reframe_v2.csv
+│   │   ├── claims_to_retain_rewrite_or_verify.csv
+│   │   ├── claims_to_retain_rewrite_or_verify_v2.csv
+│   │   ├── class_architecture_inventory.csv
+│   │   ├── classifier_graph_evidence.csv
+│   │   ├── classifier_provenance.csv
+│   │   ├── code_evidence.csv
+│   │   ├── code_operation_order.csv
+│   │   ├── common_real_test_utility_summary.txt
+│   │   ├── common_test_integrity_audit.csv
+│   │   ├── conflicting_claims.csv
+│   │   ├── confusion_matrix_code_evidence.csv
+│   │   ├── confusion_matrix_training_only_oversampled.csv
+│   │   ├── corrected_evaluation_metrics.csv
+│   │   ├── corrected_evaluation_provenance.csv
+│   │   ├── corrected_evaluation_summary.txt
+│   │   ├── corrected_split_manifest.csv
+│   │   ├── corrected_split_overlap_check.csv
+│   │   ├── covid_clinical_balanced.csv
+│   │   ├── covid_clinical_preprocessed.csv
+│   │   ├── csv_schema_inventory.csv
+│   │   ├── data_modality_inventory.csv
+│   │   ├── data_modality_inventory_v2.csv
+│   │   ├── data_structure.txt
+│   │   ├── dataset_inventory.csv
+│   │   ├── duplicate_figure_numbers_v2.csv
+│   │   ├── efficiency_claim_reconstruction.csv
+│   │   ├── experiment_metric_inventory.csv
+│   │   ├── experiment_reconstruction_status.csv
+│   │   ├── experiment_registry.csv
+│   │   ├── feature_chronology_classification.csv
+│   │   ├── feature_chronology_classification_v2.csv
+│   │   ├── feature_mapping.csv
+│   │   ├── feature_mapping_2.csv
+│   │   ├── feature_proxy_audit_provenance.csv
+│   │   ├── feature_proxy_audit_provenance_v2.csv
+│   │   ├── feature_proxy_audit_summary.txt
+│   │   ├── feature_proxy_audit_summary_v2.txt
+│   │   ├── feature_proxy_audit_verdict.csv
+│   │   ├── feature_proxy_audit_verdict_v2.csv
+│   │   ├── feature_proxy_review_priority.csv
+│   │   ├── feature_proxy_review_priority_v2.csv
+│   │   ├── feature_target_correlations.csv
+│   │   ├── feature_timing_evidence.csv
+│   │   ├── fidelity_code_evidence.csv
+│   │   ├── fidelity_provenance.csv
+│   │   ├── fidelity_summary.txt
+│   │   ├── fidelity_terminology_verdict.csv
+│   │   ├── figure_caption_audit.csv
+│   │   ├── figure_caption_audit_v2.csv
+│   │   ├── figure_files.csv
+│   │   ├── figure_inventory.csv
+│   │   ├── figure_inventory_v2.csv
+│   │   ├── file_inventory.csv
+│   │   ├── file_inventory_v2.csv
+│   │   ├── file_timestamp_audit.csv
+│   │   ├── final_claim_policy.csv
+│   │   ├── final_claim_policy_v2.csv
+│   │   ├── function_inventory.csv
+│   │   ├── fusion_ablation_evidence.csv
+│   │   ├── generation_operation_evidence.csv
+│   │   ├── generation_provenance_chain.csv
+│   │   ├── generation_reconstruction_verdict.csv
+│   │   ├── generation_save_evidence.csv
+│   │   ├── generative_scalability_linkage.csv
+│   │   ├── generative_semantic_evidence.csv
+│   │   ├── generator_definition_evidence.csv
+│   │   ├── hardware_evidence.csv
+│   │   ├── HFAGM_Project_Structure.txt
+│   │   ├── IMG_20210609_185131_jpg.rf.694078212c691632597bcaa1fdf1841a.txt
+│   │   ├── important_experiment_files.csv
+│   │   ├── json_config_values.csv
+│   │   ├── key_dataset_files.csv
+│   │   ├── leakage_findings.csv
+│   │   ├── leakage_verdict.csv
+│   │   ├── locked_split_manifest.csv
+│   │   ├── locked_test_data.csv
+│   │   ├── locked_test_indices.csv
+│   │   ├── locked_train_indices.csv
+│   │   ├── manuscript_claim_mapping.csv
+│   │   ├── manuscript_claim_mapping_v2.csv
+│   │   ├── manuscript_metric_claims.csv
+│   │   ├── manuscript_metric_claims_v2.csv
+│   │   ├── manuscript_multimodal_claims.csv
+│   │   ├── manuscript_multimodal_claims_v2.csv
+│   │   ├── manuscript_restructuring_plan.csv
+│   │   ├── manuscript_restructuring_plan_v2.csv
+│   │   ├── master_evidence_and_restructuring_audit_summary.txt
+│   │   ├── master_evidence_and_restructuring_audit_v2_summary.txt
+│   │   ├── master_evidence_table.csv
+│   │   ├── master_evidence_table_v2.csv
+│   │   ├── memory_evidence.csv
+│   │   ├── metric_files.csv
+│   │   ├── metric_tables.csv
+│   │   ├── metric_value_hits.csv
+│   │   ├── metrics_training_only_oversampled.csv
+│   │   ├── metrics_unbalanced_training.csv
+│   │   ├── model_files.csv
+│   │   ├── model_provenance.csv
+│   │   ├── multimodal_code_evidence.csv
+│   │   ├── multimodal_evidence_classification.csv
+│   │   ├── multimodal_figure_provenance.csv
+│   │   ├── multimodal_figure_provenance_v2.csv
+│   │   ├── multimodal_figure_results_audit_summary.txt
+│   │   ├── multimodal_figure_results_audit_v2_summary.txt
+│   │   ├── multimodal_figure_verdict.csv
+│   │   ├── multimodal_figure_verdict_v2.csv
+│   │   ├── multimodal_figure_verification_matrix.csv
+│   │   ├── multimodal_figure_verification_matrix_v2.csv
+│   │   ├── multimodal_files.csv
+│   │   ├── multimodal_implementation_evidence.csv
+│   │   ├── multimodal_implementation_evidence_v2.csv
+│   │   ├── numeric_conversion_audit.csv
+│   │   ├── numeric_conversion_audit_2.csv
+│   │   ├── original_193_duplicate_audit.csv
+│   │   ├── prediction_code_evidence.csv
+│   │   ├── prediction_code_evidence_2.csv
+│   │   ├── prediction_source_candidates.csv
+│   │   ├── predictions_training_only_oversampled.csv
+│   │   ├── predictions_unbalanced_training.csv
+│   │   ├── preprocessing_audit.csv
+│   │   ├── preserved_model_configuration.csv
+│   │   ├── primary_metrics_audit_summary.txt
+│   │   ├── prior_audit_crosscheck.csv
+│   │   ├── prior_audit_crosscheck_v2.csv
+│   │   ├── project_generation_code_inventory.csv
+│   │   ├── project_structure.txt
+│   │   ├── python_file_inventory.csv
+│   │   ├── real_feature_mapping.csv
+│   │   ├── real_numeric_conversion_audit.csv
+│   │   ├── real_training_data_audit.csv
+│   │   ├── recomputed_primary_metrics.csv
+│   │   ├── reconstruction_provenance.csv
+│   │   ├── regenerated_confusion_matrix.csv
+│   │   ├── regenerated_existing_metrics.csv
+│   │   ├── regenerated_existing_predictions.csv
+│   │   ├── regeneration_summary.txt
+│   │   ├── reproducibility_matrix.csv
+│   │   ├── reproducibility_matrix_v2.csv
+│   │   ├── result_candidates.csv
+│   │   ├── results_consistency_findings.csv
+│   │   ├── results_consistency_findings_v2.csv
+│   │   ├── reviewer_comment_disposition.csv
+│   │   ├── reviewer_comment_disposition_v2.csv
+│   │   ├── runtime_evidence.csv
+│   │   ├── save_statements.csv
+│   │   ├── scalability_ablation_evidence.csv
+│   │   ├── scalability_audit_summary.txt
+│   │   ├── scalability_numeric_evidence.csv
+│   │   ├── scalability_provenance.csv
+│   │   ├── scalability_source_inventory.csv
+│   │   ├── scalability_verdict.csv
+│   │   ├── scalability_verification_matrix.csv
+│   │   ├── scaling_code_evidence.csv
+│   │   ├── scanner_file_inclusion_audit.csv
+│   │   ├── source_file_inventory.csv
+│   │   ├── source_resolution_diagnostics.json
+│   │   ├── source_resolution_diagnostics_v2.json
+│   │   ├── source_resolution_table.csv
+│   │   ├── source_resolution_table_v2.csv
+│   │   ├── split_code_evidence.csv
+│   │   ├── split_leakage_audit_summary.txt
+│   │   ├── stage10_v2_closure_matrix.csv
+│   │   ├── structured_feature_space_audit.csv
+│   │   ├── structured_frechet_self_checks.csv
+│   │   ├── structured_generation_summary.txt
+│   │   ├── structured_output_evidence.csv
+│   │   ├── summary_by_generation.csv
+│   │   ├── summary_by_generation_2.csv
+│   │   ├── synthetic_array_candidate_inventory.csv
+│   │   ├── synthetic_generation_code_evidence.csv
+│   │   ├── table_schema_inventory.csv
+│   │   ├── target_feature_audit.csv
+│   │   ├── test_data_audit.csv
+│   │   ├── train_test_exact_overlap.csv
+│   │   ├── train_test_near_duplicate_summary.csv
+│   │   ├── train_test_near_duplicates.csv
+│   │   ├── training_code_evidence.csv
+│   │   ├── utility_confusion_matrices.csv
+│   │   ├── utility_metrics.csv
+│   │   ├── utility_predictions.csv
+│   │   ├── utility_provenance.csv
+│   │   ├── utility_verdict.csv
+│   │   ├── verification_provenance.csv
+│   │   ├── workload_size_evidence.csv
+│   │   ├── X_test_corrected_scaled.csv
+│   │   ├── X_test_scaled.csv
+│   │   ├── X_train_corrected_scaled.csv
+│   │   ├── X_train_corrected_training_only_balanced.csv
+│   │   ├── X_train_scaled.csv
+│   │   ├── y_test.csv
+│   │   ├── y_test_corrected.csv
+│   │   ├── y_train.csv
+│   │   ├── y_train_corrected.csv
+│   │   └── y_train_corrected_training_only_balanced.csv
+│   ├── repeated_holdout/
+│   │   ├── all_seeds_generations.csv
+│   │   ├── feature_mapping.csv
+│   │   ├── numeric_conversion_audit.csv
+│   │   ├── per_seed_results_seed42.csv
+│   │   ├── per_seed_results_seed47.csv
+│   │   ├── per_seed_results_seed53.csv
+│   │   ├── pooled_prediction_summary.csv
+│   │   ├── repeated_confusion_matrices.csv
+│   │   ├── repeated_evaluation_provenance.csv
+│   │   ├── repeated_evaluation_summary.txt
+│   │   ├── repeated_predictions.csv
+│   │   ├── repeated_seed_metrics.csv
+│   │   ├── repeated_split_audit.csv
+│   │   ├── single_feature_repeated_seed_metrics.csv
+│   │   ├── single_feature_repeated_seed_metrics_v2.csv
+│   │   ├── single_feature_repeated_summary.csv
+│   │   └── source_case_prediction_frequency.csv
+│   └── statistics/
+│       ├── excluded_repeated_sources.csv
+│       ├── inferential_eligibility_v2.csv
+│       ├── inferential_test_eligibility.csv
+│       ├── paired_condition_differences.csv
+│       ├── paired_difference_summary.csv
+│       ├── paired_variant_differences.csv
+│       ├── paired_variant_tests.csv
+│       ├── primary_paired_difference_summary.csv
+│       ├── primary_paired_seed_differences.csv
+│       ├── primary_repeated_metric_long.csv
+│       ├── primary_repeated_metric_summary.csv
+│       ├── primary_source_resolution.csv
+│       ├── repeated_metric_long.csv
+│       ├── repeated_metric_summary.csv
+│       ├── repeated_result_candidate_inventory.csv
+│       ├── repeated_summary_statistics.csv
+│       ├── significance_language_evidence.csv
+│       ├── statistical_claim_audit_summary.txt
+│       ├── statistical_claim_audit_v2_summary.txt
+│       ├── statistical_claim_language_audit.csv
+│       ├── statistical_provenance.csv
+│       ├── statistical_provenance_v2.csv
+│       ├── statistical_source_inventory.csv
+│       ├── statistical_verdict.csv
+│       ├── statistical_verdict_v2.csv
+│       ├── statistical_verification_matrix.csv
+│       ├── statistical_verification_matrix_v2.csv
+│       └── univariate_descriptive_statistics.csv
+├── src/
+│   ├── evaluation/
+│   │   ├── 01_audit_existing_results.py
+│   │   ├── 02_reconstruct_and_recompute_primary_metrics.py
+│   │   ├── 02B_regenerate_existing_predictions.py
+│   │   ├── 04_verify_and_compute_structured_frechet.py
+│   │   ├── 04B_reconstruct_structured_synthetic_generation.py
+│   │   ├── 04B_v2_verify_actual_generative_architecture.py
+│   │   ├── 05_common_real_test_utility.py
+│   │   ├── 07_ablation_reproducibility_audit.py
+│   │   ├── 09_multimodal_figure_results_audit.py
+│   │   ├── 09_multimodal_figure_results_audit_v2.py
+│   │   ├── 10_master_evidence_and_restructuring_audit.py
+│   │   ├── 10_master_evidence_and_restructuring_audit_v2.py
+│   │   ├── __init__.py
+│   │   ├── collect_paper4_evidence.py
+│   │   ├── data_structure.py
+│   │   ├── explore_hfagm_project.py
+│   │   ├── explore_project.py
+│   │   ├── get_project_structure.py
+│   │   ├── HFAGM.py
+│   │   ├── HFAGM2.py
+│   │   ├── HFAGM3.py
+│   │   └── HFAGM4.py
+│   ├── fairness/
+│   │   └── __init__.py
+│   ├── modeling/
+│   │   ├── __init__.py
+│   │   ├── hfagm_model.py
+│   │   ├── train_ensemble.py
+│   │   ├── train_hfagm.py
+│   │   ├── train_hfagm_2.py
+│   │   └── train_hfagm_2_2.py
+│   ├── preprocessing/
+│   │   ├── __init__.py
+│   │   ├── contrastive_encoder.py
+│   │   ├── generate_graph_features_and_adjacency.py
+│   │   └── preprocess_covid_clinical.py
+│   ├── utils/
+│   │   └── __init__.py
+│   └── __init__.py
+├── .gitignore
+├── .zenodo.json
+├── CITATION.cff
+├── environment.yml
+├── LICENSE
+├── README.md
+└── requirements.txt

@@ -1,0 +1,72 @@
+================================================================================
+LeakageSafe-ClinicalML GitHub Build Report
+================================================================================
+
+Source: D:\47\472\New-Papers\Enhancing Fidelity_Array\HFAGM_OptionA_GitHub
+Target: D:\47\472\New-Papers\Enhancing Fidelity_Array\LeakageSafe-ClinicalML
+Built: 2026-10-06T20:41:46.368655
+
+RESEARCH POLICY
+--------------------------------------------------------------------------------
+No experiments were executed.
+Existing source code and result artifacts were collected only.
+Participant-level clinical data were not automatically copied.
+
+COLLECTION SUMMARY
+--------------------------------------------------------------------------------
+Files copied: 342
+Files skipped: 0
+Missing items: 1
+Hard-coded paths detected: 115
+
+CATEGORY COUNTS
+--------------------------------------------------------------------------------
+experiment:baseline_comparison          : 1
+experiment:fairness_analysis            : 3
+experiment:leakage_safe_evaluation      : 6
+experiment:statistical_analysis         : 2
+figure                                  : 4
+model                                   : 4
+result:baselines                        : 2
+result:fairness                         : 25
+result:primary                          : 221
+result:repeated_holdout                 : 17
+result:statistics                       : 28
+source:evaluation                       : 21
+source:modeling                         : 5
+source:preprocessing                    : 3
+
+DEPENDENCIES
+--------------------------------------------------------------------------------
+- __future__
+- dataclasses
+- fairlearn
+- html
+- imbalanced-learn
+- joblib
+- matplotlib
+- networkx
+- numpy
+- pandas
+- Pillow
+- PyYAML
+- scikit-learn
+- scipy
+- seaborn
+- torch
+- torchvision
+- xml
+- zipfile
+
+MANUAL CHECKS REQUIRED BEFORE GITHUB RELEASE
+--------------------------------------------------------------------------------
+1. Replace USERNAME in CITATION.cff and .zenodo.json.
+2. Review reproducibility/hardcoded_paths.csv.
+3. Verify requirements.txt against the actual final executable scripts.
+4. Pin package versions after verifying the environment used for reproduction.
+5. Confirm the complete software creator list before minting the DOI.
+6. Verify clinical-data redistribution permissions.
+7. Verify every copied model is actually required.
+8. Remove any unsupported/historical result that survived automated selection.
+9. Confirm that README commands match the final public scripts.
+10. Do not create the DOI until the repository passes final reproducibility review.

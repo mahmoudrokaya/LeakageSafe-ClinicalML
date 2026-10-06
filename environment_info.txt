@@ -1,0 +1,32 @@
+LeakageSafe-ClinicalML Environment Information
+============================================================
+
+Repository build date: 2026-10-06T20:41:46.086171
+Build Python: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+Platform: Windows-10-10.0.26200-SP0
+
+Important:
+This file describes the environment used to BUILD the clean
+repository. It is not automatically evidence of the exact
+environment used to run every historical experiment.
+
+Detected/required Python packages:
+- __future__
+- dataclasses
+- fairlearn
+- html
+- imbalanced-learn
+- joblib
+- matplotlib
+- networkx
+- numpy
+- pandas
+- Pillow
+- PyYAML
+- scikit-learn
+- scipy
+- seaborn
+- torch
+- torchvision
+- xml
+- zipfile
