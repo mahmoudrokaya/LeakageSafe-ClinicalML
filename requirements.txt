@@ -1,0 +1,11 @@
+# Populate with VERIFIED versions before public release.
+# Do not guess package versions.
+#
+# Example only:
+# numpy==
+# pandas==
+# scikit-learn==
+# torch==
+# matplotlib==
+#
+# Inspect the original environment and imports before filling this file.
