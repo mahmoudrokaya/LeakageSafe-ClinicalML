@@ -1,0 +1,2 @@
+﻿variant,n_test,accuracy,precision,recall_sensitivity,specificity,f1,tn,fp,fn,tp,roc_auc,score_source,classification_threshold,model_source,model_configuration,balancing
+unbalanced_training,39,1.0,1.0,1.0,1.0,1.0,20,0,0,19,1.0,predict_proba_positive_class,0.5,models\classifiers\ensemble_model.pkl,cloned_preserved_ensemble,"{""method"": ""none"", ""scope"": ""training_only_no_resampling"", ""class_counts"": ""{\""0\"": 80, \""1\"": 74}""}"

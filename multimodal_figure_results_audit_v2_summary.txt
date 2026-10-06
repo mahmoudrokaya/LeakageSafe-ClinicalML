@@ -1,0 +1,101 @@
+====================================================================================================
+HFAGM - 09 V2 MULTIMODAL / FIGURE / RESULTS CONSISTENCY AUDIT
+====================================================================================================
+
+Generated: 2026-09-03T17:40:14
+Preferred manuscript filename: HFAGM.docx
+Selected manuscript: D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM.docx
+Manuscript SHA256: 8026dc4ea8a161bac162550d3d1e3165e623d0e835107b103c0e1f1f6d6a98ef
+
+CORRECTIONS FROM 09 V1
+----------------------------------------------------------------------------------------------------
+1. Exact expected manuscript filename is preferred; if absent, only a unique strong filename match is accepted.
+2. The script never silently substitutes an arbitrary DOCX.
+3. Accuracy is parsed only when a numeric value directly follows the accuracy label.
+4. AUC values are parsed independently and cannot be reassigned to accuracy.
+5. Duplicate figure numbers are audited independently of image hashes.
+6. Exact-image, perceptual-image, and caption-similarity signals are separated.
+7. No OCR or image-content interpretation is performed.
+
+COUNTS
+----------------------------------------------------------------------------------------------------
+Project files scanned: 40417
+Multimodal manuscript claim rows: 27
+Metric claim rows: 11
+Sample-size claim rows: 0
+Confusion-text claim rows: 0
+Embedded image occurrences: 10
+Duplicate figure-number groups: 3
+Exact duplicate image groups: 0
+Perceptual similarity pairs: 0
+Similar-caption pairs: 0
+Strict executable clinical multimodal+fusion candidates: 0
+
+CONTEXT-AWARE METRIC PARSING
+----------------------------------------------------------------------------------------------------
+Direct accuracy values: []
+Direct AUC values: [0.95, 0.99]
+Direct FID values: []
+
+FINDINGS
+----------------------------------------------------------------------------------------------------
+C13-C14 | multimodal_scope_and_reproducibility | NOT_REPRODUCIBLE_FROM_RECOVERED_PROJECT
+    Evidence: manuscript multimodal claims=27; strict executable clinical multimodal+fusion candidates=0; clinical image artifacts=0; unrelated image/sign-language artifacts=20035
+    Manuscript action: If strict clinical multimodal evidence remains absent, remove or reframe multimodal claims and describe the evaluated study as structured clinical/tabular data only.
+C15 | figure_numbering_and_duplicate_content | CORRECTION_REQUIRED
+    Evidence: duplicate figure-number groups=3; exact duplicate image groups=0; visually similar image candidate pairs=0; similar-caption candidate pairs=0
+    Manuscript action: Correct duplicate figure numbering. Review exact, visual, and caption-similarity candidates manually, especially confusion matrices, before retaining any apparently distinct experiment.
+C22 | accuracy_and_confusion_consistency | REVIEW_REQUIRED
+    Evidence: directly parsed accuracy values=[]; complete TP/TN/FP/FN text claims=0
+    Manuscript action: For each retained confusion matrix, tie TP/TN/FP/FN to one documented evaluation condition and ensure stated accuracy equals (TP+TN)/N. Do not treat AUC values as accuracy.
+C23 | synthetic_sample_size_interpretation | NO_LARGE_SYNTHETIC_N_DIRECTLY_PARSED
+    Evidence: sample sizes=[]; large synthetic sizes>193=[]
+    Manuscript action: Describe any synthetic N above the original cohort only as generated computational workload, never as additional independent patient information.
+C24 | fid_consistency_and_reproducibility | UNSUPPORTED
+    Evidence: directly parsed manuscript FID values=[]; prior FID/generator unsupported=1
+    Manuscript action: Remove absolute FID claims unless generator provenance and the exact feature space are recovered. Do not label raw structured-feature Fréchet distance as conventional image FID.
+C13-C15,C22-C24 | overall_results_integrity | MAJOR_REFRAME_REQUIRED
+    Evidence: strict clinical multimodal implementation=0; duplicate figure numbers=3; exact duplicate images=0; FID/generator prior unsupported=1; caption issue count=12
+    Manuscript action: Consolidate the manuscript around reproducible structured-clinical evidence and remove unsupported multimodal/generator/FID/scalability interpretations.
+
+VERIFICATION MATRIX
+----------------------------------------------------------------------------------------------------
+PASS: intended_array_manuscript_selected
+    D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM.docx
+PASS: figure_inventory_completed
+    embedded images=10; figure captions=12
+PASS: duplicate_figure_numbers_explicitly_audited
+    duplicate figure-number groups=3
+PASS: context_aware_metric_extraction_used
+    direct accuracy values=[]; direct AUC values=[0.95, 0.99]
+MISSING/NO: clinical_multimodal_implementation_verified
+    strict executable clinical multimodal+fusion candidates=0
+PASS: fid_claims_crosschecked_with_prior_generator_audit
+    prior categories=["ablation_unsupported", "fid_unsupported", "generator_missing", "scalability_unsupported", "statistics_descriptive_only"]
+
+FINAL VERDICT
+----------------------------------------------------------------------------------------------------
+ARRAY_MANUSCRIPT_REQUIRES_MULTIMODAL_GENERATIVE_REFRAMING
+
+NEXT ACTION
+----------------------------------------------------------------------------------------------------
+RETAIN_REPRODUCIBLE_STRUCTURED_CLINICAL_RESULTS_AND_CORRECT_FIGURE_NUMBERING_AND_NUMERICS
+
+INTERPRETATION RULES
+----------------------------------------------------------------------------------------------------
+1. AUC and accuracy are different metrics; an AUC value is never reassigned to accuracy.
+2. Duplicate figure number and duplicate image content are independent problems.
+3. Similar image hashes or captions are candidates for manual review, not proof of duplication.
+4. An unrelated image dataset in the repository does not establish multimodal clinical evaluation.
+5. Synthetic N does not increase the independent clinical sample beyond the original cohort.
+6. FID remains unsupported if generator and feature-space provenance are absent.
+
+SAFETY
+----------------------------------------------------------------------------------------------------
+New training: NO
+Synthetic generation: NO
+OCR: NO
+Image modification: NO
+Historical project modification: NO
+
+====================================================================================================

@@ -1,0 +1,22 @@
+﻿candidate_files,category,claim_id,datasets,description,experiments,found_values,hit_count,status,target_values
+,fidelity,FID_HGF_1_5,,HGF/baseline fidelity reported around 1.5,,,0,NOT_FOUND,1.5
+,fidelity,FID_LIGHTWEIGHT_1_6,,Lightweight fidelity reported around 1.6,,,0,NOT_FOUND,1.6
+,fidelity,FID_LIGHTWEIGHT_3_2,,Lightweight fidelity reported as 3.2,,,0,NOT_FOUND,3.2
+,fairness,SPD_0,,SPD reported as 0,,,0,NOT_FOUND,0.0
+,fairness,SPD_00514,,SPD reported as 0.0514,,,0,NOT_FOUND,0.0514
+experiments\New_EXPs\metrics\all_seeds_generations.csv; experiments\New_EXPs\metrics\per_seed_results_seed42.csv; experiments\New_EXPs\metrics\per_seed_results_seed47.csv; experiments\New_EXPs\metrics\per_seed_results_seed53.csv; experiments\New_EXPs\metrics\summary_by_generation.csv,fairness,EOD_1,,EOD reported as 1.0,new_exps,1.0,15,FOUND_IN_EXPERIMENTAL_EVIDENCE,1.0
+,fairness,DI_1,,DI reported as 1.0,,,0,NOT_FOUND,1.0
+,fairness,DI_0643,,DI reported as 0.643,,,0,NOT_FOUND,0.643
+,fairness,DI_0209,,DI reported as 0.209,,,0,NOT_FOUND,0.209
+experiments\New_EXP2\metrics\all_seeds_generations_ArSL.csv; experiments\New_EXP2\metrics\per_seed_ArSL_seed53.csv; experiments\New_EXPs\metrics\all_seeds_generations.csv; experiments\New_EXPs\metrics\per_seed_results_seed47.csv; experiments\New_EXPs\metrics\summary_by_generation.csv,utility,ACC_REAL_0983,ArSL,Real-data accuracy around 0.983,new_exp2; new_exps,0.981578947368421; 0.9815789473684211; 0.9825151325764452; 0.9828604242107541; 0.9841496159706383; 0.9842105263157894; 0.9852253112226839,13,FOUND_IN_EXPERIMENTAL_EVIDENCE,0.983
+experiments\New_EXPs\metrics\summary_by_generation.csv,utility,ACC_BASELINE_0957,,Baseline synthetic accuracy around 0.957,new_exps,0.9549286128233496; 0.9572649572649573,2,FOUND_IN_EXPERIMENTAL_EVIDENCE,0.957
+experiments\New_EXPs\metrics\all_seeds_generations.csv; experiments\New_EXPs\metrics\per_seed_results_seed47.csv; experiments\New_EXPs\metrics\per_seed_results_seed53.csv; experiments\New_EXPs\metrics\summary_by_generation.csv,utility,ACC_LIGHTWEIGHT_094,,Lightweight accuracy around 0.94,new_exps,0.9439010439010439; 0.9444444444444444; 0.9473684210526315; 0.9487179487179487; 0.9487179487179488,22,FOUND_IN_EXPERIMENTAL_EVIDENCE,0.94
+experiments\New_EXP2\metrics\summary_by_generation_ArSL.csv,utility,ACC_LIGHTWEIGHT_0703,ArSL,Lightweight accuracy around 0.703,new_exp2,0.7034409081785196; 0.7040153320788493,2,FOUND_IN_EXPERIMENTAL_EVIDENCE,0.703
+experiments\New_EXPs\metrics\all_seeds_generations.csv; experiments\New_EXPs\metrics\per_seed_results_seed53.csv; experiments\New_EXPs\metrics\summary_by_generation.csv,utility,F1_LIGHTWEIGHT_091,,Lightweight F1 around 0.91,new_exps,0.9142857142857143; 0.9184419713831479,3,FOUND_IN_EXPERIMENTAL_EVIDENCE,0.91
+experiments\New_EXPs\metrics\all_seeds_generations.csv; experiments\New_EXPs\metrics\per_seed_results_seed42.csv; experiments\New_EXPs\metrics\per_seed_results_seed53.csv,utility,AUC_BASELINE_0996,,Baseline ROC-AUC around 0.996,new_exps,0.9947368421052631; 0.9973684210526316,4,FOUND_IN_EXPERIMENTAL_EVIDENCE,0.996
+,utility,AUC_LIGHTWEIGHT_0801,,Lightweight ROC-AUC around 0.801,,,0,NOT_FOUND,0.801
+,efficiency,RUNTIME_25_PERCENT,,Runtime improvement around 25%,,,0,NOT_FOUND,25.0
+,efficiency,MEMORY_20_30_PERCENT,,GPU-memory reduction 20-30%,,,0,NOT_FOUND,20.0; 25.0; 30.0
+,efficiency,MEMORY_40_PERCENT,,Hybrid memory increase around 40%,,,0,NOT_FOUND,40.0
+,scalability,SYNTHETIC_N_500,,Synthetic workload N=500,,,0,NOT_FOUND,500.0
+,scalability,SYNTHETIC_N_100000,,Synthetic workload N=100000,,,0,NOT_FOUND,100000.0

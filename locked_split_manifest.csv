@@ -1,0 +1,2 @@
+﻿split_name,random_state,test_size_fraction,total_real_rows,train_rows,test_rows,train_class_0,train_class_1,test_class_0,test_class_1,train_indices_sha256,test_indices_sha256,purpose
+locked_common_real_test,42,0.2,193,154,39,80,74,20,19,59c6481eadc2c2e14682529bc39693c4d1d1c1d6d974fb997b8ffbe6634e7f40,6caeb83356532ea23e2aa252649a4911f9d2090ace1b9ed230369b1af8a4b977,single locked untouched real test set for every downstream utility condition

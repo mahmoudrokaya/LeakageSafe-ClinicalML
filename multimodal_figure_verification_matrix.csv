@@ -1,0 +1,9 @@
+﻿criterion,passed,detail
+manuscript_resolved,1,HFAGM.docx
+figure_inventory_completed,1,Embedded image occurrences=10; figure captions=12.
+exact_duplicate_images_audited,1,Exact duplicate embedded-image groups=0.
+multimodal_claims_identified,1,Multimodal-related manuscript sentences identified=27.
+clinical_multimodal_implementation_verified,0,Strict executable clinical multimodal+fusion candidates=0.
+fid_claims_cross_checked,1,FID values=[]; prior unsupported/generator-missing evidence=1.
+sample_size_claims_inventory_completed,1,Sample-size claim rows=0.
+accuracy_metric_claims_inventory_completed,1,Accuracy claim rows=5.

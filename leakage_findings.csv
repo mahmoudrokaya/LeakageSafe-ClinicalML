@@ -1,0 +1,12 @@
+﻿finding_id,severity,status,finding,evidence,implication
+F01,INFO,PASS,Feature/label row counts are internally consistent.,Train=160; Test=40,No row-count misalignment detected.
+F02,CRITICAL,FAIL,Exact train/test duplicates were detected.,Exact overlap pairs = 25,The preserved test set is not independent of training data.
+F03,HIGH,WARNING,Some train/test records become identical after rounding.,Maximum rounded overlap pairs = 25,Records may be near duplicates and require manual inspection.
+F04,HIGH,WARNING,Extremely close cross-split records were detected.,15 test records have nearest-train Euclidean distance <= 1e-6.,Potential duplicate/near-duplicate leakage should be investigated.
+F05,CRITICAL,PASS,No obvious target-named feature is present in X.,No feature name matched outcome/status/death/survival-related terms.,Direct target-column leakage is not evident.
+F06,HIGH,PASS,No individual numeric training feature has near-perfect linear correlation with the target.,No |r| >= 0.999999 feature detected.,Simple single-column label encoding is not evident.
+F07,HIGH,EVIDENCE_FOUND,Train/test split implementation exists in project code.,8220 split-related code statements found.,Operation ordering should be assessed from split_code_evidence.csv.
+F08,HIGH,EVIDENCE_FOUND,Scaling/preprocessing code exists.,7817 scaling-related statements found.,"Need to verify scaler.fit() uses X_train only, not the full dataset."
+F09,CRITICAL,EVIDENCE_FOUND,Balancing/resampling logic exists in project code.,1025 balancing-related statements detected.,Must determine whether balancing occurred before or after train/test separation.
+F10,HIGH,EVIDENCE_FOUND,Classifier training logic exists in project code.,7550 training-related statements found.,Need to verify that only X_train/y_train are passed into model.fit().
+F11,HIGH,EVIDENCE_FOUND,Synthetic/generative code exists in the project.,5500 generative-related statements found.,Need to confirm that the untouched test set was not used to fit the generator.

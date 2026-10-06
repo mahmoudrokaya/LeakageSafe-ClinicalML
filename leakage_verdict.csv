@@ -1,0 +1,2 @@
+﻿critical_failures,explanation,high_unresolved_findings,manuscript_use,verdict
+1,At least one critical leakage test failed.,2,DO_NOT_USE_PERFECT_TEST_METRICS_AS_VALIDATED RESULTS,LEAKAGE_DETECTED_OR_STRONGLY_SUSPECTED

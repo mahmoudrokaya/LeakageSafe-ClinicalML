@@ -1,0 +1,10 @@
+﻿extension,filename,is_ablation,is_confusion_matrix,is_fairness,is_log,is_metric,is_multimodal,is_prediction,is_scalability,is_table,matched_keywords,modified_time,relative_path,sha256,size_bytes
+.csv,covid_clinical_balanced.csv,0,0,0,0,0,0,0,0,1,{},2025-06-12T18:47:29,data\preprocessed\covid_clinical_balanced.csv,ef87b77b63fb0b7c2ff03ebe453d0bb02008f69f36f911f514597a960cdc784f,199791
+.csv,covid_clinical_preprocessed.csv,0,0,0,0,0,0,0,0,1,{},2025-06-12T18:47:29,data\preprocessed\covid_clinical_preprocessed.csv,cc0da66c557265af118b4545a40a87b020288b66ed85bb01be9fa52a7f58d5b9,193088
+.csv,fairness_metrics_summary.csv,0,0,1,0,1,0,0,0,1,"{""metric"": ""metric; metrics; summary"", ""fairness"": ""fairness""}",2025-06-12T20:35:59,data\preprocessed\fairness_metrics_summary.csv,6f3fc60a847bf8d9df38a71c13d8e382d49951969325c56632ef286f18baeaa6,392
+.csv,X_test_scaled.csv,0,0,0,0,0,0,0,0,1,{},2025-06-12T19:59:13,data\preprocessed\X_test_scaled.csv,f9b2d898cbf60e4ffd876705b3f213e52967e921856c54598d185f828325bdfa,41051
+.csv,X_train_scaled.csv,0,0,0,0,0,0,0,0,1,{},2025-06-12T19:59:13,data\preprocessed\X_train_scaled.csv,bcb52d2b01a2f4d42c7d8334fc6de4831827be7a3d2e3e66f122c015fc43db4d,163051
+.csv,y_test.csv,0,0,0,0,0,0,0,0,1,{},2025-06-12T19:59:13,data\preprocessed\y_test.csv,14275e191b4bf8724c7011b9995af8d2a7a29b6cc2a3d6a82173620c574bcc01,128
+.csv,y_train.csv,0,0,0,0,0,0,0,0,1,{},2025-06-12T19:59:13,data\preprocessed\y_train.csv,689f91de4888e8277d05b06a00f8f411ee25f96afecee4083619a78bb16b043b,488
+.csv,covid_clinical.csv,0,0,0,0,0,0,0,0,1,{},2025-06-12T18:47:14,data\raw\covid_clinical.csv,47e3d5dbc46904f8f16d9a52a5dba27650737e3bcedbdf40f2fb9dc6c38fca63,47909
+.xlsx,covid_clinical.xlsx,0,0,0,0,0,0,0,0,1,{},2025-06-12T16:53:27,data\raw\covid_clinical.xlsx,1019bcb1cee33495a86f6eff2565952cf24e3899388e776ba1925e27944924a7,81269

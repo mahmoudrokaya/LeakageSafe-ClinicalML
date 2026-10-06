@@ -1,0 +1,116 @@
+================================================================================================================
+HFAGM - STAGE 10 V2 MASTER EVIDENCE AND MANUSCRIPT RESTRUCTURING AUDIT
+================================================================================================================
+
+Generated: 2026-09-03T18:12:29
+Project root: D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project
+Manuscript target: D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM.docx
+
+V2 CORRECTIONS
+----------------------------------------------------------------------------------------------------------------
+1. Prior audit files are resolved by unique verdict/signature strings across the outputs tree rather than brittle hard-coded filenames.
+2. Stage 02F, 04, 04B, 05, and 06 provenance are explicitly resolved and recorded.
+3. Stage 03 fairness prefers the per-seed file and aggregates it; if unavailable, the summary file is preserved without inventing values.
+4. A formal closure matrix determines whether Stage 10 can be closed.
+
+COUNTS
+----------------------------------------------------------------------------------------------------------------
+Master evidence records: 21
+Critical records: 11
+Remove/remove-or-majorly-reframe records: 7
+Rewrite/verify/correct records: 13
+Restructuring actions: 22
+Reviewer comments mapped: 28
+Claim-policy rows: 14
+
+SOURCE RESOLUTION
+----------------------------------------------------------------------------------------------------------------
+02F_v2: RESOLVED | path=D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_primary_metrics\feature_chronology_proxy_audit_v2\feature_proxy_audit_summary_v2.txt | candidates=2 | ambiguity=False
+04: RESOLVED | path=D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_fidelity\structured_frechet_audit\fidelity_summary.txt | candidates=4 | ambiguity=False
+04B_v2: RESOLVED | path=D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_fidelity\actual_generative_architecture_verification\actual_generative_architecture_summary.txt | candidates=5 | ambiguity=False
+05: RESOLVED | path=D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_utility\common_real_test\common_real_test_utility_summary.txt | candidates=2 | ambiguity=False
+06: RESOLVED | path=D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_scalability\scalability_audit_summary.txt | candidates=5 | ambiguity=False
+07: RESOLVED | path=D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_ablation\ablation_audit_summary.txt | candidates=7 | ambiguity=False
+08_v2: RESOLVED | path=D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_statistics_v2\statistical_claim_audit_v2_summary.txt | candidates=11 | ambiguity=False
+09_v2: RESOLVED | path=D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_multimodal_figure_audit_v2\multimodal_figure_results_audit_v2_summary.txt | candidates=3 | ambiguity=False
+
+FAIRNESS SOURCE
+----------------------------------------------------------------------------------------------------------------
+selected=D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_fairness\recomputed_fairness\fairness_per_seed_reference.csv | source_kind=per_seed | rows=40 | metric_columns={"spd": "spd", "eod": "eod", "di": "di"} | group_columns=["sensitive_attribute", "reference_group"]
+
+CLOSURE MATRIX
+----------------------------------------------------------------------------------------------------------------
+PASS: 02E repeated leakage-safe metrics resolved
+    D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\repeated_seed_metrics.csv
+PASS: 02F chronology audit resolved by verdict
+    D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_primary_metrics\feature_chronology_proxy_audit_v2\feature_proxy_audit_summary_v2.txt
+PASS: 03 fairness evidence parsed
+    D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_fairness\recomputed_fairness\fairness_per_seed_reference.csv
+PASS: 04 FID/SFD audit resolved by verdict
+    D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_fidelity\structured_frechet_audit\fidelity_summary.txt
+PASS: 04B generator audit resolved by verdict
+    D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_fidelity\actual_generative_architecture_verification\actual_generative_architecture_summary.txt
+PASS: 05 utility audit resolved by verdict
+    D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_utility\common_real_test\common_real_test_utility_summary.txt
+PASS: 06 scalability audit resolved by verdict
+    D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_scalability\scalability_audit_summary.txt
+PASS: 07 ablation audit resolved by verdict
+    D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_ablation\ablation_audit_summary.txt
+PASS: 08 statistics audit resolved by verdict
+    D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_statistics_v2\statistical_claim_audit_v2_summary.txt
+PASS: 09 multimodal/figure audit available
+    D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_multimodal_figure_audit_v2\multimodal_figure_results_audit_v2_summary.txt
+
+CONTROLLING CONCLUSIONS
+----------------------------------------------------------------------------------------------------------------
+1. The recovered project does not substantiate a verified structured GAN/VAE/diffusion hybrid generator.
+2. Historical FID/SFD, generator scalability, synthetic utility, generator ablations, multimodal clinical generalization, and generator-fairness claims are not reproducible from recovered artifacts.
+3. The strongest reproducible empirical evidence is the corrected leakage-safe structured-clinical classifier evaluation and descriptive fairness/stability analysis.
+4. Repeated holdouts reuse the same participant cohort and therefore support descriptive stability, not independent-replicate significance.
+5. Unsupported figures/results must be removed before final renumbering.
+6. Any future generator/ablation/privacy/scalability experiment must be labeled as new corrected work, not historical reconstruction.
+
+FINAL STAGE-10 V2 VERDICT
+----------------------------------------------------------------------------------------------------------------
+MASTER_EVIDENCE_PROVENANCE_RESOLVED_READY_FOR_SECTION_BY_SECTION_REWRITE
+
+NEXT ACTION
+----------------------------------------------------------------------------------------------------------------
+BEGIN_MANUSCRIPT_REWRITE_WITH_TITLE_THEN_ABSTRACT
+
+RECOMMENDED MANUSCRIPT ORDER
+----------------------------------------------------------------------------------------------------------------
+01. Title | REWRITE | Narrow title to reproducible structured-clinical scope; do not foreground scalability, multimodal validation, or a verified hybrid generator.
+02. Abstract | REWRITE | Remove unsupported FID, generator superiority, multimodal generalization, privacy guarantee, scalability, ablation, and significance claims; report only corrected reproducible classifier/fairness stability evidence.
+03. Introduction | REWRITE | Retain synthetic-data/fairness motivation cautiously, but distinguish motivation from demonstrated properties.
+04. Contributions | REWRITE | List only contributions directly supported by retained evidence.
+05. Methods - Framework | MAJOR_REWRITE | Separate conceptual framework from executable recovered implementation. Remove claims that non-recovered GAN/VAE/diffusion/fairness/scalability modules were executed.
+06. Methods - Dataset | RETAIN_AND_CLARIFY | Describe structured clinical dataset and original cohort size (193) exactly; do not call the clinical dataset multimodal.
+07. Methods - Preprocessing/Splits | REWRITE | Use split-first leakage-safe preprocessing and clearly distinguish corrected evaluation from invalid historical workflow.
+08. Methods - Fairness | REWRITE | Define favorable outcome, sensitive attribute, reference group, subgroup counts, SPD/EOD/DI formulas, and classifier scope.
+09. Methods - Statistics | REWRITE | Report repeated holdouts descriptively; no formal p-values or independent-replicate significance claims.
+10. Methods - Hardware | VERIFY | Retain only hardware tied to retained experiments.
+11. Results - Primary performance | REBUILD | Use corrected leakage-safe repeated-holdout performance; do not headline contaminated perfect scores.
+12. Results - Fairness | REBUILD | Use corrected classifier fairness metrics with descriptive interpretation.
+13. Results - Fidelity/FID | REMOVE | Remove unsupported FID/SFD values and generator-fidelity claims.
+14. Results - Synthetic utility | REMOVE_OR_REFRAME | Remove synthetic-vs-real superiority claims; retain only reproducible real reference if needed.
+15. Results - Scalability | REMOVE | Remove unsupported synthetic-N/runtime/memory generator-scale claims.
+16. Results - Ablations | REMOVE | Remove unreproducible generator/fusion/fairness/scalability ablation claims and plots.
+17. Results - Multimodal/Cross-domain | REMOVE | Remove unsupported ArSL→clinical/multimodal claims from the clinical evidence narrative.
+18. Figures | REBUILD_AND_RENUMBER | Remove unsupported figures first, then renumber retained figures sequentially and verify all references.
+19. Discussion | MAJOR_REWRITE | Discuss verified classifier/fairness stability, feature-timing limitation, missing generator provenance, absent privacy evaluation, and limited generalizability.
+20. Limitations | EXPAND | State cohort size, repeated-holdout dependence, chronology uncertainty, missing generator provenance, absence of validated multimodal/privacy claims, and non-reproducible ablations/scalability.
+21. Conclusion | REWRITE | Conclude only what is supported by leakage-safe structured-clinical evaluation.
+22. References | AUDIT | Verify every retained reference and DOI independently.
+
+SAFETY
+----------------------------------------------------------------------------------------------------------------
+New model training: NO
+Synthetic generation: NO
+New ablation creation: NO
+OCR: NO
+Image modification: NO
+Historical output modification: NO
+Manuscript modification: NO
+
+================================================================================================================

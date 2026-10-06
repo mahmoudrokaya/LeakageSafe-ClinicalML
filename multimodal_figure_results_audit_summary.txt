@@ -1,0 +1,89 @@
+====================================================================================================
+HFAGM - 09 MULTIMODAL / FIGURE / RESULTS CONSISTENCY AUDIT
+====================================================================================================
+
+Generated: 2026-09-03T14:32:48
+Selected manuscript: D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM.docx
+Manuscript SHA256: 8026dc4ea8a161bac162550d3d1e3165e623d0e835107b103c0e1f1f6d6a98ef
+
+SCOPE
+----------------------------------------------------------------------------------------------------
+Reviewer #3 C13-C15 and C22-C24: multimodal scope/reproducibility, duplicate or mismatched figures, confusion-matrix consistency, synthetic-N interpretation, and FID consistency.
+
+COUNTS
+----------------------------------------------------------------------------------------------------
+Project files scanned: 40402
+Manuscript multimodal-related sentences: 27
+Metric claim rows: 22
+Sample-size claim rows: 0
+Embedded image occurrences: 10
+Exact duplicate embedded-image groups: 0
+Multimodal implementation evidence rows: 89
+Strict executable clinical multimodal+fusion candidates: 0
+
+FINDINGS
+----------------------------------------------------------------------------------------------------
+C13-C14 | multimodal_scope_and_reproducibility | NOT_REPRODUCIBLE_FROM_RECOVERED_PROJECT
+    Evidence: Manuscript multimodal claim sentences=27; strict clinical multimodal implementation candidates=0; clinical image artifacts=0; unrelated image/sign-language artifacts=20035.
+    Manuscript action: Retain multimodal claims only if a concrete clinical multimodal implementation, aligned modalities, preprocessing, fusion, and result provenance can be demonstrated. Otherwise remove or explicitly reframe the work as structured clinical/tabular data.
+C15 | duplicate_figures_and_confusion_matrices | NO_EXACT_DUPLICATE_EMBEDDED_IMAGES_DETECTED
+    Evidence: Exact duplicate embedded-image groups=0.
+    Manuscript action: For each duplicate group, verify that repeated images are intentional. Remove duplicate confusion matrices and correct captions when a repeated image is presented as a different experiment or modality.
+C22 | accuracy_and_confusion_consistency | REVIEW_REQUIRED
+    Evidence: Distinct manuscript accuracy value strings detected=["0.72", "0.90", "0.93", "0.99"]. Confusion-related figure captions require cross-check against their source counts.
+    Manuscript action: Recalculate every accuracy stated next to a confusion matrix as (TP + TN) / N for the same evaluation condition. Retain only values tied to a documented evaluation condition.
+C23 | synthetic_sample_size_interpretation | NO_LARGE_SAMPLE_SIZE_CLAIM_DETECTED
+    Evidence: Detected sample-size claims=[].
+    Manuscript action: Any increase from the original clinical cohort to hundreds or thousands of synthetic rows must be described as synthetic computational workload, not an increase in independent patient information or effective clinical sample size.
+C24 | fid_consistency_and_reproducibility | UNSUPPORTED
+    Evidence: Distinct manuscript FID value strings=[]; prior audit marks FID/generator unsupported=1.
+    Manuscript action: Remove absolute FID claims unless the feature space and synthetic-data provenance are recovered. For structured data, do not call a raw-feature Fréchet distance conventional image FID.
+C13-C15,C22-C24 | overall_results_integrity | MAJOR_REFRAME_REQUIRED
+    Evidence: strict clinical multimodal implementation=0; duplicate groups=0; FID prior unsupported=1; caption issues=8.
+    Manuscript action: Consolidate final results around only reproducible structured-clinical evidence. Remove unsupported multimodal, generator, FID, scalability, and synthetic-sample-size interpretations unless direct provenance exists.
+
+VERIFICATION MATRIX
+----------------------------------------------------------------------------------------------------
+PASS: manuscript_resolved
+    HFAGM.docx
+PASS: figure_inventory_completed
+    Embedded image occurrences=10; figure captions=12.
+PASS: exact_duplicate_images_audited
+    Exact duplicate embedded-image groups=0.
+PASS: multimodal_claims_identified
+    Multimodal-related manuscript sentences identified=27.
+MISSING/NO: clinical_multimodal_implementation_verified
+    Strict executable clinical multimodal+fusion candidates=0.
+PASS: fid_claims_cross_checked
+    FID values=[]; prior unsupported/generator-missing evidence=1.
+PASS: sample_size_claims_inventory_completed
+    Sample-size claim rows=0.
+PASS: accuracy_metric_claims_inventory_completed
+    Accuracy claim rows=5.
+
+FINAL VERDICT
+----------------------------------------------------------------------------------------------------
+MULTIMODAL_AND_GENERATIVE_RESULT_CLAIMS_REQUIRE_REMOVAL_OR_MAJOR_REFRAMING
+
+NEXT ACTION
+----------------------------------------------------------------------------------------------------
+RETAIN_ONLY_REPRODUCIBLE_STRUCTURED_CLINICAL_RESULTS_AND_CORRECT_FIGURES_CAPTIONS_NUMBERS
+
+INTERPRETATION RULES
+----------------------------------------------------------------------------------------------------
+1. An image dataset elsewhere in the repository does not establish multimodal clinical evaluation.
+2. A multimodal claim is reproducible only when the clinical modalities, alignment, preprocessing, fusion operation, and result provenance are recoverable.
+3. Exact duplicate image hashes flag repeated embedded figures but do not by themselves prove an error; captions and experimental meaning must be checked.
+4. Accuracy associated with a confusion matrix must equal (TP + TN) / N for the same evaluation condition.
+5. Synthetic row count is computational workload and does not increase independent patient information beyond the original cohort.
+6. Historical FID values remain unsupported when no verified structured generator and feature-space provenance are recoverable.
+
+SAFETY
+----------------------------------------------------------------------------------------------------
+New training: NO
+Synthetic generation: NO
+OCR: NO
+Image modification: NO
+Historical project modification: NO
+
+====================================================================================================

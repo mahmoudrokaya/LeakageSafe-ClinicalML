@@ -1,0 +1,76 @@
+==============================================================================================================
+HFAGM - STAGE 10 MASTER EVIDENCE AND MANUSCRIPT RESTRUCTURING AUDIT
+==============================================================================================================
+
+Generated: 2026-09-03T18:04:45
+Project root: D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project
+Manuscript target: D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM.docx
+
+PURPOSE
+--------------------------------------------------------------------------------------------------------------
+Consolidate Stages 02E/02F, 03, 04/04B, 05, 06, 07, 08, and 09 into one controlling evidence table for manuscript revision.
+This stage does not create new experimental evidence. It determines what may be retained, rewritten, verified, or removed.
+
+COUNTS
+--------------------------------------------------------------------------------------------------------------
+Master evidence records: 21
+Critical records: 11
+Remove/remove-or-reframe records: 7
+Rewrite/verify/correct records: 13
+Restructuring actions: 22
+Reviewer comments mapped: 28
+Claim-policy rows: 14
+
+CONTROLLING CONCLUSIONS
+--------------------------------------------------------------------------------------------------------------
+1. The recovered project does not substantiate a verified structured GAN/VAE/diffusion hybrid generator.
+2. Historical FID/SFD, generator scalability, synthetic utility, generator ablations, multimodal clinical generalization, and generator-fairness claims are not reproducible from recovered artifacts.
+3. The strongest reproducible empirical evidence is the corrected leakage-safe structured-clinical classifier evaluation and its descriptive fairness/stability analysis.
+4. Repeated holdouts reuse the same participant cohort and therefore support descriptive stability, not independent-replicate significance.
+5. Figures and numbering must be rebuilt only after unsupported result figures are removed/reframed.
+6. Any future generator/ablation/privacy/scalability experiment must be labeled as a new corrected experiment, not historical reconstruction.
+
+FINAL STAGE-10 VERDICT
+--------------------------------------------------------------------------------------------------------------
+MAJOR_EVIDENCE_CONSTRAINED_MANUSCRIPT_RESTRUCTURING_REQUIRED
+
+NEXT ACTION
+--------------------------------------------------------------------------------------------------------------
+Use master_evidence_table.csv and manuscript_restructuring_plan.csv as the controlling source to rewrite the manuscript section-by-section.
+
+RECOMMENDED MANUSCRIPT ORDER
+--------------------------------------------------------------------------------------------------------------
+01. Title | REWRITE | Narrow title to the reproducible study scope. Do not foreground scalability, multimodal validation, or a verified hybrid generator unless independently supported.
+02. Abstract | REWRITE | Remove unsupported FID, generator superiority, multimodal generalization, privacy guarantee, scalability, ablation, and statistical-significance claims. Report only corrected reproducible classifier/fairness stability evidence.
+03. Introduction | REWRITE | Retain synthetic-data/fairness motivation cautiously, but distinguish motivation from demonstrated properties.
+04. Contributions | REWRITE | List only contributions directly supported by retained experiments and audits.
+05. Methods - Framework | MAJOR_REWRITE | Separate conceptual framework from executable recovered implementation. Remove claims that non-recovered GAN/VAE/diffusion/fairness/scalability modules were executed.
+06. Methods - Dataset | RETAIN_AND_CLARIFY | Describe the structured clinical dataset and original cohort size (193) exactly. Do not call the clinical dataset multimodal.
+07. Methods - Preprocessing/Splits | REWRITE | Use split-first leakage-safe preprocessing and clearly distinguish corrected evaluation from invalid historical pipeline behavior.
+08. Methods - Fairness | REWRITE | Define favorable outcome, sensitive attribute, reference group, subgroup counts, SPD/EOD/DI formulas, and interpret them as classifier fairness metrics.
+09. Methods - Statistics | REWRITE | Report repeated holdouts descriptively. No formal p-values or independent-replicate significance claims.
+10. Methods - Hardware | VERIFY | Retain only hardware tied to retained experiments.
+11. Results - Primary performance | REBUILD | Use corrected leakage-safe repeated-holdout performance. Do not headline contaminated perfect scores.
+12. Results - Fairness | REBUILD | Use corrected classifier fairness metrics with cautious descriptive interpretation.
+13. Results - Fidelity/FID | REMOVE | Remove unsupported FID/SFD values and generator-fidelity claims.
+14. Results - Synthetic utility | REMOVE_OR_REFRAME | Remove synthetic-vs-real superiority claims; retain only the reproducible real reference if needed.
+15. Results - Scalability | REMOVE | Remove unsupported N/runtime/memory generator-scale claims.
+16. Results - Ablations | REMOVE | Remove unreproducible historical generator/fusion/fairness/scalability ablation claims and plots.
+17. Results - Multimodal/Cross-domain | REMOVE | Remove unsupported ArSL→clinical/multimodal claims from the clinical evidence narrative.
+18. Figures | REBUILD_AND_RENUMBER | Remove unsupported figures first, then renumber retained figures sequentially and verify all textual references.
+19. Discussion | MAJOR_REWRITE | Discuss only verified classifier/fairness stability results, limitations of feature timing, lack of generator provenance, lack of formal privacy evaluation, and limited generalizability.
+20. Limitations | EXPAND | Explicitly state cohort size, repeated-holdout dependence, feature chronology uncertainty, missing generator provenance, absence of validated multimodal/generalization/privacy claims, and non-reproducible historical ablations/scalability.
+21. Conclusion | REWRITE | Conclude only what is supported by retained leakage-safe structured-clinical evaluation.
+22. References | AUDIT | Verify every retained reference and DOI independently.
+
+SAFETY
+--------------------------------------------------------------------------------------------------------------
+New model training: NO
+Synthetic generation: NO
+New ablation creation: NO
+OCR: NO
+Image modification: NO
+Historical output modification: NO
+Manuscript modification: NO
+
+==============================================================================================================

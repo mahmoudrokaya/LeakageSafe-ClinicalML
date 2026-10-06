@@ -1,0 +1,23 @@
+﻿order,section,action,target,evidence_ids
+1,Title,REWRITE,"Narrow title to reproducible structured-clinical scope; do not foreground scalability, multimodal validation, or a verified hybrid generator.","E04B-01,E06-01,E09-01,ESTR-07"
+2,Abstract,REWRITE,"Remove unsupported FID, generator superiority, multimodal generalization, privacy guarantee, scalability, ablation, and significance claims; report only corrected reproducible classifier/fairness stability evidence.","E02E-01,E03-01,E04-01,E04B-01,E05-01,E06-01,E07-01,E08-01,E09-01,ESTR-06"
+3,Introduction,REWRITE,"Retain synthetic-data/fairness motivation cautiously, but distinguish motivation from demonstrated properties.","E04B-01,ESTR-06,ESTR-07"
+4,Contributions,REWRITE,List only contributions directly supported by retained evidence.,"E02E-01,E03-01,E08-01,ESTR-07"
+5,Methods - Framework,MAJOR_REWRITE,Separate conceptual framework from executable recovered implementation. Remove claims that non-recovered GAN/VAE/diffusion/fairness/scalability modules were executed.,"E04B-01,ESTR-01,ESTR-02"
+6,Methods - Dataset,RETAIN_AND_CLARIFY,Describe structured clinical dataset and original cohort size (193) exactly; do not call the clinical dataset multimodal.,"E09-01,E09-04"
+7,Methods - Preprocessing/Splits,REWRITE,Use split-first leakage-safe preprocessing and clearly distinguish corrected evaluation from invalid historical workflow.,"E02E-01,E02F-01,E05-01"
+8,Methods - Fairness,REWRITE,"Define favorable outcome, sensitive attribute, reference group, subgroup counts, SPD/EOD/DI formulas, and classifier scope.",E03-01
+9,Methods - Statistics,REWRITE,Report repeated holdouts descriptively; no formal p-values or independent-replicate significance claims.,E08-01
+10,Methods - Hardware,VERIFY,Retain only hardware tied to retained experiments.,ESTR-04
+11,Results - Primary performance,REBUILD,Use corrected leakage-safe repeated-holdout performance; do not headline contaminated perfect scores.,"E02E-01,E05-01"
+12,Results - Fairness,REBUILD,Use corrected classifier fairness metrics with descriptive interpretation.,"E03-01,E08-01"
+13,Results - Fidelity/FID,REMOVE,Remove unsupported FID/SFD values and generator-fidelity claims.,"E04-01,E04B-01"
+14,Results - Synthetic utility,REMOVE_OR_REFRAME,Remove synthetic-vs-real superiority claims; retain only reproducible real reference if needed.,E05-01
+15,Results - Scalability,REMOVE,Remove unsupported synthetic-N/runtime/memory generator-scale claims.,E06-01
+16,Results - Ablations,REMOVE,Remove unreproducible generator/fusion/fairness/scalability ablation claims and plots.,E07-01
+17,Results - Multimodal/Cross-domain,REMOVE,Remove unsupported ArSL→clinical/multimodal claims from the clinical evidence narrative.,E09-01
+18,Figures,REBUILD_AND_RENUMBER,"Remove unsupported figures first, then renumber retained figures sequentially and verify all references.","E09-02,E09-03"
+19,Discussion,MAJOR_REWRITE,"Discuss verified classifier/fairness stability, feature-timing limitation, missing generator provenance, absent privacy evaluation, and limited generalizability.","E02F-01,E03-01,E04B-01,E06-01,E07-01,E08-01,E09-01,ESTR-06,ESTR-07"
+20,Limitations,EXPAND,"State cohort size, repeated-holdout dependence, chronology uncertainty, missing generator provenance, absence of validated multimodal/privacy claims, and non-reproducible ablations/scalability.","E02F-01,E04B-01,E06-01,E07-01,E08-01,E09-01,ESTR-06"
+21,Conclusion,REWRITE,Conclude only what is supported by leakage-safe structured-clinical evaluation.,"E02E-01,E03-01,E08-01,ESTR-07"
+22,References,AUDIT,Verify every retained reference and DOI independently.,ESTR-08
