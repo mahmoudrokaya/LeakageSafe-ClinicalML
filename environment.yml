@@ -1,0 +1,18 @@
+name: leakagesafe-clinicalml
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - joblib
+  - pyyaml
+  - pip:
+      - imbalanced-learn
