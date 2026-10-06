@@ -1,0 +1,11 @@
+﻿common_columns,dataset_a,dataset_b,exact_same_column_set,exact_same_order,n_columns_a,n_columns_b,only_a,only_b
+54,raw_csv,preprocessed,1,1,55,55,,
+54,raw_csv,balanced,1,1,55,55,,
+50,raw_csv,X_train,0,0,55,51,gender; nationality; patient_id; status,
+50,raw_csv,X_test,0,0,55,51,gender; nationality; patient_id; status,
+54,preprocessed,balanced,1,1,55,55,,
+50,preprocessed,X_train,0,0,55,51,gender; nationality; patient_id; status,
+50,preprocessed,X_test,0,0,55,51,gender; nationality; patient_id; status,
+50,balanced,X_train,0,0,55,51,gender; nationality; patient_id; status,
+50,balanced,X_test,0,0,55,51,gender; nationality; patient_id; status,
+50,X_train,X_test,1,1,51,51,,

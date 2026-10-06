@@ -1,0 +1,7 @@
+﻿metric,unbalanced_training,training_only_oversampled,delta_oversampled_minus_unbalanced
+accuracy,1.0,1.0,0.0
+precision,1.0,1.0,0.0
+recall_sensitivity,1.0,1.0,0.0
+specificity,1.0,1.0,0.0
+f1,1.0,1.0,0.0
+roc_auc,1.0,1.0,0.0
