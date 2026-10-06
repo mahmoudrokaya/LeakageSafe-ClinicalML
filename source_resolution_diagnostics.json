@@ -1,0 +1,172 @@
+{
+  "stage02e_repeated_metrics": {
+    "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_primary_metrics\\repeated_leakage_safe_evaluation\\repeated_seed_metrics.csv",
+    "available": true,
+    "rows": 20,
+    "conditions": {
+      "training_only_oversampled": {
+        "accuracy": {
+          "n": 10,
+          "mean": 0.976923076923077,
+          "sd": 0.022451154763356716,
+          "median": 0.9743589743589745,
+          "min": 0.9487179487179488,
+          "max": 1.0
+        },
+        "precision": {
+          "n": 10,
+          "mean": 0.9804761904761904,
+          "sd": 0.03376142341878202,
+          "median": 1.0,
+          "min": 0.9047619047619048,
+          "max": 1.0
+        },
+        "sensitivity": {
+          "n": 10,
+          "mean": 0.9736842105263159,
+          "sd": 0.044728241347305124,
+          "median": 1.0,
+          "min": 0.8947368421052632,
+          "max": 1.0
+        },
+        "specificity": {
+          "n": 10,
+          "mean": 0.9800000000000001,
+          "sd": 0.03496029493900505,
+          "median": 1.0,
+          "min": 0.9,
+          "max": 1.0
+        },
+        "f1": {
+          "n": 10,
+          "mean": 0.9760579810579811,
+          "sd": 0.023537255050333442,
+          "median": 0.9743589743589745,
+          "min": 0.9444444444444444,
+          "max": 1.0
+        },
+        "roc_auc": {
+          "n": 10,
+          "mean": 0.998421052631579,
+          "sd": 0.003328713326493008,
+          "median": 1.0,
+          "min": 0.9894736842105264,
+          "max": 1.0
+        }
+      },
+      "unbalanced_training": {
+        "accuracy": {
+          "n": 10,
+          "mean": 0.9820512820512821,
+          "sd": 0.021109553906373413,
+          "median": 0.9871794871794872,
+          "min": 0.9487179487179488,
+          "max": 1.0
+        },
+        "precision": {
+          "n": 10,
+          "mean": 0.9804761904761904,
+          "sd": 0.03376142341878202,
+          "median": 1.0,
+          "min": 0.9047619047619048,
+          "max": 1.0
+        },
+        "sensitivity": {
+          "n": 10,
+          "mean": 0.9842105263157895,
+          "sd": 0.035523608300555405,
+          "median": 1.0,
+          "min": 0.8947368421052632,
+          "max": 1.0
+        },
+        "specificity": {
+          "n": 10,
+          "mean": 0.9800000000000001,
+          "sd": 0.03496029493900505,
+          "median": 1.0,
+          "min": 0.9,
+          "max": 1.0
+        },
+        "f1": {
+          "n": 10,
+          "mean": 0.9816135366135367,
+          "sd": 0.021733701367630136,
+          "median": 0.9871794871794872,
+          "min": 0.9444444444444444,
+          "max": 1.0
+        },
+        "roc_auc": {
+          "n": 10,
+          "mean": 0.9986842105263157,
+          "sd": 0.0033402513622209887,
+          "median": 1.0,
+          "min": 0.9894736842105264,
+          "max": 1.0
+        }
+      }
+    }
+  },
+  "stage02f_feature_chronology": {
+    "path": null,
+    "available": false,
+    "matched_terms": [],
+    "text_excerpt": ""
+  },
+  "stage03_fairness": {
+    "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_fairness\\recomputed_fairness\\fairness_summary_reference.csv",
+    "available": true,
+    "rows": 4,
+    "summary": {}
+  },
+  "stage04_structured_frechet": {
+    "path": null,
+    "available": false,
+    "matched_terms": [],
+    "text_excerpt": ""
+  },
+  "stage04b_generator": {
+    "path": null,
+    "available": false,
+    "matched_terms": [],
+    "text_excerpt": ""
+  },
+  "stage05_utility": {
+    "path": null,
+    "available": false,
+    "matched_terms": [],
+    "text_excerpt": ""
+  },
+  "stage06_scalability": {
+    "path": null,
+    "available": false,
+    "matched_terms": [],
+    "text_excerpt": ""
+  },
+  "stage07_ablation": {
+    "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_ablation\\ablation_audit_summary.txt",
+    "available": true,
+    "matched_terms": [
+      "ABLATION_STUDY_NOT_REPRODUCIBLE_FROM_RECOVERED_ARTIFACTS",
+      "REMOVE_UNSUPPORTED_ABLATION_CLAIMS"
+    ],
+    "text_excerpt": "--------------------------- NOT_REPRODUCIBLE: Full HGF compared against GAN-only NOT_REPRODUCIBLE: Full HGF compared against VAE-only NOT_REPRODUCIBLE: Full HGF compared against diffusion-only NOT_REPRODUCIBLE: Adaptive fusion compared against static fusion NOT_REPRODUCIBLE: Fairness ON compared against fairness OFF NOT_REPRODUCIBLE: Scalability ON compared against scalability OFF FINAL VERDICT ---------------------------------------------------------------------------------------------------- ABLATION_STUDY_NOT_REPRODUCIBLE_FROM_RECOVERED_ARTIFACTS NEXT ACTION ---------------------------------------------------------------------------------------------------- REMOVE_UNSUPPORTED_ABLATION_CLAIMS MANUSCRIPT ACTION ---------------------------------------------------------------------------------------------------- Remove historical claims comparing full HGF with GAN-only, VAE-only, diffusion-only, static/adaptive fusion, fairness on/off, or scalability on/off unless independently preserved evidence is recovered. Do not generate replacement ablations and present them as the original study. INTERPRETATION ---------------------------------------------------------------------------------------------------- Ablation evidence requires an actual implemented variant plus a corresponding historical result or preserved trained artifact. Textual mentions, proposed methodology diagrams, or parameter names alone do not establish that an ablation experiment was executed. Classifier hyperparameter variants must not be relabeled as GAN/VAE/diffusion generator ablations. SAFETY CONFIRMATION -------------------------------------------------------------------------------------------------"
+  },
+  "stage08_statistics": {
+    "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_statistics_v2\\statistical_claim_audit_v2_summary.txt",
+    "available": true,
+    "matched_terms": [
+      "DESCRIPTIVE_STABILITY_EVIDENCE_VALID_FORMAL_SIGNIFICANCE_NOT_SUPPORTED",
+      "FORMAL_SIGNIFICANCE_NOT_SUPPORTED"
+    ],
+    "text_excerpt": "identifiers, metric, and seed. PASS: inferential_confidence_intervals_removed Only mean, SD, median, minimum, and maximum are reported. PASS: formal_p_values_not_generated No p-value or inferential significance test is produced. MISSING/NO: independent_experimental_replicates_available Repeated holdouts reuse the same 193 participants and are not independent datasets. FINAL VERDICT ---------------------------------------------------------------------------------------------------- DESCRIPTIVE_STABILITY_EVIDENCE_VALID_FORMAL_SIGNIFICANCE_NOT_SUPPORTED NEXT ACTION ---------------------------------------------------------------------------------------------------- USE_MEAN_SD_MIN_MAX_AND_REMOVE_UNSUPPORTED_SIGNIFICANCE_WORDING MANUSCRIPT ACTION ---------------------------------------------------------------------------------------------------- Report the corrected 02E repeated-holdout classifier results using descriptive mean ± SD, optionally accompanied by median and range. Treat seed-level differences as descriptive only. Do not claim statistically significant superiority from these dependent repeated holdouts. RECOMMENDED REPORTING STYLE ---------------------------------------------------------------------------------------------------- Preferred: 'Across ten repeated leakage-safe stratified holdouts, performance remained stable, with ROC-AUC reported as mean ± SD.' Avoid: 'The method significantly outperformed the baseline' unless a separate valid inferential design is available. IMPORTANT LIMITATION ---------------------------------------------------------------------------------------------------- Repeated resampling does not increase the independent"
+  },
+  "stage09": {
+    "summary_available": true,
+    "findings_rows": 6,
+    "verdict_rows": 1,
+    "figure_rows": 10,
+    "duplicate_number_rows": 3,
+    "metric_rows": 11,
+    "multimodal_rows": 27
+  }
+}

@@ -1,0 +1,1594 @@
+{
+  "resolved_stage_sources": {
+    "02F_v2": {
+      "resolved": true,
+      "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_primary_metrics\\feature_chronology_proxy_audit_v2\\feature_proxy_audit_summary_v2.txt",
+      "matched_terms": [
+        "NO_DIRECT_TEMPORAL_LEAKAGE_EVIDENCE_BUT_HIGHLY_PREDICTIVE_FEATURE_TIMING_REMAINS_UNDOCUMENTED"
+      ],
+      "candidate_count": 2,
+      "ambiguity": false,
+      "all_candidates": [
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_primary_metrics\\feature_chronology_proxy_audit_v2\\feature_proxy_audit_summary_v2.txt",
+          "matched_terms": [
+            "NO_DIRECT_TEMPORAL_LEAKAGE_EVIDENCE_BUT_HIGHLY_PREDICTIVE_FEATURE_TIMING_REMAINS_UNDOCUMENTED"
+          ],
+          "score": 135,
+          "mtime": 1788372380.9521542
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_primary_metrics\\feature_chronology_proxy_audit_v2\\feature_proxy_audit_verdict_v2.csv",
+          "matched_terms": [
+            "NO_DIRECT_TEMPORAL_LEAKAGE_EVIDENCE_BUT_HIGHLY_PREDICTIVE_FEATURE_TIMING_REMAINS_UNDOCUMENTED"
+          ],
+          "score": 105,
+          "mtime": 1788372380.9485672
+        }
+      ],
+      "text_excerpt": "-------------------------- NONE DETECTED FROM FILTERED GENUINE PROJECT DOCUMENTATION. HIGH-PREDICTIVE FEATURES WITH UNKNOWN TIMING ---------------------------------------------------------------------------------------------------- Age: directionless repeated AUC=0.954605; timing=UNKNOWN BLOOD UREA: directionless repeated AUC=0.927105; timing=UNKNOWN PT: directionless repeated AUC=0.904605; timing=UNKNOWN ALBUMIN: directionless repeated AUC=0.902105; timing=UNKNOWN AUTOMATED VERDICT ---------------------------------------------------------------------------------------------------- Verdict: NO_DIRECT_TEMPORAL_LEAKAGE_EVIDENCE_BUT_HIGHLY_PREDICTIVE_FEATURE_TIMING_REMAINS_UNDOCUMENTED Manuscript use: HIGH_CLASSIFICATION_RESULTS_MAY_BE_REPORTED_AS_INTERNAL_ASSOCIATION_WITH_TIMING_LIMITATION INTERPRETATION ---------------------------------------------------------------------------------------------------- High predictive performance alone is not evidence of leakage. A feature is considered a temporal-risk candidate only when genuine project documentation places it after baseline, during later clinical evolution, after outcome, or derives it from the outcome. Where timing remains undocumented, the appropriate response is to state the limitation and avoid claiming prospective prediction unless the source documentation can verify the measurement time. PRIMARY OUTPUTS ---------------------------------------------------------------------------------------------------- scanner_file_inclusion_audit.csv feature_timing_evidence_v2.csv feature_chronology_classification_v2.csv feature_proxy_review_priority_v2.csv univariate_descriptive_statistics_v2.csv single_feature_repeated_summary_v2.csv single_feature_repeated_seed_metrics_v2.csv feature_proxy_audit_verdict_v2.csv feature_proxy_audit_provenance_v2.csv ===================================================================================================="
+    },
+    "04": {
+      "resolved": true,
+      "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_fidelity\\structured_frechet_audit\\fidelity_summary.txt",
+      "matched_terms": [
+        "NO_REPRODUCIBLE_FID_OR_STRUCTURED_FRECHET_RESULT_AVAILABLE"
+      ],
+      "candidate_count": 4,
+      "ambiguity": false,
+      "all_candidates": [
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_fidelity\\structured_frechet_audit\\fidelity_summary.txt",
+          "matched_terms": [
+            "NO_REPRODUCIBLE_FID_OR_STRUCTURED_FRECHET_RESULT_AVAILABLE"
+          ],
+          "score": 130,
+          "mtime": 1788375296.5720053
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_multimodal_figure_audit_v2\\prior_audit_crosscheck_v2.csv",
+          "matched_terms": [
+            "NO_REPRODUCIBLE_FID_OR_STRUCTURED_FRECHET_RESULT_AVAILABLE"
+          ],
+          "score": 105,
+          "mtime": 1788446414.1559372
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_multimodal_figure_audit\\prior_audit_crosscheck.csv",
+          "matched_terms": [
+            "NO_REPRODUCIBLE_FID_OR_STRUCTURED_FRECHET_RESULT_AVAILABLE"
+          ],
+          "score": 105,
+          "mtime": 1788435168.680258
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_fidelity\\structured_frechet_audit\\fidelity_terminology_verdict.csv",
+          "matched_terms": [
+            "NO_REPRODUCIBLE_FID_OR_STRUCTURED_FRECHET_RESULT_AVAILABLE"
+          ],
+          "score": 100,
+          "mtime": 1788375296.566485
+        }
+      ],
+      "text_excerpt": "------------------------------------------------------------------------------ FID_HGF_OR_BASELINE_1_5: reported value=1.5; historical context hits=5 FID_LIGHTWEIGHT_1_6: reported value=1.6; historical context hits=6 FID_LIGHTWEIGHT_3_2: reported value=3.2; historical context hits=6 A textual or hard-coded occurrence of 1.5, 1.6, or 3.2 does not validate the value. Only a value recomputed from a provenanced real/synthetic dataset pair is considered independently verified. TERMINOLOGY VERDICT ---------------------------------------------------------------------------------------------------- NO_REPRODUCIBLE_FID_OR_STRUCTURED_FRECHET_RESULT_AVAILABLE MANUSCRIPT ACTION ---------------------------------------------------------------------------------------------------- Remove unsupported absolute FID values from the structured-data results until an actual synthetic dataset with verified provenance is available. Do not recreate 1.5, 1.6, or 3.2 from the manuscript. NUMERICAL SELF-CHECKS ---------------------------------------------------------------------------------------------------- identity_real_vs_real: value=0; status=PASS row_permutation_invariance: value=0; status=PASS PRIMARY OUTPUTS ---------------------------------------------------------------------------------------------------- fidelity_code_evidence.csv historical_fidelity_value_evidence.csv synthetic_candidate_inventory.csv synthetic_candidate_feature_mapping.csv synthetic_array_candidate_inventory.csv real_feature_mapping.csv real_numeric_conversion_audit.csv synthetic_numeric_conversion_audit.csv structured_feature_space_audit.csv structured_frechet_self_checks.csv structured_frechet_results.csv covariance_diagnostics.csv historical_claim_comparison.csv fidelity_terminology_verdict.csv fidelity_provenance.csv ===================================================================================================="
+    },
+    "04B_v2": {
+      "resolved": true,
+      "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_fidelity\\actual_generative_architecture_verification\\actual_generative_architecture_summary.txt",
+      "matched_terms": [
+        "CLASSIFIER_OR_ENCODER_ONLY_NO_STRUCTURED_GENERATOR",
+        "DO_NOT_REGENERATE_REMOVE_UNSUPPORTED_GENERATIVE_FID_CLAIMS"
+      ],
+      "candidate_count": 5,
+      "ambiguity": false,
+      "all_candidates": [
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_fidelity\\actual_generative_architecture_verification\\actual_generative_architecture_summary.txt",
+          "matched_terms": [
+            "CLASSIFIER_OR_ENCODER_ONLY_NO_STRUCTURED_GENERATOR",
+            "DO_NOT_REGENERATE_REMOVE_UNSUPPORTED_GENERATIVE_FID_CLAIMS"
+          ],
+          "score": 230,
+          "mtime": 1788378966.2650483
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_multimodal_figure_audit_v2\\prior_audit_crosscheck_v2.csv",
+          "matched_terms": [
+            "CLASSIFIER_OR_ENCODER_ONLY_NO_STRUCTURED_GENERATOR",
+            "DO_NOT_REGENERATE_REMOVE_UNSUPPORTED_GENERATIVE_FID_CLAIMS"
+          ],
+          "score": 205,
+          "mtime": 1788446414.1559372
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_multimodal_figure_audit\\prior_audit_crosscheck.csv",
+          "matched_terms": [
+            "CLASSIFIER_OR_ENCODER_ONLY_NO_STRUCTURED_GENERATOR",
+            "DO_NOT_REGENERATE_REMOVE_UNSUPPORTED_GENERATIVE_FID_CLAIMS"
+          ],
+          "score": 205,
+          "mtime": 1788435168.680258
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_fidelity\\actual_generative_architecture_verification\\actual_generative_architecture_verdict.csv",
+          "matched_terms": [
+            "CLASSIFIER_OR_ENCODER_ONLY_NO_STRUCTURED_GENERATOR",
+            "DO_NOT_REGENERATE_REMOVE_UNSUPPORTED_GENERATIVE_FID_CLAIMS"
+          ],
+          "score": 200,
+          "mtime": 1788378966.2619886
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_fidelity\\actual_generative_architecture_verification\\verification_provenance.csv",
+          "matched_terms": [
+            "CLASSIFIER_OR_ENCODER_ONLY_NO_STRUCTURED_GENERATOR"
+          ],
+          "score": 100,
+          "mtime": 1788378966.2650483
+        }
+      ],
+      "text_excerpt": "or_output No explicit 51-dimensional generative output found. MISSING: latent_dimension_evidence No latent dimension assignment found. MISSING: latent_or_noise_sampling No genuine latent/noise sampling found. MISSING: explicit_generation_call No explicit generative method call found. MISSING: plausible_trained_generative_checkpoint 0 plausible generative checkpoint(s). MISSING: checkpoint_linked_to_verified_generative_code 0 valid checkpoint/code link(s). FINAL VERDICT ---------------------------------------------------------------------------------------------------- CLASSIFIER_OR_ENCODER_ONLY_NO_STRUCTURED_GENERATOR NEXT ACTION ---------------------------------------------------------------------------------------------------- DO_NOT_REGENERATE_REMOVE_UNSUPPORTED_GENERATIVE_FID_CLAIMS MANUSCRIPT CONSEQUENCE ---------------------------------------------------------------------------------------------------- Recovered implementation supports classifier/encoder/graph processing rather than a verified structured synthetic generator. The manuscript's structured generative-model claims and FID values are not supported by the recovered implementation. SAFETY CONFIRMATION ---------------------------------------------------------------------------------------------------- New training performed: NO New inference performed: NO New synthetic data generated: NO Arbitrary project modules executed: NO Unknown pickle/joblib models loaded: NO PRIMARY OUTPUTS ---------------------------------------------------------------------------------------------------- python_file_inventory.csv class_architecture_inventory.csv function_inventory.csv generative_semantic_evidence.csv gan_evidence.csv vae_evidence.csv diffusion_evidence.csv hybrid_integration_evidence.csv classifier_graph_evidence.csv structured_output_evidence.csv checkpoint_inventory_v2.csv checkpoint_generative_linkage.csv generation_save_evidence.csv architecture_verification_matrix.csv actual_g"
+    },
+    "05": {
+      "resolved": true,
+      "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_utility\\common_real_test\\common_real_test_utility_summary.txt",
+      "matched_terms": [
+        "SYNTHETIC_UTILITY_NOT_RECOMPUTABLE_FROM_RECOVERED_ARTIFACTS"
+      ],
+      "candidate_count": 2,
+      "ambiguity": false,
+      "all_candidates": [
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_utility\\common_real_test\\common_real_test_utility_summary.txt",
+          "matched_terms": [
+            "SYNTHETIC_UTILITY_NOT_RECOMPUTABLE_FROM_RECOVERED_ARTIFACTS"
+          ],
+          "score": 130,
+          "mtime": 1788379301.4184735
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_utility\\common_real_test\\utility_verdict.csv",
+          "matched_terms": [
+            "SYNTHETIC_UTILITY_NOT_RECOMPUTABLE_FROM_RECOVERED_ARTIFACTS"
+          ],
+          "score": 100,
+          "mtime": 1788379301.4129698
+        }
+      ],
+      "text_excerpt": "NG AUDIT ---------------------------------------------------------------------------------------------------- Potential labeled 51-feature synthetic candidates: 0 Candidates passing strict training-only provenance: 0 Synthetic conditions evaluated: 0 No recovered synthetic training dataset satisfied the required provenance conditions. Therefore no real-vs-synthetic downstream utility difference is reported. This script intentionally does NOT generate replacement synthetic data. FINAL VERDICT ---------------------------------------------------------------------------------------------------- SYNTHETIC_UTILITY_NOT_RECOMPUTABLE_FROM_RECOVERED_ARTIFACTS MANUSCRIPT ACTION ---------------------------------------------------------------------------------------------------- Retain the leakage-safe real-data reference benchmark, but remove historical real-vs-synthetic downstream-utility claims because no synthetic training dataset with training-only provenance is recoverable. Do not substitute newly generated synthetic data into the historical comparison. REVIEWER RESPONSE CONSEQUENCE ---------------------------------------------------------------------------------------------------- Explain that the revised audit established a common locked real-test protocol, but the submitted synthetic conditions could not be reproduced from recoverable training-only synthetic artifacts; unsupported historical comparisons are therefore removed. INTERPRETATION LIMITATIONS ---------------------------------------------------------------------------------------------------- This is one locked real-test experiment. It establishes a controlled comparison framework but should not be used by itself to claim statistical significance. Repeated-seed uncertainty or paired resampling statistics must be handled separately if a valid synthetic condition becomes available. The 193-patient real dataset remains the independent information source; synthetic sample count does not increase the number of"
+    },
+    "06": {
+      "resolved": true,
+      "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_scalability\\scalability_audit_summary.txt",
+      "matched_terms": [
+        "GENERATIVE_SCALABILITY_NOT_REPRODUCIBLE_FROM_RECOVERED_ARTIFACTS",
+        "REMOVE_UNSUPPORTED_RUNTIME_MEMORY_AND_SYNTHETIC_SCALE_CLAIMS"
+      ],
+      "candidate_count": 5,
+      "ambiguity": false,
+      "all_candidates": [
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_scalability\\scalability_audit_summary.txt",
+          "matched_terms": [
+            "GENERATIVE_SCALABILITY_NOT_REPRODUCIBLE_FROM_RECOVERED_ARTIFACTS",
+            "REMOVE_UNSUPPORTED_RUNTIME_MEMORY_AND_SYNTHETIC_SCALE_CLAIMS"
+          ],
+          "score": 235,
+          "mtime": 1788380274.4452944
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_multimodal_figure_audit_v2\\prior_audit_crosscheck_v2.csv",
+          "matched_terms": [
+            "GENERATIVE_SCALABILITY_NOT_REPRODUCIBLE_FROM_RECOVERED_ARTIFACTS",
+            "REMOVE_UNSUPPORTED_RUNTIME_MEMORY_AND_SYNTHETIC_SCALE_CLAIMS"
+          ],
+          "score": 205,
+          "mtime": 1788446414.1559372
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_multimodal_figure_audit\\prior_audit_crosscheck.csv",
+          "matched_terms": [
+            "GENERATIVE_SCALABILITY_NOT_REPRODUCIBLE_FROM_RECOVERED_ARTIFACTS",
+            "REMOVE_UNSUPPORTED_RUNTIME_MEMORY_AND_SYNTHETIC_SCALE_CLAIMS"
+          ],
+          "score": 205,
+          "mtime": 1788435168.680258
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_scalability\\scalability_verdict.csv",
+          "matched_terms": [
+            "GENERATIVE_SCALABILITY_NOT_REPRODUCIBLE_FROM_RECOVERED_ARTIFACTS",
+            "REMOVE_UNSUPPORTED_RUNTIME_MEMORY_AND_SYNTHETIC_SCALE_CLAIMS"
+          ],
+          "score": 200,
+          "mtime": 1788380274.4357483
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_scalability\\scalability_provenance.csv",
+          "matched_terms": [
+            "GENERATIVE_SCALABILITY_NOT_REPRODUCIBLE_FROM_RECOVERED_ARTIFACTS"
+          ],
+          "score": 100,
+          "mtime": 1788380274.4442945
+        }
+      ],
+      "text_excerpt": "untime evidence row(s) linked to verified generator code. MISSING: generator_gpu_memory_measurements 0 memory evidence row(s) linked to verified generator code. MISSING: workload_N_500_provenance No verified generator workload evidence for N=500. MISSING: workload_N_100000_provenance No verified generator workload evidence for N=100000. PASS: historical_hardware_documentation 92 hardware-related evidence row(s) found; manual consistency assessment still required. FINAL VERDICT ---------------------------------------------------------------------------------------------------- GENERATIVE_SCALABILITY_NOT_REPRODUCIBLE_FROM_RECOVERED_ARTIFACTS NEXT ACTION ---------------------------------------------------------------------------------------------------- REMOVE_UNSUPPORTED_RUNTIME_MEMORY_AND_SYNTHETIC_SCALE_CLAIMS MANUSCRIPT ACTION ---------------------------------------------------------------------------------------------------- Remove quantitative synthetic-generation scalability claims, including N=500 to N=100000, approximately 25% faster execution, 20-30% lower GPU memory, and any conflicting +40% memory claim, unless independently documented raw measurements are recovered. Do not replace these measurements with classifier or preprocessing benchmarks. INTERPRETATION ---------------------------------------------------------------------------------------------------- A larger requested synthetic N would represent computational workload only. It would not increase the number of independent clinical observations beyond the original 193 patients. Classifier inference speed, graph processing speed, or preprocessing speed must not be presented as synthetic-data generation scalability. Any percentage reduction in runtime or GPU memory requires matched raw measurements under the same hardware, batch size, software environment, and workload. SAFETY CONFIRMATION ---------------------------------------------------------------------------------------------"
+    },
+    "07": {
+      "resolved": true,
+      "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_ablation\\ablation_audit_summary.txt",
+      "matched_terms": [
+        "ABLATION_STUDY_NOT_REPRODUCIBLE_FROM_RECOVERED_ARTIFACTS",
+        "REMOVE_UNSUPPORTED_ABLATION_CLAIMS"
+      ],
+      "candidate_count": 7,
+      "ambiguity": false,
+      "all_candidates": [
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_ablation\\ablation_audit_summary.txt",
+          "matched_terms": [
+            "ABLATION_STUDY_NOT_REPRODUCIBLE_FROM_RECOVERED_ARTIFACTS",
+            "REMOVE_UNSUPPORTED_ABLATION_CLAIMS"
+          ],
+          "score": 235,
+          "mtime": 1788380929.6051989
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_multimodal_figure_audit_v2\\prior_audit_crosscheck_v2.csv",
+          "matched_terms": [
+            "ABLATION_STUDY_NOT_REPRODUCIBLE_FROM_RECOVERED_ARTIFACTS",
+            "REMOVE_UNSUPPORTED_ABLATION_CLAIMS"
+          ],
+          "score": 205,
+          "mtime": 1788446414.1559372
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_multimodal_figure_audit\\prior_audit_crosscheck.csv",
+          "matched_terms": [
+            "ABLATION_STUDY_NOT_REPRODUCIBLE_FROM_RECOVERED_ARTIFACTS",
+            "REMOVE_UNSUPPORTED_ABLATION_CLAIMS"
+          ],
+          "score": 205,
+          "mtime": 1788435168.680258
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_master_evidence\\source_resolution_diagnostics.json",
+          "matched_terms": [
+            "ABLATION_STUDY_NOT_REPRODUCIBLE_FROM_RECOVERED_ARTIFACTS",
+            "REMOVE_UNSUPPORTED_ABLATION_CLAIMS"
+          ],
+          "score": 200,
+          "mtime": 1788447885.52328
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_master_evidence\\source_resolution_table.csv",
+          "matched_terms": [
+            "ABLATION_STUDY_NOT_REPRODUCIBLE_FROM_RECOVERED_ARTIFACTS",
+            "REMOVE_UNSUPPORTED_ABLATION_CLAIMS"
+          ],
+          "score": 200,
+          "mtime": 1788447885.52328
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_ablation\\ablation_verdict.csv",
+          "matched_terms": [
+            "ABLATION_STUDY_NOT_REPRODUCIBLE_FROM_RECOVERED_ARTIFACTS",
+            "REMOVE_UNSUPPORTED_ABLATION_CLAIMS"
+          ],
+          "score": 200,
+          "mtime": 1788380929.6032763
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_ablation\\ablation_provenance.csv",
+          "matched_terms": [
+            "ABLATION_STUDY_NOT_REPRODUCIBLE_FROM_RECOVERED_ARTIFACTS"
+          ],
+          "score": 100,
+          "mtime": 1788380929.6051989
+        }
+      ],
+      "text_excerpt": "PAIRWISE ABLATION CLAIMS ---------------------------------------------------------------------------------------------------- NOT_REPRODUCIBLE: Full HGF compared against GAN-only NOT_REPRODUCIBLE: Full HGF compared against VAE-only NOT_REPRODUCIBLE: Full HGF compared against diffusion-only NOT_REPRODUCIBLE: Adaptive fusion compared against static fusion NOT_REPRODUCIBLE: Fairness ON compared against fairness OFF NOT_REPRODUCIBLE: Scalability ON compared against scalability OFF FINAL VERDICT ---------------------------------------------------------------------------------------------------- ABLATION_STUDY_NOT_REPRODUCIBLE_FROM_RECOVERED_ARTIFACTS NEXT ACTION ---------------------------------------------------------------------------------------------------- REMOVE_UNSUPPORTED_ABLATION_CLAIMS MANUSCRIPT ACTION ---------------------------------------------------------------------------------------------------- Remove historical claims comparing full HGF with GAN-only, VAE-only, diffusion-only, static/adaptive fusion, fairness on/off, or scalability on/off unless independently preserved evidence is recovered. Do not generate replacement ablations and present them as the original study. INTERPRETATION ---------------------------------------------------------------------------------------------------- Ablation evidence requires an actual implemented variant plus a corresponding historical result or preserved trained artifact. Textual mentions, proposed methodology diagrams, or parameter names alone do not establish that an ablation experiment was executed. Classifier hyperparameter variants must not be relabeled as GAN/VAE/diffusion generator ablations. SAFETY CONFIRMATION ---------------------------------------------------------------------------------------------------- New models trained: NO New synthetic rows generated: NO New ablation variants created: NO Historical files modified: NO PRIMARY OUTPUTS -----------------------------------------------------------"
+    },
+    "08_v2": {
+      "resolved": true,
+      "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_statistics_v2\\statistical_claim_audit_v2_summary.txt",
+      "matched_terms": [
+        "DESCRIPTIVE_STABILITY_EVIDENCE_VALID_FORMAL_SIGNIFICANCE_NOT_SUPPORTED",
+        "FORMAL_SIGNIFICANCE_NOT_SUPPORTED"
+      ],
+      "candidate_count": 11,
+      "ambiguity": false,
+      "all_candidates": [
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_statistics_v2\\statistical_claim_audit_v2_summary.txt",
+          "matched_terms": [
+            "DESCRIPTIVE_STABILITY_EVIDENCE_VALID_FORMAL_SIGNIFICANCE_NOT_SUPPORTED",
+            "FORMAL_SIGNIFICANCE_NOT_SUPPORTED"
+          ],
+          "score": 235,
+          "mtime": 1788384019.7432387
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_multimodal_figure_audit_v2\\prior_audit_crosscheck_v2.csv",
+          "matched_terms": [
+            "DESCRIPTIVE_STABILITY_EVIDENCE_VALID_FORMAL_SIGNIFICANCE_NOT_SUPPORTED",
+            "FORMAL_SIGNIFICANCE_NOT_SUPPORTED"
+          ],
+          "score": 205,
+          "mtime": 1788446414.1559372
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_multimodal_figure_audit\\prior_audit_crosscheck.csv",
+          "matched_terms": [
+            "DESCRIPTIVE_STABILITY_EVIDENCE_VALID_FORMAL_SIGNIFICANCE_NOT_SUPPORTED",
+            "FORMAL_SIGNIFICANCE_NOT_SUPPORTED"
+          ],
+          "score": 205,
+          "mtime": 1788435168.680258
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_master_evidence\\source_resolution_diagnostics.json",
+          "matched_terms": [
+            "DESCRIPTIVE_STABILITY_EVIDENCE_VALID_FORMAL_SIGNIFICANCE_NOT_SUPPORTED",
+            "FORMAL_SIGNIFICANCE_NOT_SUPPORTED"
+          ],
+          "score": 200,
+          "mtime": 1788447885.52328
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_master_evidence\\source_resolution_table.csv",
+          "matched_terms": [
+            "DESCRIPTIVE_STABILITY_EVIDENCE_VALID_FORMAL_SIGNIFICANCE_NOT_SUPPORTED",
+            "FORMAL_SIGNIFICANCE_NOT_SUPPORTED"
+          ],
+          "score": 200,
+          "mtime": 1788447885.52328
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_statistics_v2\\statistical_provenance_v2.csv",
+          "matched_terms": [
+            "DESCRIPTIVE_STABILITY_EVIDENCE_VALID_FORMAL_SIGNIFICANCE_NOT_SUPPORTED",
+            "FORMAL_SIGNIFICANCE_NOT_SUPPORTED"
+          ],
+          "score": 200,
+          "mtime": 1788384019.7432387
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_statistics_v2\\statistical_verdict_v2.csv",
+          "matched_terms": [
+            "DESCRIPTIVE_STABILITY_EVIDENCE_VALID_FORMAL_SIGNIFICANCE_NOT_SUPPORTED",
+            "FORMAL_SIGNIFICANCE_NOT_SUPPORTED"
+          ],
+          "score": 200,
+          "mtime": 1788384019.7422395
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_statistics\\statistical_claim_audit_summary.txt",
+          "matched_terms": [
+            "FORMAL_SIGNIFICANCE_NOT_SUPPORTED"
+          ],
+          "score": 135,
+          "mtime": 1788382181.496493
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_statistics_v2\\statistical_claim_language_audit.csv",
+          "matched_terms": [
+            "FORMAL_SIGNIFICANCE_NOT_SUPPORTED"
+          ],
+          "score": 105,
+          "mtime": 1788384019.734854
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_statistics\\statistical_provenance.csv",
+          "matched_terms": [
+            "FORMAL_SIGNIFICANCE_NOT_SUPPORTED"
+          ],
+          "score": 100,
+          "mtime": 1788382181.4951735
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_statistics\\statistical_verdict.csv",
+          "matched_terms": [
+            "FORMAL_SIGNIFICANCE_NOT_SUPPORTED"
+          ],
+          "score": 100,
+          "mtime": 1788382181.4931755
+        }
+      ],
+      "text_excerpt": "aired_without_cartesian_inflation Fairness pairing is grouped by sensitive attribute, comparison identifiers, metric, and seed. PASS: inferential_confidence_intervals_removed Only mean, SD, median, minimum, and maximum are reported. PASS: formal_p_values_not_generated No p-value or inferential significance test is produced. MISSING/NO: independent_experimental_replicates_available Repeated holdouts reuse the same 193 participants and are not independent datasets. FINAL VERDICT ---------------------------------------------------------------------------------------------------- DESCRIPTIVE_STABILITY_EVIDENCE_VALID_FORMAL_SIGNIFICANCE_NOT_SUPPORTED NEXT ACTION ---------------------------------------------------------------------------------------------------- USE_MEAN_SD_MIN_MAX_AND_REMOVE_UNSUPPORTED_SIGNIFICANCE_WORDING MANUSCRIPT ACTION ---------------------------------------------------------------------------------------------------- Report the corrected 02E repeated-holdout classifier results using descriptive mean ± SD, optionally accompanied by median and range. Treat seed-level differences as descriptive only. Do not claim statistically significant superiority from these dependent repeated holdouts. RECOMMENDED REPORTING STYLE ---------------------------------------------------------------------------------------------------- Preferred: 'Across ten repeated leakage-safe stratified holdouts, performance remained stable, with ROC-AUC reported as mean ± SD.' Avoid: 'The method significantly outperformed the baseline' unless a separate valid inferential design is available. IMPORTANT LIMITATION ---------------------------------------------------------------------------------------------------- Repeated resampling does not increase the independent sample size beyond the original 193 participants. SAFETY CONFIRMATION ---------------------------------------------------------------------------------------------------- New model training: NO New s"
+    },
+    "09_v2": {
+      "resolved": true,
+      "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_multimodal_figure_audit_v2\\multimodal_figure_results_audit_v2_summary.txt",
+      "matched_terms": [
+        "ARRAY_MANUSCRIPT_REQUIRES_MULTIMODAL_GENERATIVE_REFRAMING",
+        "RETAIN_REPRODUCIBLE_STRUCTURED_CLINICAL_RESULTS_AND_CORRECT_FIGURE_NUMBERING_AND_NUMERICS"
+      ],
+      "candidate_count": 3,
+      "ambiguity": false,
+      "all_candidates": [
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_multimodal_figure_audit_v2\\multimodal_figure_results_audit_v2_summary.txt",
+          "matched_terms": [
+            "ARRAY_MANUSCRIPT_REQUIRES_MULTIMODAL_GENERATIVE_REFRAMING",
+            "RETAIN_REPRODUCIBLE_STRUCTURED_CLINICAL_RESULTS_AND_CORRECT_FIGURE_NUMBERING_AND_NUMERICS"
+          ],
+          "score": 235,
+          "mtime": 1788446414.1660857
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_multimodal_figure_audit_v2\\multimodal_figure_verdict_v2.csv",
+          "matched_terms": [
+            "ARRAY_MANUSCRIPT_REQUIRES_MULTIMODAL_GENERATIVE_REFRAMING",
+            "RETAIN_REPRODUCIBLE_STRUCTURED_CLINICAL_RESULTS_AND_CORRECT_FIGURE_NUMBERING_AND_NUMERICS"
+          ],
+          "score": 200,
+          "mtime": 1788446414.157944
+        },
+        {
+          "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_multimodal_figure_audit_v2\\multimodal_figure_provenance_v2.csv",
+          "matched_terms": [
+            "ARRAY_MANUSCRIPT_REQUIRES_MULTIMODAL_GENERATIVE_REFRAMING"
+          ],
+          "score": 100,
+          "mtime": 1788446414.1657782
+        }
+      ],
+      "text_excerpt": "ers_explicitly_audited duplicate figure-number groups=3 PASS: context_aware_metric_extraction_used direct accuracy values=[]; direct AUC values=[0.95, 0.99] MISSING/NO: clinical_multimodal_implementation_verified strict executable clinical multimodal+fusion candidates=0 PASS: fid_claims_crosschecked_with_prior_generator_audit prior categories=[\"ablation_unsupported\", \"fid_unsupported\", \"generator_missing\", \"scalability_unsupported\", \"statistics_descriptive_only\"] FINAL VERDICT ---------------------------------------------------------------------------------------------------- ARRAY_MANUSCRIPT_REQUIRES_MULTIMODAL_GENERATIVE_REFRAMING NEXT ACTION ---------------------------------------------------------------------------------------------------- RETAIN_REPRODUCIBLE_STRUCTURED_CLINICAL_RESULTS_AND_CORRECT_FIGURE_NUMBERING_AND_NUMERICS INTERPRETATION RULES ---------------------------------------------------------------------------------------------------- 1. AUC and accuracy are different metrics; an AUC value is never reassigned to accuracy. 2. Duplicate figure number and duplicate image content are independent problems. 3. Similar image hashes or captions are candidates for manual review, not proof of duplication. 4. An unrelated image dataset in the repository does not establish multimodal clinical evaluation. 5. Synthetic N does not increase the independent clinical sample beyond the original cohort. 6. FID remains unsupported if generator and feature-space provenance are absent. SAFETY ---------------------------------------------------------------------------------------------------- New training: NO Synthetic generation: NO OCR: NO Image modification: NO Historical project modification: NO ===================================================================================================="
+    }
+  },
+  "stage02e_repeated_metrics": {
+    "path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_primary_metrics\\repeated_leakage_safe_evaluation\\repeated_seed_metrics.csv",
+    "available": true,
+    "rows": 20,
+    "conditions": {
+      "training_only_oversampled": {
+        "accuracy": {
+          "n": 10,
+          "mean": 0.976923076923077,
+          "sd": 0.022451154763356716,
+          "median": 0.9743589743589745,
+          "min": 0.9487179487179488,
+          "max": 1.0
+        },
+        "precision": {
+          "n": 10,
+          "mean": 0.9804761904761904,
+          "sd": 0.03376142341878202,
+          "median": 1.0,
+          "min": 0.9047619047619048,
+          "max": 1.0
+        },
+        "sensitivity": {
+          "n": 10,
+          "mean": 0.9736842105263159,
+          "sd": 0.044728241347305124,
+          "median": 1.0,
+          "min": 0.8947368421052632,
+          "max": 1.0
+        },
+        "specificity": {
+          "n": 10,
+          "mean": 0.9800000000000001,
+          "sd": 0.03496029493900505,
+          "median": 1.0,
+          "min": 0.9,
+          "max": 1.0
+        },
+        "f1": {
+          "n": 10,
+          "mean": 0.9760579810579811,
+          "sd": 0.023537255050333442,
+          "median": 0.9743589743589745,
+          "min": 0.9444444444444444,
+          "max": 1.0
+        },
+        "roc_auc": {
+          "n": 10,
+          "mean": 0.998421052631579,
+          "sd": 0.003328713326493008,
+          "median": 1.0,
+          "min": 0.9894736842105264,
+          "max": 1.0
+        }
+      },
+      "unbalanced_training": {
+        "accuracy": {
+          "n": 10,
+          "mean": 0.9820512820512821,
+          "sd": 0.021109553906373413,
+          "median": 0.9871794871794872,
+          "min": 0.9487179487179488,
+          "max": 1.0
+        },
+        "precision": {
+          "n": 10,
+          "mean": 0.9804761904761904,
+          "sd": 0.03376142341878202,
+          "median": 1.0,
+          "min": 0.9047619047619048,
+          "max": 1.0
+        },
+        "sensitivity": {
+          "n": 10,
+          "mean": 0.9842105263157895,
+          "sd": 0.035523608300555405,
+          "median": 1.0,
+          "min": 0.8947368421052632,
+          "max": 1.0
+        },
+        "specificity": {
+          "n": 10,
+          "mean": 0.9800000000000001,
+          "sd": 0.03496029493900505,
+          "median": 1.0,
+          "min": 0.9,
+          "max": 1.0
+        },
+        "f1": {
+          "n": 10,
+          "mean": 0.9816135366135367,
+          "sd": 0.021733701367630136,
+          "median": 0.9871794871794872,
+          "min": 0.9444444444444444,
+          "max": 1.0
+        },
+        "roc_auc": {
+          "n": 10,
+          "mean": 0.9986842105263157,
+          "sd": 0.0033402513622209887,
+          "median": 1.0,
+          "min": 0.9894736842105264,
+          "max": 1.0
+        }
+      }
+    }
+  },
+  "stage03_fairness": {
+    "selected_path": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_fairness\\recomputed_fairness\\fairness_per_seed_reference.csv",
+    "available": true,
+    "source_kind": "per_seed",
+    "rows": 40,
+    "metric_columns": {
+      "spd": "spd",
+      "eod": "eod",
+      "di": "di"
+    },
+    "group_columns": [
+      "sensitive_attribute",
+      "reference_group"
+    ],
+    "summary": {
+      "Gender | M": {
+        "spd": {
+          "n": 20,
+          "mean": -0.1029701779701779,
+          "sd": 0.25194341227358696,
+          "min": -0.425,
+          "max": 0.5222222222222221
+        },
+        "eod": {
+          "n": 20,
+          "mean": 0.02724089635854341,
+          "sd": 0.04408920546541369,
+          "min": 0.0,
+          "max": 0.1176470588235294
+        },
+        "di": {
+          "n": 20,
+          "mean": 0.8860700312759138,
+          "sd": 0.5684265705077086,
+          "min": 0.32,
+          "max": 2.4242424242424243
+        }
+      },
+      "Nationality | S": {
+        "spd": {
+          "n": 20,
+          "mean": 0.043465378017235594,
+          "sd": 0.10897032249356164,
+          "min": -0.1789473684210526,
+          "max": 0.1925133689839572
+        },
+        "eod": {
+          "n": 20,
+          "mean": 0.03170995670995671,
+          "sd": 0.051872167746849863,
+          "min": 0.0,
+          "max": 0.1428571428571429
+        },
+        "di": {
+          "n": 20,
+          "mean": 1.106268940725597,
+          "sd": 0.221992872974804,
+          "min": 0.6909090909090909,
+          "max": 1.425
+        }
+      }
+    },
+    "raw_rows": [
+      {
+        "seed": 42,
+        "variant": "training_only_oversampled",
+        "sensitive_attribute": "Gender",
+        "reference_group": "M",
+        "comparison_group": "F",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 28,
+        "n_comparison": 11,
+        "reference_favorable_prediction_rate": 0.5714285714285714,
+        "comparison_favorable_prediction_rate": 0.3636363636363636,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": -0.2077922077922077,
+        "eod": 0.0,
+        "di": 0.6363636363636365,
+        "abs_spd": 0.2077922077922077,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.3636363636363635,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 42,
+        "variant": "training_only_oversampled",
+        "sensitive_attribute": "Nationality",
+        "reference_group": "S",
+        "comparison_group": "NS",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 14,
+        "n_comparison": 25,
+        "reference_favorable_prediction_rate": 0.5,
+        "comparison_favorable_prediction_rate": 0.52,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": 0.02,
+        "eod": 0.0,
+        "di": 1.04,
+        "abs_spd": 0.02,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.04,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 42,
+        "variant": "unbalanced_training",
+        "sensitive_attribute": "Gender",
+        "reference_group": "M",
+        "comparison_group": "F",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 28,
+        "n_comparison": 11,
+        "reference_favorable_prediction_rate": 0.5714285714285714,
+        "comparison_favorable_prediction_rate": 0.3636363636363636,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": -0.2077922077922077,
+        "eod": 0.0,
+        "di": 0.6363636363636365,
+        "abs_spd": 0.2077922077922077,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.3636363636363635,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 42,
+        "variant": "unbalanced_training",
+        "sensitive_attribute": "Nationality",
+        "reference_group": "S",
+        "comparison_group": "NS",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 14,
+        "n_comparison": 25,
+        "reference_favorable_prediction_rate": 0.5,
+        "comparison_favorable_prediction_rate": 0.52,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": 0.02,
+        "eod": 0.0,
+        "di": 1.04,
+        "abs_spd": 0.02,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.04,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 47,
+        "variant": "training_only_oversampled",
+        "sensitive_attribute": "Gender",
+        "reference_group": "M",
+        "comparison_group": "F",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 30,
+        "n_comparison": 9,
+        "reference_favorable_prediction_rate": 0.3666666666666666,
+        "comparison_favorable_prediction_rate": 0.8888888888888888,
+        "reference_favorable_tpr": 0.9166666666666666,
+        "comparison_favorable_tpr": 1.0,
+        "spd": 0.5222222222222221,
+        "eod": 0.0833333333333333,
+        "di": 2.4242424242424243,
+        "abs_spd": 0.5222222222222221,
+        "abs_eod": 0.0833333333333333,
+        "di_distance_from_1": 1.4242424242424243,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 47,
+        "variant": "training_only_oversampled",
+        "sensitive_attribute": "Nationality",
+        "reference_group": "S",
+        "comparison_group": "NS",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 19,
+        "n_comparison": 20,
+        "reference_favorable_prediction_rate": 0.5789473684210527,
+        "comparison_favorable_prediction_rate": 0.4,
+        "reference_favorable_tpr": 0.9166666666666666,
+        "comparison_favorable_tpr": 1.0,
+        "spd": -0.1789473684210526,
+        "eod": 0.0833333333333333,
+        "di": 0.6909090909090909,
+        "abs_spd": 0.1789473684210526,
+        "abs_eod": 0.0833333333333333,
+        "di_distance_from_1": 0.3090909090909091,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 47,
+        "variant": "unbalanced_training",
+        "sensitive_attribute": "Gender",
+        "reference_group": "M",
+        "comparison_group": "F",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 30,
+        "n_comparison": 9,
+        "reference_favorable_prediction_rate": 0.3666666666666666,
+        "comparison_favorable_prediction_rate": 0.8888888888888888,
+        "reference_favorable_tpr": 0.9166666666666666,
+        "comparison_favorable_tpr": 1.0,
+        "spd": 0.5222222222222221,
+        "eod": 0.0833333333333333,
+        "di": 2.4242424242424243,
+        "abs_spd": 0.5222222222222221,
+        "abs_eod": 0.0833333333333333,
+        "di_distance_from_1": 1.4242424242424243,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 47,
+        "variant": "unbalanced_training",
+        "sensitive_attribute": "Nationality",
+        "reference_group": "S",
+        "comparison_group": "NS",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 19,
+        "n_comparison": 20,
+        "reference_favorable_prediction_rate": 0.5789473684210527,
+        "comparison_favorable_prediction_rate": 0.4,
+        "reference_favorable_tpr": 0.9166666666666666,
+        "comparison_favorable_tpr": 1.0,
+        "spd": -0.1789473684210526,
+        "eod": 0.0833333333333333,
+        "di": 0.6909090909090909,
+        "abs_spd": 0.1789473684210526,
+        "abs_eod": 0.0833333333333333,
+        "di_distance_from_1": 0.3090909090909091,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 53,
+        "variant": "training_only_oversampled",
+        "sensitive_attribute": "Gender",
+        "reference_group": "M",
+        "comparison_group": "F",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 28,
+        "n_comparison": 11,
+        "reference_favorable_prediction_rate": 0.6071428571428571,
+        "comparison_favorable_prediction_rate": 0.3636363636363636,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": -0.2435064935064934,
+        "eod": 0.0,
+        "di": 0.5989304812834225,
+        "abs_spd": 0.2435064935064934,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.4010695187165775,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 53,
+        "variant": "training_only_oversampled",
+        "sensitive_attribute": "Nationality",
+        "reference_group": "S",
+        "comparison_group": "NS",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 22,
+        "n_comparison": 17,
+        "reference_favorable_prediction_rate": 0.4545454545454545,
+        "comparison_favorable_prediction_rate": 0.6470588235294118,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": 0.1925133689839572,
+        "eod": 0.0,
+        "di": 1.423529411764706,
+        "abs_spd": 0.1925133689839572,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.4235294117647059,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 53,
+        "variant": "unbalanced_training",
+        "sensitive_attribute": "Gender",
+        "reference_group": "M",
+        "comparison_group": "F",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 28,
+        "n_comparison": 11,
+        "reference_favorable_prediction_rate": 0.6428571428571429,
+        "comparison_favorable_prediction_rate": 0.3636363636363636,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": -0.2792207792207792,
+        "eod": 0.0,
+        "di": 0.5656565656565656,
+        "abs_spd": 0.2792207792207792,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.4343434343434343,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 53,
+        "variant": "unbalanced_training",
+        "sensitive_attribute": "Nationality",
+        "reference_group": "S",
+        "comparison_group": "NS",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 22,
+        "n_comparison": 17,
+        "reference_favorable_prediction_rate": 0.5,
+        "comparison_favorable_prediction_rate": 0.6470588235294118,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": 0.1470588235294118,
+        "eod": 0.0,
+        "di": 1.2941176470588236,
+        "abs_spd": 0.1470588235294118,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.2941176470588236,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 59,
+        "variant": "training_only_oversampled",
+        "sensitive_attribute": "Gender",
+        "reference_group": "M",
+        "comparison_group": "F",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 24,
+        "n_comparison": 15,
+        "reference_favorable_prediction_rate": 0.625,
+        "comparison_favorable_prediction_rate": 0.2,
+        "reference_favorable_tpr": 0.8823529411764706,
+        "comparison_favorable_tpr": 1.0,
+        "spd": -0.425,
+        "eod": 0.1176470588235294,
+        "di": 0.32,
+        "abs_spd": 0.425,
+        "abs_eod": 0.1176470588235294,
+        "di_distance_from_1": 0.6799999999999999,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 59,
+        "variant": "training_only_oversampled",
+        "sensitive_attribute": "Nationality",
+        "reference_group": "S",
+        "comparison_group": "NS",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 28,
+        "n_comparison": 11,
+        "reference_favorable_prediction_rate": 0.4285714285714285,
+        "comparison_favorable_prediction_rate": 0.5454545454545454,
+        "reference_favorable_tpr": 0.8571428571428571,
+        "comparison_favorable_tpr": 1.0,
+        "spd": 0.1168831168831168,
+        "eod": 0.1428571428571429,
+        "di": 1.2727272727272727,
+        "abs_spd": 0.1168831168831168,
+        "abs_eod": 0.1428571428571429,
+        "di_distance_from_1": 0.2727272727272727,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 59,
+        "variant": "unbalanced_training",
+        "sensitive_attribute": "Gender",
+        "reference_group": "M",
+        "comparison_group": "F",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 24,
+        "n_comparison": 15,
+        "reference_favorable_prediction_rate": 0.625,
+        "comparison_favorable_prediction_rate": 0.2,
+        "reference_favorable_tpr": 0.8823529411764706,
+        "comparison_favorable_tpr": 1.0,
+        "spd": -0.425,
+        "eod": 0.1176470588235294,
+        "di": 0.32,
+        "abs_spd": 0.425,
+        "abs_eod": 0.1176470588235294,
+        "di_distance_from_1": 0.6799999999999999,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 59,
+        "variant": "unbalanced_training",
+        "sensitive_attribute": "Nationality",
+        "reference_group": "S",
+        "comparison_group": "NS",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 28,
+        "n_comparison": 11,
+        "reference_favorable_prediction_rate": 0.4285714285714285,
+        "comparison_favorable_prediction_rate": 0.5454545454545454,
+        "reference_favorable_tpr": 0.8571428571428571,
+        "comparison_favorable_tpr": 1.0,
+        "spd": 0.1168831168831168,
+        "eod": 0.1428571428571429,
+        "di": 1.2727272727272727,
+        "abs_spd": 0.1168831168831168,
+        "abs_eod": 0.1428571428571429,
+        "di_distance_from_1": 0.2727272727272727,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 71,
+        "variant": "training_only_oversampled",
+        "sensitive_attribute": "Gender",
+        "reference_group": "M",
+        "comparison_group": "F",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 27,
+        "n_comparison": 12,
+        "reference_favorable_prediction_rate": 0.4814814814814814,
+        "comparison_favorable_prediction_rate": 0.5,
+        "reference_favorable_tpr": 0.9285714285714286,
+        "comparison_favorable_tpr": 1.0,
+        "spd": 0.0185185185185185,
+        "eod": 0.0714285714285714,
+        "di": 1.0384615384615383,
+        "abs_spd": 0.0185185185185185,
+        "abs_eod": 0.0714285714285714,
+        "di_distance_from_1": 0.0384615384615385,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 71,
+        "variant": "training_only_oversampled",
+        "sensitive_attribute": "Nationality",
+        "reference_group": "S",
+        "comparison_group": "NS",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 20,
+        "n_comparison": 19,
+        "reference_favorable_prediction_rate": 0.5,
+        "comparison_favorable_prediction_rate": 0.4736842105263157,
+        "reference_favorable_tpr": 0.9090909090909092,
+        "comparison_favorable_tpr": 1.0,
+        "spd": -0.0263157894736842,
+        "eod": 0.0909090909090909,
+        "di": 0.9473684210526316,
+        "abs_spd": 0.0263157894736842,
+        "abs_eod": 0.0909090909090909,
+        "di_distance_from_1": 0.0526315789473684,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 71,
+        "variant": "unbalanced_training",
+        "sensitive_attribute": "Gender",
+        "reference_group": "M",
+        "comparison_group": "F",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 27,
+        "n_comparison": 12,
+        "reference_favorable_prediction_rate": 0.4814814814814814,
+        "comparison_favorable_prediction_rate": 0.5,
+        "reference_favorable_tpr": 0.9285714285714286,
+        "comparison_favorable_tpr": 1.0,
+        "spd": 0.0185185185185185,
+        "eod": 0.0714285714285714,
+        "di": 1.0384615384615383,
+        "abs_spd": 0.0185185185185185,
+        "abs_eod": 0.0714285714285714,
+        "di_distance_from_1": 0.0384615384615385,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 71,
+        "variant": "unbalanced_training",
+        "sensitive_attribute": "Nationality",
+        "reference_group": "S",
+        "comparison_group": "NS",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 20,
+        "n_comparison": 19,
+        "reference_favorable_prediction_rate": 0.5,
+        "comparison_favorable_prediction_rate": 0.4736842105263157,
+        "reference_favorable_tpr": 0.9090909090909092,
+        "comparison_favorable_tpr": 1.0,
+        "spd": -0.0263157894736842,
+        "eod": 0.0909090909090909,
+        "di": 0.9473684210526316,
+        "abs_spd": 0.0263157894736842,
+        "abs_eod": 0.0909090909090909,
+        "di_distance_from_1": 0.0526315789473684,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 83,
+        "variant": "training_only_oversampled",
+        "sensitive_attribute": "Gender",
+        "reference_group": "M",
+        "comparison_group": "F",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 33,
+        "n_comparison": 6,
+        "reference_favorable_prediction_rate": 0.5151515151515151,
+        "comparison_favorable_prediction_rate": 0.5,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": -0.0151515151515151,
+        "eod": 0.0,
+        "di": 0.9705882352941176,
+        "abs_spd": 0.0151515151515151,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.0294117647058823,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 83,
+        "variant": "training_only_oversampled",
+        "sensitive_attribute": "Nationality",
+        "reference_group": "S",
+        "comparison_group": "NS",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 22,
+        "n_comparison": 17,
+        "reference_favorable_prediction_rate": 0.5454545454545454,
+        "comparison_favorable_prediction_rate": 0.4705882352941176,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": -0.0748663101604277,
+        "eod": 0.0,
+        "di": 0.8627450980392157,
+        "abs_spd": 0.0748663101604277,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.1372549019607842,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 83,
+        "variant": "unbalanced_training",
+        "sensitive_attribute": "Gender",
+        "reference_group": "M",
+        "comparison_group": "F",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 33,
+        "n_comparison": 6,
+        "reference_favorable_prediction_rate": 0.5151515151515151,
+        "comparison_favorable_prediction_rate": 0.5,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": -0.0151515151515151,
+        "eod": 0.0,
+        "di": 0.9705882352941176,
+        "abs_spd": 0.0151515151515151,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.0294117647058823,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 83,
+        "variant": "unbalanced_training",
+        "sensitive_attribute": "Nationality",
+        "reference_group": "S",
+        "comparison_group": "NS",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 22,
+        "n_comparison": 17,
+        "reference_favorable_prediction_rate": 0.5454545454545454,
+        "comparison_favorable_prediction_rate": 0.4705882352941176,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": -0.0748663101604277,
+        "eod": 0.0,
+        "di": 0.8627450980392157,
+        "abs_spd": 0.0748663101604277,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.1372549019607842,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 97,
+        "variant": "training_only_oversampled",
+        "sensitive_attribute": "Gender",
+        "reference_group": "M",
+        "comparison_group": "F",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 28,
+        "n_comparison": 11,
+        "reference_favorable_prediction_rate": 0.6071428571428571,
+        "comparison_favorable_prediction_rate": 0.4545454545454545,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": -0.1525974025974025,
+        "eod": 0.0,
+        "di": 0.7486631016042781,
+        "abs_spd": 0.1525974025974025,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.2513368983957219,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 97,
+        "variant": "training_only_oversampled",
+        "sensitive_attribute": "Nationality",
+        "reference_group": "S",
+        "comparison_group": "NS",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 19,
+        "n_comparison": 20,
+        "reference_favorable_prediction_rate": 0.5263157894736842,
+        "comparison_favorable_prediction_rate": 0.6,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": 0.0736842105263158,
+        "eod": 0.0,
+        "di": 1.14,
+        "abs_spd": 0.0736842105263158,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.1400000000000001,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 97,
+        "variant": "unbalanced_training",
+        "sensitive_attribute": "Gender",
+        "reference_group": "M",
+        "comparison_group": "F",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 28,
+        "n_comparison": 11,
+        "reference_favorable_prediction_rate": 0.5714285714285714,
+        "comparison_favorable_prediction_rate": 0.3636363636363636,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": -0.2077922077922077,
+        "eod": 0.0,
+        "di": 0.6363636363636365,
+        "abs_spd": 0.2077922077922077,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.3636363636363635,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 97,
+        "variant": "unbalanced_training",
+        "sensitive_attribute": "Nationality",
+        "reference_group": "S",
+        "comparison_group": "NS",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 19,
+        "n_comparison": 20,
+        "reference_favorable_prediction_rate": 0.4736842105263157,
+        "comparison_favorable_prediction_rate": 0.55,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": 0.0763157894736842,
+        "eod": 0.0,
+        "di": 1.1611111111111112,
+        "abs_spd": 0.0763157894736842,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.1611111111111112,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 101,
+        "variant": "training_only_oversampled",
+        "sensitive_attribute": "Gender",
+        "reference_group": "M",
+        "comparison_group": "F",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 27,
+        "n_comparison": 12,
+        "reference_favorable_prediction_rate": 0.5185185185185185,
+        "comparison_favorable_prediction_rate": 0.5,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": -0.0185185185185184,
+        "eod": 0.0,
+        "di": 0.9642857142857144,
+        "abs_spd": 0.0185185185185184,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.0357142857142857,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 101,
+        "variant": "training_only_oversampled",
+        "sensitive_attribute": "Nationality",
+        "reference_group": "S",
+        "comparison_group": "NS",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 15,
+        "n_comparison": 24,
+        "reference_favorable_prediction_rate": 0.4666666666666667,
+        "comparison_favorable_prediction_rate": 0.5416666666666666,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": 0.0749999999999999,
+        "eod": 0.0,
+        "di": 1.1607142857142856,
+        "abs_spd": 0.0749999999999999,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.1607142857142856,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 101,
+        "variant": "unbalanced_training",
+        "sensitive_attribute": "Gender",
+        "reference_group": "M",
+        "comparison_group": "F",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 27,
+        "n_comparison": 12,
+        "reference_favorable_prediction_rate": 0.5185185185185185,
+        "comparison_favorable_prediction_rate": 0.5,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": -0.0185185185185184,
+        "eod": 0.0,
+        "di": 0.9642857142857144,
+        "abs_spd": 0.0185185185185184,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.0357142857142857,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 101,
+        "variant": "unbalanced_training",
+        "sensitive_attribute": "Nationality",
+        "reference_group": "S",
+        "comparison_group": "NS",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 15,
+        "n_comparison": 24,
+        "reference_favorable_prediction_rate": 0.4666666666666667,
+        "comparison_favorable_prediction_rate": 0.5416666666666666,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": 0.0749999999999999,
+        "eod": 0.0,
+        "di": 1.1607142857142856,
+        "abs_spd": 0.0749999999999999,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.1607142857142856,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 113,
+        "variant": "training_only_oversampled",
+        "sensitive_attribute": "Gender",
+        "reference_group": "M",
+        "comparison_group": "F",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 28,
+        "n_comparison": 11,
+        "reference_favorable_prediction_rate": 0.5714285714285714,
+        "comparison_favorable_prediction_rate": 0.3636363636363636,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": -0.2077922077922077,
+        "eod": 0.0,
+        "di": 0.6363636363636365,
+        "abs_spd": 0.2077922077922077,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.3636363636363635,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 113,
+        "variant": "training_only_oversampled",
+        "sensitive_attribute": "Nationality",
+        "reference_group": "S",
+        "comparison_group": "NS",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 19,
+        "n_comparison": 20,
+        "reference_favorable_prediction_rate": 0.4210526315789473,
+        "comparison_favorable_prediction_rate": 0.6,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": 0.1789473684210526,
+        "eod": 0.0,
+        "di": 1.425,
+        "abs_spd": 0.1789473684210526,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.425,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 113,
+        "variant": "unbalanced_training",
+        "sensitive_attribute": "Gender",
+        "reference_group": "M",
+        "comparison_group": "F",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 28,
+        "n_comparison": 11,
+        "reference_favorable_prediction_rate": 0.5714285714285714,
+        "comparison_favorable_prediction_rate": 0.3636363636363636,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": -0.2077922077922077,
+        "eod": 0.0,
+        "di": 0.6363636363636365,
+        "abs_spd": 0.2077922077922077,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.3636363636363635,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 113,
+        "variant": "unbalanced_training",
+        "sensitive_attribute": "Nationality",
+        "reference_group": "S",
+        "comparison_group": "NS",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 19,
+        "n_comparison": 20,
+        "reference_favorable_prediction_rate": 0.4210526315789473,
+        "comparison_favorable_prediction_rate": 0.6,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": 0.1789473684210526,
+        "eod": 0.0,
+        "di": 1.425,
+        "abs_spd": 0.1789473684210526,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.425,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 127,
+        "variant": "training_only_oversampled",
+        "sensitive_attribute": "Gender",
+        "reference_group": "M",
+        "comparison_group": "F",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 27,
+        "n_comparison": 12,
+        "reference_favorable_prediction_rate": 0.6296296296296297,
+        "comparison_favorable_prediction_rate": 0.4166666666666667,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": -0.2129629629629629,
+        "eod": 0.0,
+        "di": 0.6617647058823529,
+        "abs_spd": 0.2129629629629629,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.3382352941176471,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 127,
+        "variant": "training_only_oversampled",
+        "sensitive_attribute": "Nationality",
+        "reference_group": "S",
+        "comparison_group": "NS",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 24,
+        "n_comparison": 15,
+        "reference_favorable_prediction_rate": 0.5416666666666666,
+        "comparison_favorable_prediction_rate": 0.6,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": 0.0583333333333333,
+        "eod": 0.0,
+        "di": 1.1076923076923078,
+        "abs_spd": 0.0583333333333333,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.1076923076923077,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 127,
+        "variant": "unbalanced_training",
+        "sensitive_attribute": "Gender",
+        "reference_group": "M",
+        "comparison_group": "F",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 27,
+        "n_comparison": 12,
+        "reference_favorable_prediction_rate": 0.6296296296296297,
+        "comparison_favorable_prediction_rate": 0.3333333333333333,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": -0.2962962962962963,
+        "eod": 0.0,
+        "di": 0.5294117647058824,
+        "abs_spd": 0.2962962962962963,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.4705882352941176,
+        "status": "COMPUTED"
+      },
+      {
+        "seed": 127,
+        "variant": "unbalanced_training",
+        "sensitive_attribute": "Nationality",
+        "reference_group": "S",
+        "comparison_group": "NS",
+        "reference_selection_method": "AUTO_LARGEST_GROUP_NOT_NORMATIVE",
+        "favorable_label": 0,
+        "favorable_outcome": "recovered/survived",
+        "n_reference": 24,
+        "n_comparison": 15,
+        "reference_favorable_prediction_rate": 0.5,
+        "comparison_favorable_prediction_rate": 0.6,
+        "reference_favorable_tpr": 1.0,
+        "comparison_favorable_tpr": 1.0,
+        "spd": 0.0999999999999999,
+        "eod": 0.0,
+        "di": 1.2,
+        "abs_spd": 0.0999999999999999,
+        "abs_eod": 0.0,
+        "di_distance_from_1": 0.1999999999999999,
+        "status": "COMPUTED"
+      }
+    ]
+  },
+  "stage09": {
+    "summary_available": true,
+    "findings_rows": 6,
+    "verdict_rows": 1,
+    "figure_rows": 10,
+    "duplicate_number_rows": 3,
+    "metric_rows": 11,
+    "multimodal_rows": 27
+  },
+  "closure_matrix": [
+    {
+      "criterion": "02E repeated leakage-safe metrics resolved",
+      "passed": 1,
+      "detail": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_primary_metrics\\repeated_leakage_safe_evaluation\\repeated_seed_metrics.csv"
+    },
+    {
+      "criterion": "02F chronology audit resolved by verdict",
+      "passed": 1,
+      "detail": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_primary_metrics\\feature_chronology_proxy_audit_v2\\feature_proxy_audit_summary_v2.txt"
+    },
+    {
+      "criterion": "03 fairness evidence parsed",
+      "passed": 1,
+      "detail": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_fairness\\recomputed_fairness\\fairness_per_seed_reference.csv"
+    },
+    {
+      "criterion": "04 FID/SFD audit resolved by verdict",
+      "passed": 1,
+      "detail": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_fidelity\\structured_frechet_audit\\fidelity_summary.txt"
+    },
+    {
+      "criterion": "04B generator audit resolved by verdict",
+      "passed": 1,
+      "detail": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_fidelity\\actual_generative_architecture_verification\\actual_generative_architecture_summary.txt"
+    },
+    {
+      "criterion": "05 utility audit resolved by verdict",
+      "passed": 1,
+      "detail": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_utility\\common_real_test\\common_real_test_utility_summary.txt"
+    },
+    {
+      "criterion": "06 scalability audit resolved by verdict",
+      "passed": 1,
+      "detail": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_scalability\\scalability_audit_summary.txt"
+    },
+    {
+      "criterion": "07 ablation audit resolved by verdict",
+      "passed": 1,
+      "detail": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_ablation\\ablation_audit_summary.txt"
+    },
+    {
+      "criterion": "08 statistics audit resolved by verdict",
+      "passed": 1,
+      "detail": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_statistics_v2\\statistical_claim_audit_v2_summary.txt"
+    },
+    {
+      "criterion": "09 multimodal/figure audit available",
+      "passed": 1,
+      "detail": "D:\\47\\472\\New-Papers\\Array\\Paper4-Under-Processing\\HFAGM_Project\\outputs\\revision_multimodal_figure_audit_v2\\multimodal_figure_results_audit_v2_summary.txt"
+    }
+  ],
+  "final_closure_pass": true
+}

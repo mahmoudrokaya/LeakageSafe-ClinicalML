@@ -1,0 +1,2 @@
+﻿condition,training_source,n_training,n_common_real_test,accuracy,precision,recall_sensitivity,specificity,f1,roc_auc
+real_training_unbalanced,data\raw\covid_clinical.csv,154,39,1.0,1.0,1.0,1.0,1.0,1.0

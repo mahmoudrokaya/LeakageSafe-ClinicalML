@@ -1,0 +1,11 @@
+﻿stage_key,resolved_path,available,diagnostic
+stage02e_repeated_metrics,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\repeated_seed_metrics.csv,1,"{""available"": true, ""rows"": 20}"
+stage02f_feature_chronology,,0,"{""available"": false, ""matched_terms"": []}"
+stage03_fairness,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_fairness\recomputed_fairness\fairness_summary_reference.csv,1,"{""available"": true, ""rows"": 4}"
+stage04_structured_frechet,,0,"{""available"": false, ""matched_terms"": []}"
+stage04b_generator,,0,"{""available"": false, ""matched_terms"": []}"
+stage05_utility,,0,"{""available"": false, ""matched_terms"": []}"
+stage06_scalability,,0,"{""available"": false, ""matched_terms"": []}"
+stage07_ablation,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_ablation\ablation_audit_summary.txt,1,"{""available"": true, ""matched_terms"": [""ABLATION_STUDY_NOT_REPRODUCIBLE_FROM_RECOVERED_ARTIFACTS"", ""REMOVE_UNSUPPORTED_ABLATION_CLAIMS""]}"
+stage08_statistics,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_statistics_v2\statistical_claim_audit_v2_summary.txt,1,"{""available"": true, ""matched_terms"": [""DESCRIPTIVE_STABILITY_EVIDENCE_VALID_FORMAL_SIGNIFICANCE_NOT_SUPPORTED"", ""FORMAL_SIGNIFICANCE_NOT_SUPPORTED""]}"
+stage09,,1,"{""summary_available"": true, ""findings_rows"": 6, ""verdict_rows"": 1, ""figure_rows"": 10, ""duplicate_number_rows"": 3, ""metric_rows"": 11, ""multimodal_rows"": 27}"

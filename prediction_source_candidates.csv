@@ -1,0 +1,12 @@
+﻿dataset_hint,evidence_categories,experiment,relative_path
+COVID-clinical,prediction_save,,preprocess_covid_clinical.py
+,prediction_save,,split_and_standardize.py
+,prediction_save,,data\preprocessed\generate_graph_features_and_adjacency.py
+,classification_metrics; model_load; predict,,metrics\evaluate_fairness.py
+,classification_metrics; model_load; predict; prediction_save,,metrics\evaluate_fairness1.py
+,classification_metrics; predict,,models\classifiers\train_ensemble.py
+,classification_metrics,,models\classifiers\train_hfagm.py
+,prediction_save,,models\encoders\contrastive_encoder.py
+,classification_metrics; prediction_save,,training\ensemble\train_hfagm.py
+,confusion_matrix; predict; prediction_save,,training\hfagm\train_hfagm.py
+,prediction_save,,utils\extract_batch_subgraph1.py

@@ -1,0 +1,11 @@
+﻿criterion,passed,detail
+02E repeated leakage-safe metrics resolved,1,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\repeated_seed_metrics.csv
+02F chronology audit resolved by verdict,1,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_primary_metrics\feature_chronology_proxy_audit_v2\feature_proxy_audit_summary_v2.txt
+03 fairness evidence parsed,1,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_fairness\recomputed_fairness\fairness_per_seed_reference.csv
+04 FID/SFD audit resolved by verdict,1,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_fidelity\structured_frechet_audit\fidelity_summary.txt
+04B generator audit resolved by verdict,1,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_fidelity\actual_generative_architecture_verification\actual_generative_architecture_summary.txt
+05 utility audit resolved by verdict,1,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_utility\common_real_test\common_real_test_utility_summary.txt
+06 scalability audit resolved by verdict,1,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_scalability\scalability_audit_summary.txt
+07 ablation audit resolved by verdict,1,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_ablation\ablation_audit_summary.txt
+08 statistics audit resolved by verdict,1,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_statistics_v2\statistical_claim_audit_v2_summary.txt
+09 multimodal/figure audit available,1,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_multimodal_figure_audit_v2\multimodal_figure_results_audit_v2_summary.txt

@@ -1,0 +1,52 @@
+﻿dataset,feature,original_nonmissing,numeric_nonmissing,conversion_failures,failure_fraction
+real_reference,Age,193,193,0,0.0
+real_reference,ESR,193,193,0,0.0
+real_reference,VIT D,193,193,0,0.0
+real_reference,VIT B12,193,193,0,0.0
+real_reference,CALClUM,193,193,0,0.0
+real_reference,PHOSPHOROUS,193,193,0,0.0
+real_reference,MAGNESIUM,193,193,0,0.0
+real_reference,ALBUMIN,193,193,0,0.0
+real_reference,WBC,193,193,0,0.0
+real_reference,RBC,193,193,0,0.0
+real_reference,HEMO,193,193,0,0.0
+real_reference,HEMA,193,193,0,0.0
+real_reference,MCV,193,193,0,0.0
+real_reference,MCH,193,193,0,0.0
+real_reference,MCHC,193,193,0,0.0
+real_reference,PLATELET COUNT,193,193,0,0.0
+real_reference,RDW-CV,193,193,0,0.0
+real_reference,RDW-SD,193,193,0,0.0
+real_reference,PDW,193,193,0,0.0
+real_reference,MPV,193,193,0,0.0
+real_reference,P-LCR,193,193,0,0.0
+real_reference,PCT,193,193,0,0.0
+real_reference,NEUTRPHILS #,193,193,0,0.0
+real_reference,NEUTRPHILS,193,193,0,0.0
+real_reference,LYMPHOCYTE %,193,193,0,0.0
+real_reference,MONOCYTES,193,193,0,0.0
+real_reference,EOSINOPHILS,193,193,0,0.0
+real_reference,BASOPHILS %,193,193,0,0.0
+real_reference,BLOOD UREA,193,193,0,0.0
+real_reference,CREATININE,193,193,0,0.0
+real_reference,SODIUM (NA),193,193,0,0.0
+real_reference,POTASSIUM (K),193,193,0,0.0
+real_reference,CHLORIDE,193,193,0,0.0
+real_reference,SGOT (AST),193,193,0,0.0
+real_reference,SGPT (ALT),193,193,0,0.0
+real_reference,BILRUBIN,193,193,0,0.0
+real_reference,CHOLESTEROL,193,193,0,0.0
+real_reference,TRIGLYCERIDES,193,193,0,0.0
+real_reference,HDL,193,193,0,0.0
+real_reference,LDL,193,193,0,0.0
+real_reference,CPK,193,193,0,0.0
+real_reference,SGOT (AST).1,193,193,0,0.0
+real_reference,LDH,193,193,0,0.0
+real_reference,FERRITIN,193,193,0,0.0
+real_reference,D-DIMER,193,193,0,0.0
+real_reference,PTT,193,193,0,0.0
+real_reference,PT,193,193,0,0.0
+real_reference,INR,193,193,0,0.0
+real_reference,CRP,193,193,0,0.0
+real_reference,GLUCOSE,193,193,0,0.0
+real_reference,HBA1C,193,193,0,0.0

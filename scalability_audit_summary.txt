@@ -1,0 +1,116 @@
+====================================================================================================
+HFAGM - SCALABILITY / COMPUTATIONAL EFFICIENCY FORENSIC AUDIT
+====================================================================================================
+
+Generated: 2026-09-02T23:17:54
+
+PURPOSE
+----------------------------------------------------------------------------------------------------
+Determine whether historical synthetic-generation scalability claims can be reconstructed from existing project artifacts.
+No new scalability experiment is created when the original generative architecture is not recoverable.
+
+SOURCE AUDIT
+----------------------------------------------------------------------------------------------------
+Historical/relevant files scanned: 20103
+Numeric evidence rows: 462
+
+GENERATIVE IMPLEMENTATION
+----------------------------------------------------------------------------------------------------
+Verified generative architecture files: 0
+  None.
+
+SCALABILITY EVIDENCE
+----------------------------------------------------------------------------------------------------
+Workload-related evidence rows: 212
+Runtime-related evidence rows: 389
+Memory-related evidence rows: 90
+Hardware-related evidence rows: 92
+
+HARDWARE CONSISTENCY
+----------------------------------------------------------------------------------------------------
+Detected GPU terms: []
+Multiple GPU configurations detected: NO
+
+HISTORICAL CLAIM AUDIT
+----------------------------------------------------------------------------------------------------
+Claim: synthetic workload includes N=500
+  Historical value: 500
+  Verdict: NOT_REPRODUCIBLE
+  Supporting generator-linked rows: 0
+
+Claim: synthetic workload includes N=100000
+  Historical value: 100000
+  Verdict: NOT_REPRODUCIBLE
+  Supporting generator-linked rows: 0
+
+Claim: approximately 25 percent faster
+  Historical value: 25.0
+  Verdict: NOT_REPRODUCIBLE
+  Supporting generator-linked rows: 0
+
+Claim: 20-30 percent lower GPU memory
+  Historical value: 20-30%
+  Verdict: NOT_REPRODUCIBLE
+  Supporting generator-linked rows: 0
+
+Claim: approximately 40 percent greater GPU memory
+  Historical value: +40%
+  Verdict: NOT_REPRODUCIBLE
+  Supporting generator-linked rows: 0
+
+VERIFICATION MATRIX
+----------------------------------------------------------------------------------------------------
+MISSING: verified_structured_generative_architecture
+    0 verified generative implementation file(s).
+MISSING: generator_runtime_measurements
+    0 runtime evidence row(s) linked to verified generator code.
+MISSING: generator_gpu_memory_measurements
+    0 memory evidence row(s) linked to verified generator code.
+MISSING: workload_N_500_provenance
+    No verified generator workload evidence for N=500.
+MISSING: workload_N_100000_provenance
+    No verified generator workload evidence for N=100000.
+PASS: historical_hardware_documentation
+    92 hardware-related evidence row(s) found; manual consistency assessment still required.
+
+FINAL VERDICT
+----------------------------------------------------------------------------------------------------
+GENERATIVE_SCALABILITY_NOT_REPRODUCIBLE_FROM_RECOVERED_ARTIFACTS
+
+NEXT ACTION
+----------------------------------------------------------------------------------------------------
+REMOVE_UNSUPPORTED_RUNTIME_MEMORY_AND_SYNTHETIC_SCALE_CLAIMS
+
+MANUSCRIPT ACTION
+----------------------------------------------------------------------------------------------------
+Remove quantitative synthetic-generation scalability claims, including N=500 to N=100000, approximately 25% faster execution, 20-30% lower GPU memory, and any conflicting +40% memory claim, unless independently documented raw measurements are recovered. Do not replace these measurements with classifier or preprocessing benchmarks.
+
+INTERPRETATION
+----------------------------------------------------------------------------------------------------
+A larger requested synthetic N would represent computational workload only. It would not increase the number of independent clinical observations beyond the original 193 patients.
+Classifier inference speed, graph processing speed, or preprocessing speed must not be presented as synthetic-data generation scalability.
+Any percentage reduction in runtime or GPU memory requires matched raw measurements under the same hardware, batch size, software environment, and workload.
+
+SAFETY CONFIRMATION
+----------------------------------------------------------------------------------------------------
+New generative model trained: NO
+New synthetic rows generated: NO
+New runtime benchmark created: NO
+New GPU-memory benchmark created: NO
+Historical files modified: NO
+
+PRIMARY OUTPUTS
+----------------------------------------------------------------------------------------------------
+scalability_source_inventory.csv
+scalability_numeric_evidence.csv
+workload_size_evidence.csv
+runtime_evidence.csv
+memory_evidence.csv
+hardware_evidence.csv
+generative_scalability_linkage.csv
+efficiency_claim_reconstruction.csv
+scalability_verification_matrix.csv
+scalability_verdict.csv
+scalability_provenance.csv
+
+====================================================================================================

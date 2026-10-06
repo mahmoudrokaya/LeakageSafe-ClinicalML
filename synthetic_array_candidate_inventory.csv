@@ -1,0 +1,8 @@
+﻿file,array_key,shape,dtype,path_synthetic_hint_score,potential_51_column_array,status,error
+data\preprocessed\adj_matrix_fully_connected.npy,array,"[160, 160]",int32,1,0,NOT_51_COLUMN_STRUCTURED_ARRAY,
+data\preprocessed\adj_matrix_knn.npy,array,"[160, 160]",int32,1,0,NOT_51_COLUMN_STRUCTURED_ARRAY,
+data\preprocessed\contrastive_embeddings.npy,array,"[160, 32]",float32,1,0,NOT_51_COLUMN_STRUCTURED_ARRAY,
+data\preprocessed\graph_features.npy,array,"[160, 32]",float32,1,0,NOT_51_COLUMN_STRUCTURED_ARRAY,
+data\raw\ArSL21L\train.cache.npy,,,,1,0,ARRAY_READ_FAILED,ValueError('Object arrays cannot be loaded when allow_pickle=False')
+utils\adj_matrix_batch.npy,array,"[5, 5]",float32,1,0,NOT_51_COLUMN_STRUCTURED_ARRAY,
+utils\graph_features_batch.npy,array,"[5, 32]",float32,1,0,NOT_51_COLUMN_STRUCTURED_ARRAY,

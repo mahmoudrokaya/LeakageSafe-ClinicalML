@@ -1,0 +1,152 @@
+============================================================================================
+HFAGM - SPLIT AND DATA-LEAKAGE FORENSIC AUDIT
+============================================================================================
+
+Generated: 2026-09-02T18:27:08
+
+PRESERVED SPLIT
+--------------------------------------------------------------------------------------------
+X_train: 160 rows x 51 features
+X_test: 40 rows x 51 features
+y_train: 160
+y_test: 40
+Training label column: status
+Test label column: status
+
+TRAIN/TEST DUPLICATION
+--------------------------------------------------------------------------------------------
+Exact overlap pairs: 25
+Unique overlapping test records: 15
+Minimum test-to-train Euclidean distance: 0
+
+TARGET LEAKAGE
+--------------------------------------------------------------------------------------------
+Suspicious target-related feature names: NONE
+
+TOP ABSOLUTE TRAIN FEATURE-TARGET CORRELATIONS
+--------------------------------------------------------------------------------------------
+ALBUMIN: -0.7963655010773796
+Age: 0.7598904408015675
+CALClUM: -0.6720011031513905
+HEMO: -0.6622725194770802
+RBC: -0.6616387179336499
+WBC: 0.5990370731225921
+BLOOD UREA: 0.5877038017466356
+GLUCOSE: 0.530642195150981
+PTT: 0.4993727069591356
+PT: 0.491192006903459
+
+CODE EVIDENCE COUNTS
+--------------------------------------------------------------------------------------------
+Split-related statements: 8220
+Scaling-related statements: 7817
+Balancing-related statements: 1025
+Synthetic-generation statements: 5500
+Training-related statements: 7550
+
+FINDINGS
+--------------------------------------------------------------------------------------------
+F01 [INFO] PASS
+  Feature/label row counts are internally consistent.
+  Evidence: Train=160; Test=40
+  Implication: No row-count misalignment detected.
+
+F02 [CRITICAL] FAIL
+  Exact train/test duplicates were detected.
+  Evidence: Exact overlap pairs = 25
+  Implication: The preserved test set is not independent of training data.
+
+F03 [HIGH] WARNING
+  Some train/test records become identical after rounding.
+  Evidence: Maximum rounded overlap pairs = 25
+  Implication: Records may be near duplicates and require manual inspection.
+
+F04 [HIGH] WARNING
+  Extremely close cross-split records were detected.
+  Evidence: 15 test records have nearest-train Euclidean distance <= 1e-6.
+  Implication: Potential duplicate/near-duplicate leakage should be investigated.
+
+F05 [CRITICAL] PASS
+  No obvious target-named feature is present in X.
+  Evidence: No feature name matched outcome/status/death/survival-related terms.
+  Implication: Direct target-column leakage is not evident.
+
+F06 [HIGH] PASS
+  No individual numeric training feature has near-perfect linear correlation with the target.
+  Evidence: No |r| >= 0.999999 feature detected.
+  Implication: Simple single-column label encoding is not evident.
+
+F07 [HIGH] EVIDENCE_FOUND
+  Train/test split implementation exists in project code.
+  Evidence: 8220 split-related code statements found.
+  Implication: Operation ordering should be assessed from split_code_evidence.csv.
+
+F08 [HIGH] EVIDENCE_FOUND
+  Scaling/preprocessing code exists.
+  Evidence: 7817 scaling-related statements found.
+  Implication: Need to verify scaler.fit() uses X_train only, not the full dataset.
+
+F09 [CRITICAL] EVIDENCE_FOUND
+  Balancing/resampling logic exists in project code.
+  Evidence: 1025 balancing-related statements detected.
+  Implication: Must determine whether balancing occurred before or after train/test separation.
+
+F10 [HIGH] EVIDENCE_FOUND
+  Classifier training logic exists in project code.
+  Evidence: 7550 training-related statements found.
+  Implication: Need to verify that only X_train/y_train are passed into model.fit().
+
+F11 [HIGH] EVIDENCE_FOUND
+  Synthetic/generative code exists in the project.
+  Evidence: 5500 generative-related statements found.
+  Implication: Need to confirm that the untouched test set was not used to fit the generator.
+
+FINAL AUTOMATED VERDICT
+--------------------------------------------------------------------------------------------
+Verdict: LEAKAGE_DETECTED_OR_STRONGLY_SUSPECTED
+Manuscript use: DO_NOT_USE_PERFECT_TEST_METRICS_AS_VALIDATED RESULTS
+Critical failures: 1
+High unresolved findings: 2
+
+Explanation: At least one critical leakage test failed.
+
+IMPORTANT INTERPRETATION
+--------------------------------------------------------------------------------------------
+
+This automated verdict is intentionally conservative.
+
+A PASS for duplicate detection does not by itself prove that the test set
+was untouched. The operation ordering in split_and_standardize.py,
+preprocess_covid_clinical.py, classifier training code, balancing code,
+and synthetic-generation code must still agree with the preserved files.
+
+In particular, the following must be established before the regenerated
+1.000 test metrics are treated as validated manuscript results:
+
+1. Train/test separation occurred before any operation that learned
+   information from the full dataset.
+2. Any scaler was fitted exclusively on X_train.
+3. Oversampling/balancing did not use or create derivatives of test rows.
+4. Synthetic generators were fitted only on training data when evaluated
+   against the preserved real test set.
+5. ensemble_model.pkl was fitted only using training-side information.
+6. No outcome-derived variable entered the 51 predictor features.
+
+FILES TO REVIEW NEXT
+--------------------------------------------------------------------------------------------
+1. leakage_verdict.csv
+2. leakage_findings.csv
+3. code_operation_order.csv
+4. split_code_evidence.csv
+5. scaling_code_evidence.csv
+6. balancing_code_evidence.csv
+7. training_code_evidence.csv
+8. synthetic_generation_code_evidence.csv
+9. train_test_exact_overlap.csv
+10. train_test_near_duplicate_summary.csv
+11. target_feature_audit.csv
+12. feature_target_correlations.csv
+13. dataset_inventory.csv
+14. file_timestamp_audit.csv
+
+============================================================================================

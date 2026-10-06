@@ -1,0 +1,2 @@
+﻿condition,source,training_rows,test_rows,preprocessing_fit_scope,training_only_oversampling,test_used_during_preprocessing_fit,test_used_during_model_fit,test_used_during_model_selection,status
+real_training_unbalanced,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv,154,39,LOCKED_REAL_TRAIN_ONLY,False,False,False,False,VALID_COMMON_TEST_REFERENCE

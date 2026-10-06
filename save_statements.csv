@@ -1,0 +1,26 @@
+﻿experiment,line_number,relative_path,statement
+,33,preprocess_covid_clinical.py,"df.to_csv(preprocessed_path, index=False)"
+,49,preprocess_covid_clinical.py,"df_balanced.to_csv(balanced_path, index=False)"
+,28,split_and_standardize.py,"pd.DataFrame(X_train_scaled, columns=X.columns).to_csv(os.path.join(output_folder, ""X_train_scaled.csv""), index=False)"
+,29,split_and_standardize.py,"pd.DataFrame(X_test_scaled, columns=X.columns).to_csv(os.path.join(output_folder, ""X_test_scaled.csv""), index=False)"
+,30,split_and_standardize.py,"y_train.to_frame(name='status').to_csv(os.path.join(output_folder, ""y_train.csv""), index=False)"
+,31,split_and_standardize.py,"y_test.to_frame(name='status').to_csv(os.path.join(output_folder, ""y_test.csv""), index=False)"
+,16,data\preprocessed\generate_graph_features_and_adjacency.py,"np.save(os.path.join(output_path, ""graph_features.npy""), features)"
+,27,data\preprocessed\generate_graph_features_and_adjacency.py,"np.save(os.path.join(output_path, ""adj_matrix_fully_connected.npy""), adj_matrix_fc)"
+,48,data\preprocessed\generate_graph_features_and_adjacency.py,"np.save(os.path.join(output_path, ""adj_matrix_knn.npy""), adj_matrix_knn)"
+,75,metrics\evaluate_fairness.py,plt.savefig(plot_path)
+,80,metrics\evaluate_fairness1.py,plt.savefig(plot_path)
+,86,metrics\evaluate_fairness1.py,"df_summary.to_csv(output_csv, index=False)"
+,99,metrics\evaluate_fairness1.py,pdf.savefig()
+,45,models\classifiers\train_ensemble.py,"joblib.dump(ensemble, model_path)"
+,85,models\classifiers\train_hfagm.py,"plt.savefig(""training_loss.png"")"
+,93,models\classifiers\train_hfagm.py,"plt.savefig(""training_accuracy.png"")"
+,75,models\encoders\contrastive_encoder.py,"np.save(os.path.join(base_path, ""contrastive_embeddings.npy""), embeddings)"
+,54,training\ensemble\train_hfagm.py,"torch.save(model.state_dict(), saved_model_path)"
+,77,training\ensemble\train_hfagm.py,"}).to_csv(results_path, index=False)"
+,79,training\hfagm\train_hfagm.py,plt.savefig(attn_path)
+,98,training\hfagm\train_hfagm.py,plt.savefig(conf_path)
+,105,training\hfagm\train_hfagm.py,report_df.to_csv(report_path)
+,110,training\hfagm\train_hfagm.py,"torch.save(model.state_dict(), model_path)"
+,23,utils\extract_batch_subgraph1.py,"np.save('adj_matrix_batch.npy', adj_batch.numpy())"
+,24,utils\extract_batch_subgraph1.py,"np.save('graph_features_batch.npy', features_batch.numpy())"

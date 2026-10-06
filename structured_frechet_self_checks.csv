@@ -1,0 +1,3 @@
+﻿check,value,expected,status
+identity_real_vs_real,0.0,approximately 0,PASS
+row_permutation_invariance,0.0,approximately 0,PASS

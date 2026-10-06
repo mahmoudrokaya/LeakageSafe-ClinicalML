@@ -1,0 +1,22 @@
+﻿evidence_id,reviewer_comments,topic,reproducibility_status,evidence_status,severity,final_disposition,source_stage,source_files
+E02E-01,"C21,C22,C27,C29",Repeated leakage-safe classifier performance,REPRODUCIBLE,VALIDATED,CRITICAL,REWRITE,02E,outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\repeated_seed_metrics.csv
+E02F-01,"C21,C27",Feature chronology and proxy leakage,SOURCE_NOT_AUTO_RESOLVED,LIMITATION,MAJOR,REWRITE,02F_v2,
+E03-01,"C16,C17,C18,C29",Recomputed fairness metrics,REPRODUCIBLE,VALIDATED_CLASSIFIER_FAIRNESS,CRITICAL,REWRITE,03,outputs\revision_fairness\recomputed_fairness\fairness_summary_reference.csv
+E04-01,"C19,C24",FID / Structured Fréchet Distance,NOT_REPRODUCIBLE,UNSUPPORTED,CRITICAL,REMOVE,04,
+E04B-01,"C6,C7,C8,C9,C10,C11,C19,C20,C26,C28,C30,C31",Recovered HFAGM generative implementation,NOT_REPRODUCIBLE,IMPLEMENTATION_MISSING,CRITICAL,REMOVE_OR_MAJOR_REFRAME,04B_v2,
+E05-01,"C21,C22,C27",Common untouched real-test downstream utility,PARTIALLY_REPRODUCIBLE,REAL_REFERENCE_ONLY,CRITICAL,REWRITE,05,
+E06-01,"C10,C23,C25",Generative scalability and computational efficiency,NOT_REPRODUCIBLE,UNSUPPORTED,CRITICAL,REMOVE,06,
+E07-01,"C11,C28",Generator/fusion/fairness/scalability ablations,NOT_REPRODUCIBLE,MISSING_EXECUTED_VARIANTS,CRITICAL,REMOVE,07,outputs\revision_ablation\ablation_audit_summary.txt
+E08-01,C29,Statistical significance and uncertainty,AUDITED,DESCRIPTIVE_ONLY,MAJOR,REWRITE,08_v2,outputs\revision_statistics_v2\statistical_claim_audit_v2_summary.txt
+E09-01,"C13,C14",Multimodal clinical scope,NOT_REPRODUCIBLE,UNSUPPORTED_SCOPE,CRITICAL,REMOVE_OR_MAJOR_REFRAME,09_v2,outputs\revision_multimodal_figure_audit_v2\multimodal_figure_results_audit_v2_summary.txt
+E09-02,C15,Figure numbering and figure provenance,AUDITED,CORRECTION_REQUIRED,MAJOR,CORRECT_AFTER_RESTRUCTURE,09_v2,outputs\revision_multimodal_figure_audit_v2\figure_inventory_v2.csv; outputs\revision_multimodal_figure_audit_v2\duplicate_figure_numbers_v2.csv
+E09-03,C22,Accuracy and confusion-matrix consistency,PARTIAL,MANUAL_SOURCE_LINK_REQUIRED,MAJOR,VERIFY_BEFORE_RETAINING,09_v2,outputs\revision_multimodal_figure_audit_v2\multimodal_figure_results_audit_v2_summary.txt
+E09-04,C23,Synthetic sample size,AUDITED,INTERPRETATION_CONSTRAINT,MAJOR,REWRITE_OR_REMOVE,"06,09_v2",outputs\revision_multimodal_figure_audit_v2\multimodal_figure_results_audit_v2_summary.txt
+ESTR-01,"C6,C7,C8,C9,C10,C11,C12,C26,C31",Mathematical HGF/HFAGM framework,NOT_SUPPORTED_AS_IMPLEMENTED,THEORETICAL_ONLY_AT_BEST,CRITICAL,MAJOR_REWRITE,"04B_v2,06,07",outputs\revision_ablation\ablation_audit_summary.txt
+ESTR-02,C12,Pareto-optimal wording,NOT_ESTABLISHED,UNSUPPORTED,MAJOR,REMOVE,Master synthesis,
+ESTR-03,C20,PR-GM and MSS metrics,NOT_ESTABLISHED,UNSUPPORTED_UNLESS_SOURCE_FOUND,MAJOR,REMOVE_UNLESS_PROVEN,Master synthesis,
+ESTR-04,C25,Hardware reporting,UNRESOLVED,MANUAL_PROVENANCE_REQUIRED,MAJOR,VERIFY_BEFORE_RETAINING,06 + master synthesis,
+ESTR-05,C27,Baseline tuning fairness,PARTIAL,REWRITE_REQUIRED,MAJOR,REWRITE,"02E,05,master synthesis",outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\repeated_seed_metrics.csv
+ESTR-06,C30,Privacy claims,NOT_ESTABLISHED,UNSUPPORTED_AS_RESULT,CRITICAL,REWRITE,Master synthesis,
+ESTR-07,"C31,C33",Novelty and paper scope,NARROWER_SCOPE_REQUIRED,REFRAME,CRITICAL,MAJOR_REWRITE,"04B_v2,05,06,07,08_v2,09_v2",outputs\revision_ablation\ablation_audit_summary.txt; outputs\revision_statistics_v2\statistical_claim_audit_v2_summary.txt; outputs\revision_multimodal_figure_audit_v2\multimodal_figure_results_audit_v2_summary.txt
+ESTR-08,C32,Reference audit,NOT_AUDITED_BY_STAGE10,PENDING_REFERENCE_AUDIT,MAJOR,PENDING,Pending final reference audit,

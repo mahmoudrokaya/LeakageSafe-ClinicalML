@@ -1,0 +1,48 @@
+﻿category,dataset_hint,experiment,line_number,relative_path,statement
+prediction_save,COVID-clinical,,33,preprocess_covid_clinical.py,"df.to_csv(preprocessed_path, index=False)"
+prediction_save,COVID-clinical,,49,preprocess_covid_clinical.py,"df_balanced.to_csv(balanced_path, index=False)"
+prediction_save,,,28,split_and_standardize.py,"pd.DataFrame(X_train_scaled, columns=X.columns).to_csv(os.path.join(output_folder, ""X_train_scaled.csv""), index=False)"
+prediction_save,,,29,split_and_standardize.py,"pd.DataFrame(X_test_scaled, columns=X.columns).to_csv(os.path.join(output_folder, ""X_test_scaled.csv""), index=False)"
+prediction_save,,,30,split_and_standardize.py,"y_train.to_frame(name='status').to_csv(os.path.join(output_folder, ""y_train.csv""), index=False)"
+prediction_save,,,31,split_and_standardize.py,"y_test.to_frame(name='status').to_csv(os.path.join(output_folder, ""y_test.csv""), index=False)"
+prediction_save,,,16,data\preprocessed\generate_graph_features_and_adjacency.py,"np.save(os.path.join(output_path, ""graph_features.npy""), features)"
+prediction_save,,,27,data\preprocessed\generate_graph_features_and_adjacency.py,"np.save(os.path.join(output_path, ""adj_matrix_fully_connected.npy""), adj_matrix_fc)"
+prediction_save,,,48,data\preprocessed\generate_graph_features_and_adjacency.py,"np.save(os.path.join(output_path, ""adj_matrix_knn.npy""), adj_matrix_knn)"
+predict,,,31,metrics\evaluate_fairness.py,y_pred = ensemble.predict(X_test)
+classification_metrics,,,15,metrics\evaluate_fairness.py,"from sklearn.metrics import accuracy_score, f1_score, roc_auc_score"
+classification_metrics,,,35,metrics\evaluate_fairness.py,"print(f""Accuracy: {accuracy_score(y_test, y_pred):.4f}"")"
+classification_metrics,,,36,metrics\evaluate_fairness.py,"print(f""F1-score: {f1_score(y_test, y_pred):.4f}"")"
+classification_metrics,,,37,metrics\evaluate_fairness.py,"print(f""AUC: {roc_auc_score(y_test, y_pred):.4f}"")"
+classification_metrics,,,45,metrics\evaluate_fairness.py,"""accuracy"": accuracy_score,"
+model_load,,,30,metrics\evaluate_fairness.py,ensemble = joblib.load(model_path)
+predict,,,30,metrics\evaluate_fairness1.py,y_pred = ensemble.predict(X_test)
+classification_metrics,,,14,metrics\evaluate_fairness1.py,"from sklearn.metrics import accuracy_score, f1_score, roc_auc_score"
+classification_metrics,,,34,metrics\evaluate_fairness1.py,"print(f""Accuracy: {accuracy_score(y_test, y_pred):.4f}"")"
+classification_metrics,,,35,metrics\evaluate_fairness1.py,"print(f""F1-score: {f1_score(y_test, y_pred):.4f}"")"
+classification_metrics,,,36,metrics\evaluate_fairness1.py,"print(f""AUC: {roc_auc_score(y_test, y_pred):.4f}"")"
+classification_metrics,,,46,metrics\evaluate_fairness1.py,"""accuracy"": accuracy_score,"
+prediction_save,,,86,metrics\evaluate_fairness1.py,"df_summary.to_csv(output_csv, index=False)"
+model_load,,,29,metrics\evaluate_fairness1.py,ensemble = joblib.load(model_path)
+predict,,,35,models\classifiers\train_ensemble.py,y_pred = ensemble.predict(X_test)
+classification_metrics,,,6,models\classifiers\train_ensemble.py,"from sklearn.metrics import accuracy_score, f1_score, roc_auc_score"
+classification_metrics,,,36,models\classifiers\train_ensemble.py,"acc = accuracy_score(y_test, y_pred)"
+classification_metrics,,,37,models\classifiers\train_ensemble.py,"f1 = f1_score(y_test, y_pred)"
+classification_metrics,,,38,models\classifiers\train_ensemble.py,"auc = roc_auc_score(y_test, y_pred)"
+classification_metrics,,,8,models\classifiers\train_hfagm.py,from sklearn.metrics import accuracy_score
+classification_metrics,,,73,models\classifiers\train_hfagm.py,"acc = accuracy_score(epoch_targets, epoch_preds)"
+prediction_save,,,75,models\encoders\contrastive_encoder.py,"np.save(os.path.join(base_path, ""contrastive_embeddings.npy""), embeddings)"
+classification_metrics,,,8,training\ensemble\train_hfagm.py,"from sklearn.metrics import accuracy_score, f1_score, roc_auc_score"
+classification_metrics,,,66,training\ensemble\train_hfagm.py,"acc = accuracy_score(y_true, preds)"
+classification_metrics,,,67,training\ensemble\train_hfagm.py,"f1 = f1_score(y_true, preds)"
+classification_metrics,,,68,training\ensemble\train_hfagm.py,"auc = roc_auc_score(y_true, probs)"
+prediction_save,,,54,training\ensemble\train_hfagm.py,"torch.save(model.state_dict(), saved_model_path)"
+prediction_save,,,77,training\ensemble\train_hfagm.py,"}).to_csv(results_path, index=False)"
+predict,,,66,training\hfagm\train_hfagm.py,"preds = torch.argmax(logits_val, dim=1)"
+confusion_matrix,,,5,training\hfagm\train_hfagm.py,"from sklearn.metrics import classification_report, confusion_matrix"
+confusion_matrix,,,84,training\hfagm\train_hfagm.py,"conf_mat = confusion_matrix(y_val.numpy(), preds.numpy())"
+confusion_matrix,,,87,training\hfagm\train_hfagm.py,"conf_dir = os.path.join(base_path, ""outputs"", ""evaluation"", ""confusion_matrix"")"
+confusion_matrix,,,97,training\hfagm\train_hfagm.py,"conf_path = os.path.join(conf_dir, ""confusion_matrix.png"")"
+prediction_save,,,105,training\hfagm\train_hfagm.py,report_df.to_csv(report_path)
+prediction_save,,,110,training\hfagm\train_hfagm.py,"torch.save(model.state_dict(), model_path)"
+prediction_save,,,23,utils\extract_batch_subgraph1.py,"np.save('adj_matrix_batch.npy', adj_batch.numpy())"
+prediction_save,,,24,utils\extract_batch_subgraph1.py,"np.save('graph_features_batch.npy', features_batch.numpy())"

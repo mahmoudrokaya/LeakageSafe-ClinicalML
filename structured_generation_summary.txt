@@ -1,0 +1,108 @@
+====================================================================================================
+HFAGM - STRUCTURED SYNTHETIC GENERATION RECONSTRUCTION
+====================================================================================================
+
+Generated: 2026-09-02T22:17:53
+
+PURPOSE
+----------------------------------------------------------------------------------------------------
+Determine whether the original structured synthetic-data generation can be reproduced from EXISTING project artifacts.
+This audit performs no retraining and generates no new synthetic clinical records.
+
+REFERENCE DATA
+----------------------------------------------------------------------------------------------------
+Raw source: D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+Rows: 193
+Target: status
+Structured predictors: 51
+
+GENERATION CODE
+----------------------------------------------------------------------------------------------------
+Generation-related source/config files: 21
+Generator-like class/function definitions: 4
+Generation/preprocessing/save/load evidence rows: 31
+
+CHECKPOINTS / MODELS
+----------------------------------------------------------------------------------------------------
+All model/checkpoint artifacts found: 8
+Generator-related checkpoint candidates: 8
+
+Generator-related checkpoint candidates:
+  - data\preprocessed\adj_matrix_fully_connected.npy | priority=HIGH | size=102528 bytes
+  - data\preprocessed\adj_matrix_knn.npy | priority=HIGH | size=102528 bytes
+  - data\preprocessed\contrastive_embeddings.npy | priority=HIGH | size=20608 bytes
+  - data\preprocessed\graph_features.npy | priority=HIGH | size=20608 bytes
+  - experiments\New_EXP2\encoder_pretrained.pth | priority=HIGH | size=1736514 bytes
+  - models\classifiers\ensemble_model.pkl | priority=HIGH | size=298512 bytes
+  - utils\adj_matrix_batch.npy | priority=HIGH | size=228 bytes
+  - utils\graph_features_batch.npy | priority=HIGH | size=768 bytes
+
+EXISTING STRUCTURED SYNTHETIC TABLES
+----------------------------------------------------------------------------------------------------
+Candidate tables reviewed: 0
+Verified existing 51-feature synthetic tables: 0
+
+PROVENANCE CHAIN
+----------------------------------------------------------------------------------------------------
+PASS: generator_architecture_definition
+    Generator-like class/function found.
+PASS: explicit_generation_procedure
+    Generation/sample procedure found.
+PASS: trained_generator_checkpoint_candidate
+    8 generator-related checkpoint candidate(s) found.
+PASS: checkpoint_explicitly_linked_to_code
+    At least one checkpoint filename is explicitly linked to code.
+MISSING: 51_feature_output_evidence
+    No verified 51-dimensional generator output evidence.
+MISSING: latent_or_noise_dimension_evidence
+    No explicit latent/noise dimension evidence.
+PASS: checkpoint_load_evidence
+    Checkpoint load operation found.
+PASS: checkpoint_save_evidence
+    Checkpoint save operation found.
+PASS: preprocessing_or_inverse_transform_evidence
+    Preprocessing/scaling evidence found.
+PASS: synthetic_output_save_evidence
+    Potential generated-data save operation found.
+MISSING: existing_verified_51_feature_synthetic_table
+    No verified existing 51-feature synthetic table found.
+
+RECONSTRUCTION VERDICT
+----------------------------------------------------------------------------------------------------
+CHECKPOINT_FOUND_BUT_GENERATION_PATH_INCOMPLETE
+
+NEXT ACTION
+----------------------------------------------------------------------------------------------------
+INSPECT_CHECKPOINT_AND_ASSOCIATED_CODE_MANUALLY
+
+MANUSCRIPT CONSEQUENCE
+----------------------------------------------------------------------------------------------------
+Do not generate synthetic records yet. The checkpoint exists but architecture/generation/schema provenance is incomplete. Resolve the missing links manually before any regeneration.
+
+SAFETY CONFIRMATION
+----------------------------------------------------------------------------------------------------
+New model training performed: NO
+New synthetic clinical rows generated: NO
+Historical model/checkpoint overwritten: NO
+Historical synthetic table overwritten: NO
+Arbitrary project Python modules executed: NO
+Unknown pickle/joblib objects deserialized: NO
+
+PRIMARY OUTPUTS
+----------------------------------------------------------------------------------------------------
+project_generation_code_inventory.csv
+generator_definition_evidence.csv
+generation_operation_evidence.csv
+checkpoint_inventory.csv
+checkpoint_structure_audit.csv
+checkpoint_code_linkage.csv
+checkpoint_candidate_summary.csv
+synthetic_table_inventory.csv
+synthetic_table_feature_mapping.csv
+existing_verified_synthetic_tables.csv
+preprocessing_generation_evidence.csv
+generation_provenance_chain.csv
+generation_reconstruction_verdict.csv
+reconstruction_provenance.csv
+
+====================================================================================================

@@ -1,0 +1,69 @@
+========================================================================================
+HFAGM - EXISTING MODEL PREDICTION REGENERATION
+========================================================================================
+
+Generated: 2026-09-02T18:10:30
+
+EVALUATION PROVENANCE
+----------------------------------------------------------------------------------------
+Model: D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\models\classifiers\ensemble_model.pkl
+Model class: sklearn.ensemble._voting.VotingClassifier
+Model load method: joblib
+
+X_test: D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\preprocessed\X_test_scaled.csv
+y_test: D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\preprocessed\y_test.csv
+
+Test samples: 40
+Negative class samples: 20
+Positive class samples: 20
+
+PRIMARY METRICS
+----------------------------------------------------------------------------------------
+Accuracy: 1.0000000000
+Precision: 1.0000000000
+Recall / Sensitivity: 1.0000000000
+Specificity: 1.0000000000
+F1-score: 1.0000000000
+ROC-AUC: 1.0000000000
+ROC-AUC source: probability
+
+CONFUSION MATRIX
+----------------------------------------------------------------------------------------
+TN: 20
+FP: 0
+FN: 0
+TP: 20
+
+PREDICTION SCORE
+----------------------------------------------------------------------------------------
+Score type: probability
+Details: Positive-class probability extracted from predict_proba column 1
+
+INTEGRITY CONDITIONS
+----------------------------------------------------------------------------------------
+Existing saved model used: YES
+Existing preserved test set used: YES
+Model retrained: NO
+Hyperparameters changed: NO
+Threshold tuned: NO
+Predictions fabricated: NO
+ROC-AUC calculated from hard labels: NO
+
+OUTPUTS
+----------------------------------------------------------------------------------------
+Predictions:
+D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_primary_metrics\regenerated_existing\regenerated_existing_predictions.csv
+
+Metrics:
+D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_primary_metrics\regenerated_existing\regenerated_existing_metrics.csv
+
+Confusion matrix:
+D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_primary_metrics\regenerated_existing\regenerated_confusion_matrix.csv
+
+Model provenance:
+D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_primary_metrics\regenerated_existing\model_provenance.csv
+
+Test-data audit:
+D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_primary_metrics\regenerated_existing\test_data_audit.csv
+
+========================================================================================

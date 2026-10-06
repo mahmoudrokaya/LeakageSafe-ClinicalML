@@ -1,0 +1,7 @@
+﻿criterion,passed,detail
+verified_structured_generative_architecture,0,0 verified generative implementation file(s).
+generator_runtime_measurements,0,0 runtime evidence row(s) linked to verified generator code.
+generator_gpu_memory_measurements,0,0 memory evidence row(s) linked to verified generator code.
+workload_N_500_provenance,0,No verified generator workload evidence for N=500.
+workload_N_100000_provenance,0,No verified generator workload evidence for N=100000.
+historical_hardware_documentation,1,92 hardware-related evidence row(s) found; manual consistency assessment still required.

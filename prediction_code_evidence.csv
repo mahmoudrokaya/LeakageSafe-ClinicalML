@@ -1,0 +1,14 @@
+﻿dataset_hint,evidence_category,experiment,matched_patterns,relative_path
+COVID-clinical,prediction_saving,,to_csv\(,preprocess_covid_clinical.py
+,prediction_saving,,to_csv\(,split_and_standardize.py
+,prediction_saving,,np\.save\(,data\preprocessed\generate_graph_features_and_adjacency.py
+,prediction_creation,,\.predict\(; y_pred,metrics\evaluate_fairness.py
+,prediction_creation,,\.predict\(; y_pred,metrics\evaluate_fairness1.py
+,prediction_saving,,to_csv\(,metrics\evaluate_fairness1.py
+,prediction_creation,,\.predict\(; y_pred,models\classifiers\train_ensemble.py
+,prediction_saving,,joblib\.dump,models\classifiers\train_ensemble.py
+,prediction_saving,,np\.save\(,models\encoders\contrastive_encoder.py
+,prediction_saving,,to_csv\(,training\ensemble\train_hfagm.py
+,prediction_creation,,torch\.argmax,training\hfagm\train_hfagm.py
+,prediction_saving,,to_csv\(,training\hfagm\train_hfagm.py
+,prediction_saving,,np\.save\(,utils\extract_batch_subgraph1.py

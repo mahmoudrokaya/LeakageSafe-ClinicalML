@@ -1,0 +1,52 @@
+﻿feature,real_missing_count,real_imputation_median,real_scaler_mean,real_scaler_scale,representation,real_source
+Age,0,48.0,49.59585492227979,19.974657089009366,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+ESR,0,10.0,31.922279792746114,38.33894610686278,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+VIT D,0,50.0,50.082901554404145,12.32098205642992,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+VIT B12,0,387.0,419.8445595854922,193.56092260721775,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+CALClUM,0,8.91,8.707409326424871,1.1503752590337448,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+PHOSPHOROUS,0,3.68,4.179533678756477,1.924290944079605,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+MAGNESIUM,0,2.14,2.152020725388601,0.3574703286146814,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+ALBUMIN,0,4.11,3.6894818652849737,1.0065988189510353,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+WBC,0,9.06,11.702487046632124,7.621632903460859,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+RBC,0,4.89,4.771709844559585,0.9895127176547525,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+HEMO,0,13.3,13.00103626943005,2.723834344732556,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+HEMA,0,42.0,43.37461139896373,33.72971242831248,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+MCV,0,87.2,87.0238860103627,7.298948034605866,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+MCH,0,27.9,27.46870466321243,2.703603981337821,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+MCHC,0,31.6,31.539896373056994,1.8263795239290381,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+PLATELET COUNT,0,243.0,247.26787564766838,114.70947851094942,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+RDW-CV,0,14.0,17.03678756476684,20.16798221882163,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+RDW-SD,0,43.7,46.224870466321235,20.77505237415839,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+PDW,0,13.0,13.562176165803109,4.377186432791183,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+MPV,0,11.0,11.147668393782384,2.60444165326668,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+P-LCR,0,31.4,31.758549222797924,8.921583653705444,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+PCT,0,0.26,0.4469896373056995,1.8503752762899341,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+NEUTRPHILS #,0,4.47,5.586683937823834,5.173729213809407,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+NEUTRPHILS,0,60.1,60.07248704663213,17.0525825017914,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+LYMPHOCYTE %,0,31.1,30.68290155440414,12.466696271800066,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+MONOCYTES,0,6.5,6.693264248704664,3.3207318966059804,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+EOSINOPHILS,0,2.3,2.594300518134715,1.9113022587222102,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+BASOPHILS %,0,0.4,0.459740932642487,0.2937879028275923,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+BLOOD UREA,0,34.0,59.11113989637306,55.57295203302023,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+CREATININE,0,0.82,1.3833751295336787,1.7224004267460673,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+SODIUM (NA),0,139.0,138.03119170984456,15.243191400492734,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+POTASSIUM (K),0,4.45,5.018963730569948,7.234386221640774,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+CHLORIDE,0,100.4,98.85129533678759,8.599319823736694,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+SGOT (AST),0,28.0,77.62694300518135,205.9062760268251,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+SGPT (ALT),0,23.0,89.62917098445595,339.0565765700097,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+BILRUBIN,0,0.547,0.8508186528497409,1.9064347631045009,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+CHOLESTEROL,0,129.0,127.34715025906736,43.78383907811005,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+TRIGLYCERIDES,0,123.1,130.24507772020726,54.45762805129539,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+HDL,0,43.4,43.595336787564776,7.205095276508768,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+LDL,0,74.7,80.43626943005182,40.462731916737276,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+CPK,0,108.0,240.71502590673575,582.7676388255486,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+SGOT (AST).1,0,29.0,136.2020725388601,689.2959053824792,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+LDH,0,213.0,537.6062176165804,1302.0575468458098,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+FERRITIN,0,262.0,923.4404145077721,2915.3688250967393,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+D-DIMER,0,0.37,2.270098445595855,7.78096560304035,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+PTT,0,37.3,40.68181347150259,15.858682632742108,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+PT,0,14.4,16.118134715025906,5.859665647014787,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+INR,0,1.1,1.9300000000000004,9.47313436046375,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+CRP,0,0.674,7.41302590673575,13.262550464881395,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+GLUCOSE,0,120.8,160.51088082901555,115.28153299865282,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+HBA1C,0,5.4,5.844041450777203,1.7251631261284643,real_reference_standardized_structured_feature,D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv

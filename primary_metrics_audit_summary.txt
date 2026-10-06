@@ -1,0 +1,79 @@
+====================================================================================
+HFAGM - PRIMARY METRIC RECONSTRUCTION AUDIT
+====================================================================================
+
+Generated: 2026-09-02T17:57:00
+
+Project root:
+D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project
+
+SOURCE DISCOVERY
+------------------------------------------------------------------------------------
+Relevant source files inventoried: 51
+Historical metric values extracted: 221
+Candidate label/prediction/probability arrays: 2
+Prediction-generating code evidence rows: 47
+
+RECONSTRUCTION
+------------------------------------------------------------------------------------
+Compatible reconstruction candidate pairs: 0
+Successfully recomputed metric sets: 0
+Failed reconstruction attempts: 0
+Canonical prediction tables created: 0
+
+EXPERIMENT STATUS
+------------------------------------------------------------------------------------
+Experiment: new_exp2
+  Historical metric rows: 84
+  Array candidates: 0
+  Prediction-code evidence: 0
+  Recomputed metric sets: 0
+  Status: CANNOT_RECOMPUTE
+  Recommendation: Only summary metrics appear to remain. Underlying predictions must be regenerated from the original experiment or the result cannot be independently verified.
+
+Experiment: new_exp3
+  Historical metric rows: 9
+  Array candidates: 0
+  Prediction-code evidence: 0
+  Recomputed metric sets: 0
+  Status: CANNOT_RECOMPUTE
+  Recommendation: Only summary metrics appear to remain. Underlying predictions must be regenerated from the original experiment or the result cannot be independently verified.
+
+Experiment: new_exps
+  Historical metric rows: 128
+  Array candidates: 0
+  Prediction-code evidence: 0
+  Recomputed metric sets: 0
+  Status: CANNOT_RECOMPUTE
+  Recommendation: Only summary metrics appear to remain. Underlying predictions must be regenerated from the original experiment or the result cannot be independently verified.
+
+
+IMPORTANT INTERPRETATION
+------------------------------------------------------------------------------------
+
+1. Historical metric CSVs are treated as historical evidence only.
+2. Accuracy/F1/AUC are considered independently verified only when
+   they can be recomputed from actual y_true/y_pred/y_prob arrays.
+3. Metrics from New_EXPs, New_EXP2, and New_EXP3 are NOT assumed
+   to represent the same model, dataset, or experiment.
+4. ROC-AUC is recomputed only from probabilities/scores. It is not
+   reconstructed from hard class predictions.
+5. No model is retrained by this script.
+6. No missing prediction is fabricated from summary statistics.
+7. Cross-file array matching requires strong structural evidence;
+   simple equality of sample count is not considered sufficient.
+
+FILES TO REVIEW NEXT
+------------------------------------------------------------------------------------
+1. experiment_reconstruction_status.csv
+2. recomputed_primary_metrics.csv
+3. historical_vs_recomputed.csv
+4. reconstruction_candidates.csv
+5. array_candidates.csv
+6. prediction_source_candidates.csv
+7. prediction_code_evidence.csv
+8. confusion_matrices.csv
+9. canonical_prediction_files.csv
+10. experiment_metric_inventory.csv
+
+====================================================================================

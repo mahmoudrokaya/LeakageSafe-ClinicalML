@@ -1,0 +1,2 @@
+﻿condition,training_source,tn,fp,fn,tp,total
+real_training_unbalanced,data\raw\covid_clinical.csv,20,0,0,19,39

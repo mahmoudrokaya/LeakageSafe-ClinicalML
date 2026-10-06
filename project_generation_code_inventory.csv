@@ -1,0 +1,22 @@
+﻿file,suffix,size_bytes,modified_time,high_value_path,generator_terms,generation_terms,model_load_terms,model_save_terms,preprocessing_terms
+actual_column_names.py,.py,277,2025-06-12T19:00:14,0,"[""hfagm""]",[],[],[],[]
+CreatingSubfolders.py,.py,1007,2025-06-12T16:36:40,0,"[""generator"", ""hfagm""]","[""generator"", ""synthetic""]",[],[],[]
+data\preprocessed\generate_graph_features_and_adjacency.py,.py,2193,2025-06-12T23:20:49,0,"[""hfagm""]",[],[],[],[]
+experiments\New_EXP2\artifacts\run_config_ArSL.json,.json,841,2025-10-27T05:28:33,1,"[""hfagm"", ""vae""]","[""vae""]",[],[],[]
+experiments\New_EXP3\run_config.json,.json,512,2025-10-27T17:43:46,1,"[""hfagm""]",[],[],[],[]
+experiments\New_EXPs\artifacts\run_config.json,.json,686,2025-10-26T00:22:25,1,"[""hfagm"", ""vae""]","[""latent"", ""vae""]",[],[],[]
+get_project_structure.py,.py,1508,2026-09-02T07:54:36,0,"[""hfagm""]",[],[],[],[]
+metrics\evaluate_fairness.py,.py,2804,2025-06-12T20:27:22,0,"[""hfagm""]",[],"[""joblib.load""]",[],[]
+metrics\evaluate_fairness1.py,.py,3641,2025-06-12T20:35:52,0,"[""hfagm""]","[""generate""]","[""joblib.load""]",[],[]
+models\classifiers\hfagm_model.py,.py,1965,2025-06-14T17:37:04,1,"[""hfagm""]",[],[],[],[]
+models\classifiers\train_ensemble.py,.py,1644,2025-06-12T20:17:35,1,"[""hfagm""]",[],[],"[""joblib.dump""]",[]
+models\classifiers\train_hfagm.py,.py,3411,2025-06-14T17:27:50,1,"[""hfagm""]",[],[],[],[]
+models\encoders\contrastive_encoder.py,.py,2865,2025-06-12T20:07:58,1,"[""hfagm""]","[""latent""]",[],[],"[""normaliz""]"
+outputs\revision_audit\audit_summary.txt,.txt,6072,2026-09-02T15:37:16,0,"[""hfagm""]","[""generate"", ""synthetic""]",[],[],[]
+outputs\revision_audit_v2\audit_summary_v2.txt,.txt,3413,2026-09-02T15:54:29,0,"[""hfagm""]","[""generate"", ""synthetic""]",[],[],[]
+preprocess_covid_clinical.py,.py,2023,2025-06-12T18:45:18,0,"[""hfagm""]","[""sample""]",[],[],"[""fit_transform"", ""minmaxscaler"", ""normaliz"", ""scaler""]"
+project_structure.txt,.txt,2953341,2026-09-02T07:54:58,0,"[""generator"", ""hfagm""]","[""generate"", ""generator"", ""synthetic""]",[],[],[]
+split_and_standardize.py,.py,1419,2025-06-12T19:58:53,0,"[""hfagm""]",[],[],[],"[""fit_transform"", ""scaler"", ""standardscaler""]"
+training\ensemble\train_hfagm.py,.py,2884,2025-06-12T22:55:35,1,"[""hfagm""]",[],[],"[""state_dict"", ""torch.save""]",[]
+training\hfagm\train_hfagm.py,.py,4025,2025-06-13T00:04:42,1,"[""hfagm""]",[],[],"[""state_dict"", ""torch.save""]",[]
+utils\extract_batch_subgraph1.py,.py,1179,2025-06-13T00:18:21,0,"[""hfagm""]",[],[],[],[]
