@@ -1,0 +1,11 @@
+Attribute,Disparity_Accuracy,Demographic_Parity_Diff,Equalized_Odds_Diff
+Gender,"accuracy          0.000000
+selection_rate    0.215054
+TPR               0.000000
+FPR               0.000000
+dtype: float64",0.2150537634408602,0.0
+Nationality,"accuracy          0.000000
+selection_rate    0.150376
+TPR               0.000000
+FPR               0.000000
+dtype: float64",0.15037593984962405,0.0

@@ -1,0 +1,5 @@
+﻿sensitive_attribute,observed_group,n_raw_dataset,raw_dataset_fraction,reference_group,is_reference_group,reference_selection_method,normative_privileged_status_claimed,favorable_label,favorable_outcome_description,missing_sensitive_attribute_rows
+Gender,M,135,0.6994818652849741,M,1,AUTO_LARGEST_GROUP_NOT_NORMATIVE,False,0,recovered/survived,0
+Gender,F,58,0.3005181347150259,M,0,AUTO_LARGEST_GROUP_NOT_NORMATIVE,False,0,recovered/survived,0
+Nationality,S,100,0.5181347150259067,S,1,AUTO_LARGEST_GROUP_NOT_NORMATIVE,False,0,recovered/survived,0
+Nationality,NS,93,0.48186528497409326,S,0,AUTO_LARGEST_GROUP_NOT_NORMATIVE,False,0,recovered/survived,0

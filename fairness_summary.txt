@@ -1,0 +1,98 @@
+====================================================================================================
+HFAGM - RECOMPUTED LEAKAGE-SAFE FAIRNESS METRICS
+====================================================================================================
+
+Generated: 2026-09-02T21:43:34
+
+INPUT
+----------------------------------------------------------------------------------------------------
+Raw source: D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+Raw rows: 193
+Prediction source: D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\repeated_predictions.csv
+Prediction rows: 780
+Seeds: [42, 47, 53, 59, 71, 83, 97, 101, 113, 127]
+Variants: ['training_only_oversampled', 'unbalanced_training']
+
+02E COLUMN MAPPING
+----------------------------------------------------------------------------------------------------
+original_source_row_index -> source_index
+y_score_positive -> y_prob
+test_partition_row retained only as local test-row metadata
+
+FAIRNESS DEFINITIONS
+----------------------------------------------------------------------------------------------------
+Favorable outcome: label 0 = recovered/survived
+SPD = P(predicted favorable | comparison) - P(predicted favorable | reference)
+EOD = P(predicted favorable | true favorable, comparison) - P(predicted favorable | true favorable, reference)
+DI = P(predicted favorable | comparison) / P(predicted favorable | reference)
+
+Parity targets:
+  SPD = 0
+  EOD = 0
+  DI  = 1
+
+SPD and EOD must lie within [-1, 1]. DI must be nonnegative when defined.
+
+SENSITIVE ATTRIBUTES
+----------------------------------------------------------------------------------------------------
+Gender: {'M': 135, 'F': 58}
+  operational reference = 'M'
+  selection method = AUTO_LARGEST_GROUP_NOT_NORMATIVE
+  NOTE: largest group is used solely for reproducible metric orientation; no privileged-group interpretation is asserted.
+Nationality: {'S': 100, 'NS': 93}
+  operational reference = 'S'
+  selection method = AUTO_LARGEST_GROUP_NOT_NORMATIVE
+  NOTE: largest group is used solely for reproducible metric orientation; no privileged-group interpretation is asserted.
+
+PRIMARY VARIANT
+----------------------------------------------------------------------------------------------------
+unbalanced_training
+
+Gender: comparison='F', reference='M'
+  SPD: -0.111682 ± 0.263484; range [-0.425000, 0.522222]
+  EOD: 0.027241 ± 0.045297; range [0.000000, 0.117647]
+  DI : 0.872174 ± 0.590470; range [0.320000, 2.424242]
+
+Nationality: comparison='NS', reference='S'
+  SPD: 0.043408 ± 0.109867; range [-0.178947, 0.178947]
+  EOD: 0.031710 ± 0.053294; range [0.000000, 0.142857]
+  DI : 1.105469 ± 0.221310; range [0.690909, 1.425000]
+
+BOUNDS AUDIT
+----------------------------------------------------------------------------------------------------
+Invalid mathematical-bound records: 0
+All defined SPD/EOD/DI values satisfy their mathematical bounds.
+
+INTERPRETATION RULES
+----------------------------------------------------------------------------------------------------
+1. SPD closer to 0 indicates greater statistical-parity alignment.
+2. EOD closer to 0 indicates greater equal-opportunity alignment.
+3. DI closer to 1 indicates greater parity.
+4. A DI value moving from 1.0 toward 0.64 or 0.21 is NOT an improvement in parity.
+5. The sign of SPD/EOD depends on which subgroup is written as comparison minus reference.
+6. Repeated test splits overlap in participants, so the 10-seed summaries are stability summaries rather than 10 independent population samples.
+7. Small subgroup counts must be considered before drawing strong substantive fairness conclusions.
+
+MANUSCRIPT USE
+----------------------------------------------------------------------------------------------------
+Use these recomputed metrics instead of historical SPD/EOD/DI values whenever the fairness result is tied to the corrected clinical classifier evaluation.
+Do not describe a lower DI as a fairness improvement unless it is demonstrably closer to the parity target DI=1.
+Do not call the automatically selected largest subgroup privileged or advantaged unless that interpretation is supported separately by the study design/documentation.
+
+PRIMARY OUTPUTS
+----------------------------------------------------------------------------------------------------
+sensitive_attribute_inventory.csv
+prediction_input_audit.csv
+predictions_with_sensitive_attributes.csv
+fairness_per_seed_reference.csv
+fairness_per_seed_pairwise.csv
+fairness_summary_reference.csv
+fairness_summary_pairwise.csv
+subgroup_performance_per_seed.csv
+subgroup_counts_per_seed.csv
+sensitive_attribute_missingness.csv
+fairness_bounds_audit.csv
+fairness_interpretation_audit.csv
+fairness_provenance.csv
+
+====================================================================================================
