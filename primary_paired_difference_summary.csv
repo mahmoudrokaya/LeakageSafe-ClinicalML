@@ -1,0 +1,7 @@
+﻿metric,n_paired_seeds,difference_mean,difference_sd,difference_median,difference_min,difference_max,formal_p_value,interpretation
+accuracy,10,-0.005128205128205121,0.020225913788374742,0.0,-0.05128205128205121,0.02564102564102566,,descriptive paired seed-level difference only; not an inferential significance test
+f1,10,-0.005555555555555558,0.022124726383201825,0.0,-0.05555555555555558,0.028528528528528607,,descriptive paired seed-level difference only; not an inferential significance test
+precision,10,0.0,0.0,0.0,0.0,0.0,,descriptive paired seed-level difference only; not an inferential significance test
+recall_sensitivity,10,-0.010526315789473684,0.04151634935508504,0.0,-0.10526315789473684,0.052631578947368474,,descriptive paired seed-level difference only; not an inferential significance test
+roc_auc,10,-0.0002631578947368429,0.0008321783316232604,0.0,-0.0026315789473684292,0.0,,descriptive paired seed-level difference only; not an inferential significance test
+specificity,10,0.0,0.0,0.0,0.0,0.0,,descriptive paired seed-level difference only; not an inferential significance test

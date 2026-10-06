@@ -1,0 +1,7 @@
+﻿criterion,passed,detail
+corrected_repeated_run_values_available,1,3380 repeated metric values recovered.
+multiple_corrected_seeds_available,1,"10 unique seed(s): [42, 47, 53, 59, 71, 83, 97, 101, 113, 127]"
+paired_condition_differences_available,1,10 paired descriptive summary row(s).
+independent_experimental_replicates_available,0,Repeated holdouts reuse the same 193 participants.
+formal_significance_claim_justified_by_corrected_protocol,0,The corrected repeated-holdout protocol provides stability evidence but not independent-replicate inferential significance.
+historical_significance_language_requires_revision,1,63 significance/p-value statement(s) require verification or removal.

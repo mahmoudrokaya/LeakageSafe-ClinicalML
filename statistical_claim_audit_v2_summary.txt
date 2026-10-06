@@ -1,0 +1,114 @@
+====================================================================================================
+HFAGM - STATISTICAL CLAIM / DESCRIPTIVE UNCERTAINTY AUDIT V2
+====================================================================================================
+
+Generated: 2026-09-03T00:20:19
+
+V2 CORRECTIONS
+----------------------------------------------------------------------------------------------------
+Primary performance statistics are restricted to the corrected 02E repeated leakage-safe classifier evaluation.
+Single-feature chronology/proxy experiments are excluded from primary performance aggregation.
+Fairness statistics are analyzed separately and paired by seed plus sensitive-attribute/comparison identifiers.
+No inferential confidence intervals or p-values are generated.
+
+PRIMARY SOURCE
+----------------------------------------------------------------------------------------------------
+outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\repeated_seed_metrics.csv
+
+PRIMARY DATA INTEGRITY
+----------------------------------------------------------------------------------------------------
+Expected seeds: [42, 47, 53, 59, 71, 83, 97, 101, 113, 127]
+Primary metric values: 120 (expected 120 = 10 seeds × 2 conditions × 6 metrics)
+Primary metric summaries: 12
+Primary paired metric summaries: 6
+
+PRIMARY PERFORMANCE
+----------------------------------------------------------------------------------------------------
+accuracy: unbalanced mean=0.9820512821, SD=0.0211095539, median=0.9871794872, range=[0.9487179487, 1.0000000000]
+    oversampled mean=0.9769230769, SD=0.0224511548, median=0.9743589744, range=[0.9487179487, 1.0000000000]
+    descriptive mean difference (oversampled - unbalanced)=-0.0051282051; paired seeds=10
+precision: unbalanced mean=0.9804761905, SD=0.0337614234, median=1.0000000000, range=[0.9047619048, 1.0000000000]
+    oversampled mean=0.9804761905, SD=0.0337614234, median=1.0000000000, range=[0.9047619048, 1.0000000000]
+    descriptive mean difference (oversampled - unbalanced)=0.0000000000; paired seeds=10
+recall_sensitivity: unbalanced mean=0.9842105263, SD=0.0355236083, median=1.0000000000, range=[0.8947368421, 1.0000000000]
+    oversampled mean=0.9736842105, SD=0.0447282413, median=1.0000000000, range=[0.8947368421, 1.0000000000]
+    descriptive mean difference (oversampled - unbalanced)=-0.0105263158; paired seeds=10
+specificity: unbalanced mean=0.9800000000, SD=0.0349602949, median=1.0000000000, range=[0.9000000000, 1.0000000000]
+    oversampled mean=0.9800000000, SD=0.0349602949, median=1.0000000000, range=[0.9000000000, 1.0000000000]
+    descriptive mean difference (oversampled - unbalanced)=0.0000000000; paired seeds=10
+f1: unbalanced mean=0.9816135366, SD=0.0217337014, median=0.9871794872, range=[0.9444444444, 1.0000000000]
+    oversampled mean=0.9760579811, SD=0.0235372551, median=0.9743589744, range=[0.9444444444, 1.0000000000]
+    descriptive mean difference (oversampled - unbalanced)=-0.0055555556; paired seeds=10
+roc_auc: unbalanced mean=0.9986842105, SD=0.0033402514, median=1.0000000000, range=[0.9894736842, 1.0000000000]
+    oversampled mean=0.9984210526, SD=0.0033287133, median=1.0000000000, range=[0.9894736842, 1.0000000000]
+    descriptive mean difference (oversampled - unbalanced)=-0.0002631579; paired seeds=10
+
+FAIRNESS ANALYSIS
+----------------------------------------------------------------------------------------------------
+Selected fairness source files: 1
+Fairness metric rows: 120
+Fairness paired summaries: 6
+Gender | di | paired seeds=10 | mean difference=0.0277926322
+Gender | eod | paired seeds=10 | mean difference=0.0000000000
+Gender | spd | paired seeds=10 | mean difference=0.0174242424
+Nationality | di | paired seeds=10 | mean difference=0.0015992961
+Nationality | eod | paired seeds=10 | mean difference=0.0000000000
+Nationality | spd | paired seeds=10 | mean difference=0.0001156300
+
+STATISTICAL INTERPRETATION
+----------------------------------------------------------------------------------------------------
+The ten random seeds correspond to repeated train/test partitions of the same 193-participant cohort.
+They are therefore dependent resamples rather than ten independent clinical datasets.
+The corrected statistics support descriptive stability reporting using mean ± SD and range.
+No formal claim of statistical significance is made.
+
+VERIFICATION MATRIX
+----------------------------------------------------------------------------------------------------
+PASS: primary_02E_source_resolved
+    Corrected 02E repeated-seed classifier result was explicitly resolved.
+PASS: primary_metric_count_exact
+    Recovered 120 primary metric values; expected 120 = 10 seeds × 2 conditions × 6 metrics.
+PASS: primary_seed_pairing_exact
+    Each primary metric comparison contains exactly 10 one-to-one paired seeds.
+PASS: single_feature_experiments_excluded_from_primary
+    Primary statistics are restricted to the selected 02E classifier table.
+PASS: fairness_paired_without_cartesian_inflation
+    Fairness pairing is grouped by sensitive attribute, comparison identifiers, metric, and seed.
+PASS: inferential_confidence_intervals_removed
+    Only mean, SD, median, minimum, and maximum are reported.
+PASS: formal_p_values_not_generated
+    No p-value or inferential significance test is produced.
+MISSING/NO: independent_experimental_replicates_available
+    Repeated holdouts reuse the same 193 participants and are not independent datasets.
+
+FINAL VERDICT
+----------------------------------------------------------------------------------------------------
+DESCRIPTIVE_STABILITY_EVIDENCE_VALID_FORMAL_SIGNIFICANCE_NOT_SUPPORTED
+
+NEXT ACTION
+----------------------------------------------------------------------------------------------------
+USE_MEAN_SD_MIN_MAX_AND_REMOVE_UNSUPPORTED_SIGNIFICANCE_WORDING
+
+MANUSCRIPT ACTION
+----------------------------------------------------------------------------------------------------
+Report the corrected 02E repeated-holdout classifier results using descriptive mean ± SD, optionally accompanied by median and range. Treat seed-level differences as descriptive only. Do not claim statistically significant superiority from these dependent repeated holdouts.
+
+RECOMMENDED REPORTING STYLE
+----------------------------------------------------------------------------------------------------
+Preferred: 'Across ten repeated leakage-safe stratified holdouts, performance remained stable, with ROC-AUC reported as mean ± SD.'
+Avoid: 'The method significantly outperformed the baseline' unless a separate valid inferential design is available.
+
+IMPORTANT LIMITATION
+----------------------------------------------------------------------------------------------------
+Repeated resampling does not increase the independent sample size beyond the original 193 participants.
+
+SAFETY CONFIRMATION
+----------------------------------------------------------------------------------------------------
+New model training: NO
+New synthetic generation: NO
+Formal significance test: NO
+P-value generated: NO
+Inferential confidence interval generated: NO
+Historical project files modified: NO
+
+====================================================================================================

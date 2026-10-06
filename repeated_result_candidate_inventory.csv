@@ -1,0 +1,108 @@
+﻿file,rows,columns,seed_column,condition_column,metric_columns,eligible_repeated_metric_table
+outputs\revision_fairness\recomputed_fairness\fairness_bounds_audit.csv,280,11,seed,variant,{},0
+outputs\revision_fairness\recomputed_fairness\fairness_interpretation_audit.csv,4,16,,variant,{},0
+outputs\revision_fairness\recomputed_fairness\fairness_per_seed_pairwise.csv,40,17,seed,variant,{},0
+outputs\revision_fairness\recomputed_fairness\fairness_per_seed_reference.csv,40,21,seed,variant,"{""spd"": ""spd"", ""eod"": ""eod"", ""di"": ""di""}",1
+outputs\revision_fairness\recomputed_fairness\fairness_provenance.csv,1,32,,,{},0
+outputs\revision_fairness\recomputed_fairness\fairness_summary_pairwise.csv,4,54,,variant,{},0
+outputs\revision_fairness\recomputed_fairness\fairness_summary_reference.csv,4,59,,variant,{},0
+outputs\revision_fairness\recomputed_fairness\prediction_input_audit.csv,32,8,seed,variant,{},0
+outputs\revision_fairness\recomputed_fairness\predictions_with_sensitive_attributes.csv,780,11,seed,variant,{},0
+outputs\revision_fairness\recomputed_fairness\sensitive_attribute_inventory.csv,4,11,,,{},0
+outputs\revision_fairness\recomputed_fairness\sensitive_attribute_missingness.csv,2,5,,,{},0
+outputs\revision_fairness\recomputed_fairness\subgroup_counts_per_seed.csv,80,14,seed,variant,{},0
+outputs\revision_fairness\recomputed_fairness\subgroup_performance_per_seed.csv,80,16,seed,variant,"{""accuracy"": ""accuracy""}",1
+outputs\revision_primary_metrics\array_candidates.csv,2,10,,experiment,{},0
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\confusion_matrix_training_only_oversampled.csv,2,3,,,{},0
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\confusion_matrix_unbalanced_training.csv,2,3,,,{},0
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\corrected_evaluation_metrics.csv,2,18,,variant,"{""accuracy"": ""accuracy"", ""precision"": ""precision"", ""recall_sensitivity"": ""recall_sensitivity"", ""specificity"": ""specificity"", ""f1"": ""f1"", ""roc_auc"": ""roc_auc""}",0
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\corrected_evaluation_provenance.csv,1,35,random_state,,{},0
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\corrected_split_manifest.csv,193,4,,,{},0
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\corrected_split_overlap_check.csv,0,2,,,{},0
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\feature_mapping.csv,51,3,,,{},0
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\metrics_training_only_oversampled.csv,1,17,,variant,"{""accuracy"": ""accuracy"", ""precision"": ""precision"", ""recall_sensitivity"": ""recall_sensitivity"", ""specificity"": ""specificity"", ""f1"": ""f1"", ""roc_auc"": ""roc_auc""}",0
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\metrics_unbalanced_training.csv,1,17,,variant,"{""accuracy"": ""accuracy"", ""precision"": ""precision"", ""recall_sensitivity"": ""recall_sensitivity"", ""specificity"": ""specificity"", ""f1"": ""f1"", ""roc_auc"": ""roc_auc""}",0
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\numeric_conversion_audit.csv,51,6,,,{},0
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\original_193_duplicate_audit.csv,193,4,,,{},0
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\predictions_training_only_oversampled.csv,39,8,,variant,{},0
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\predictions_unbalanced_training.csv,39,8,,variant,{},0
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\preserved_model_configuration.csv,1,7,,,{},0
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\variant_comparison.csv,6,4,,,{},0
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\X_test_corrected_scaled.csv,39,51,,,{},0
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\X_train_corrected_scaled.csv,154,51,,,{},0
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\X_train_corrected_training_only_balanced.csv,160,51,,,{},0
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\y_test_corrected.csv,39,1,,,{},0
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\y_train_corrected.csv,154,1,,,{},0
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\y_train_corrected_training_only_balanced.csv,160,1,,,{},0
+outputs\revision_primary_metrics\experiment_metric_inventory.csv,221,7,,experiment,{},0
+outputs\revision_primary_metrics\experiment_reconstruction_status.csv,3,7,,experiment,{},0
+outputs\revision_primary_metrics\feature_chronology_proxy_audit\feature_chronology_classification.csv,51,14,,,{},0
+outputs\revision_primary_metrics\feature_chronology_proxy_audit\feature_mapping.csv,51,3,,,{},0
+outputs\revision_primary_metrics\feature_chronology_proxy_audit\feature_proxy_audit_provenance.csv,1,23,,,{},0
+outputs\revision_primary_metrics\feature_chronology_proxy_audit\feature_proxy_audit_verdict.csv,1,6,,,{},0
+outputs\revision_primary_metrics\feature_chronology_proxy_audit\feature_proxy_review_priority.csv,51,19,,,{},0
+outputs\revision_primary_metrics\feature_chronology_proxy_audit\feature_timing_evidence.csv,36722,8,,,{},0
+outputs\revision_primary_metrics\feature_chronology_proxy_audit\numeric_conversion_audit.csv,51,5,,,{},0
+outputs\revision_primary_metrics\feature_chronology_proxy_audit\single_feature_repeated_seed_metrics.csv,510,10,seed,,"{""accuracy"": ""accuracy"", ""f1"": ""f1"", ""roc_auc"": ""roc_auc""}",1
+outputs\revision_primary_metrics\feature_chronology_proxy_audit\single_feature_repeated_summary.csv,51,22,,,{},0
+outputs\revision_primary_metrics\feature_chronology_proxy_audit\univariate_descriptive_statistics.csv,51,14,,,{},0
+outputs\revision_primary_metrics\feature_chronology_proxy_audit_v2\feature_chronology_classification_v2.csv,51,19,,,{},0
+outputs\revision_primary_metrics\feature_chronology_proxy_audit_v2\feature_mapping_v2.csv,51,3,,,{},0
+outputs\revision_primary_metrics\feature_chronology_proxy_audit_v2\feature_proxy_audit_provenance_v2.csv,1,31,,,{},0
+outputs\revision_primary_metrics\feature_chronology_proxy_audit_v2\feature_proxy_audit_verdict_v2.csv,1,9,,,{},0
+outputs\revision_primary_metrics\feature_chronology_proxy_audit_v2\feature_proxy_review_priority_v2.csv,51,21,,,{},0
+outputs\revision_primary_metrics\feature_chronology_proxy_audit_v2\numeric_conversion_audit_v2.csv,51,5,,,{},0
+outputs\revision_primary_metrics\feature_chronology_proxy_audit_v2\scanner_file_inclusion_audit.csv,51378,5,,,{},0
+outputs\revision_primary_metrics\feature_chronology_proxy_audit_v2\single_feature_repeated_seed_metrics_v2.csv,510,10,seed,,"{""accuracy"": ""accuracy"", ""f1"": ""f1"", ""roc_auc"": ""roc_auc""}",1
+outputs\revision_primary_metrics\feature_chronology_proxy_audit_v2\single_feature_repeated_summary_v2.csv,51,22,,,{},0
+outputs\revision_primary_metrics\feature_chronology_proxy_audit_v2\univariate_descriptive_statistics_v2.csv,51,14,,,{},0
+outputs\revision_primary_metrics\prediction_code_evidence.csv,47,6,,experiment,{},0
+outputs\revision_primary_metrics\prediction_source_candidates.csv,11,4,,experiment,{},0
+outputs\revision_primary_metrics\recomputed_primary_metrics.csv,0,24,,experiment,"{""accuracy"": ""accuracy"", ""precision"": ""precision"", ""recall"": ""recall_sensitivity"", ""sensitivity"": ""recall_sensitivity"", ""specificity"": ""specificity"", ""f1"": ""f1"", ""roc_auc"": ""roc_auc""}",0
+outputs\revision_primary_metrics\regenerated_existing\model_provenance.csv,1,13,,,{},0
+outputs\revision_primary_metrics\regenerated_existing\regenerated_confusion_matrix.csv,2,3,,,{},0
+outputs\revision_primary_metrics\regenerated_existing\regenerated_existing_metrics.csv,1,24,,,"{""accuracy"": ""accuracy"", ""precision"": ""precision"", ""recall"": ""recall_sensitivity"", ""sensitivity"": ""recall_sensitivity"", ""specificity"": ""specificity"", ""f1"": ""f1"", ""roc_auc"": ""roc_auc""}",0
+outputs\revision_primary_metrics\regenerated_existing\regenerated_existing_predictions.csv,40,5,,,{},0
+outputs\revision_primary_metrics\regenerated_existing\test_data_audit.csv,1,22,,,{},0
+outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\feature_mapping.csv,51,3,,,{},0
+outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\numeric_conversion_audit.csv,51,5,,,{},0
+outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\paired_variant_differences.csv,60,5,seed,,{},0
+outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\paired_variant_tests.csv,6,8,,,{},0
+outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\pooled_prediction_summary.csv,2,13,,variant,"{""accuracy"": ""accuracy"", ""precision"": ""precision"", ""sensitivity"": ""recall_sensitivity"", ""specificity"": ""specificity"", ""f1"": ""f1"", ""roc_auc"": ""roc_auc""}",0
+outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\repeated_confusion_matrices.csv,20,7,seed,variant,{},0
+outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\repeated_evaluation_provenance.csv,1,34,,,{},0
+outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\repeated_predictions.csv,780,9,seed,variant,{},0
+outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\repeated_seed_metrics.csv,20,28,seed,variant,"{""accuracy"": ""accuracy"", ""precision"": ""precision"", ""sensitivity"": ""recall_sensitivity"", ""specificity"": ""specificity"", ""f1"": ""f1"", ""roc_auc"": ""roc_auc""}",1
+outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\repeated_split_audit.csv,10,12,seed,,{},0
+outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\repeated_summary_statistics.csv,12,10,,variant,{},0
+outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\source_case_prediction_frequency.csv,328,10,,variant,{},0
+outputs\revision_primary_metrics\source_file_inventory.csv,51,7,,experiment,{},0
+outputs\revision_primary_metrics\split_leakage_audit\balancing_code_evidence.csv,1025,5,,,{},0
+outputs\revision_primary_metrics\split_leakage_audit\code_operation_order.csv,15562,4,,,{},0
+outputs\revision_primary_metrics\split_leakage_audit\dataset_inventory.csv,6,13,,,{},0
+outputs\revision_primary_metrics\split_leakage_audit\feature_target_correlations.csv,51,5,,,{},0
+outputs\revision_primary_metrics\split_leakage_audit\file_timestamp_audit.csv,14,5,,,{},0
+outputs\revision_primary_metrics\split_leakage_audit\leakage_findings.csv,11,6,,,{},0
+outputs\revision_primary_metrics\split_leakage_audit\leakage_verdict.csv,1,5,,,{},0
+outputs\revision_primary_metrics\split_leakage_audit\scaling_code_evidence.csv,7817,5,,,{},0
+outputs\revision_primary_metrics\split_leakage_audit\schema_comparison.csv,10,9,,,{},0
+outputs\revision_primary_metrics\split_leakage_audit\split_code_evidence.csv,8220,5,,,{},0
+outputs\revision_primary_metrics\split_leakage_audit\synthetic_generation_code_evidence.csv,5500,5,,,{},0
+outputs\revision_primary_metrics\split_leakage_audit\target_feature_audit.csv,50,4,,,{},0
+outputs\revision_primary_metrics\split_leakage_audit\train_test_exact_overlap.csv,5,7,,,{},0
+outputs\revision_primary_metrics\split_leakage_audit\train_test_near_duplicate_summary.csv,6,3,,,{},0
+outputs\revision_primary_metrics\split_leakage_audit\train_test_near_duplicates.csv,40,3,,,{},0
+outputs\revision_primary_metrics\split_leakage_audit\training_code_evidence.csv,7550,5,,,{},0
+outputs\revision_utility\common_real_test\classifier_provenance.csv,1,6,,,{},0
+outputs\revision_utility\common_real_test\common_test_integrity_audit.csv,3,4,,,{},0
+outputs\revision_utility\common_real_test\locked_split_manifest.csv,1,13,random_state,,{},0
+outputs\revision_utility\common_real_test\locked_test_data.csv,39,56,,,{},0
+outputs\revision_utility\common_real_test\locked_test_indices.csv,39,2,,,{},0
+outputs\revision_utility\common_real_test\locked_train_indices.csv,154,2,,,{},0
+outputs\revision_utility\common_real_test\preprocessing_audit.csv,51,8,,,{},0
+outputs\revision_utility\common_real_test\real_training_data_audit.csv,1,10,,condition,{},0
+outputs\revision_utility\common_real_test\utility_confusion_matrices.csv,1,7,,condition,{},0
+outputs\revision_utility\common_real_test\utility_metrics.csv,1,10,,condition,"{""accuracy"": ""accuracy"", ""precision"": ""precision"", ""recall_sensitivity"": ""recall_sensitivity"", ""specificity"": ""specificity"", ""f1"": ""f1"", ""roc_auc"": ""roc_auc""}",0
+outputs\revision_utility\common_real_test\utility_predictions.csv,39,9,,condition,{},0
+outputs\revision_utility\common_real_test\utility_provenance.csv,1,21,split_seed,,{},0
+outputs\revision_utility\common_real_test\utility_verdict.csv,1,13,,,{},0

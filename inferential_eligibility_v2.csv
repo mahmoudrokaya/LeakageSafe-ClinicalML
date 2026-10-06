@@ -1,0 +1,6 @@
+﻿criterion,status,detail
+multiple_repeated_seeds,PASS,10 repeated leakage-safe stratified holdout seeds are available.
+same_participant_pool_reused,YES,All repeated runs originate from the same 193-participant cohort.
+independent_dataset_replicates,NO,No independent external cohorts or independent experimental datasets are present.
+formal_significance_from_seed_replicates,NOT_SUPPORTED,Seed-level repeated holdouts are dependent resamples and are interpreted descriptively.
+descriptive_mean_sd_range,SUPPORTED,"Mean, SD, median, minimum, maximum, and paired seed-level differences are appropriate descriptive stability summaries."

@@ -1,0 +1,13 @@
+﻿condition,metric,n_seeds,seeds,mean,sd,median,min,max,interpretation
+oversampled,accuracy,10,"[42, 47, 53, 59, 71, 83, 97, 101, 113, 127]",0.976923076923077,0.022451154763356716,0.9743589743589745,0.9487179487179488,1.0,descriptive stability across repeated leakage-safe stratified holdouts
+oversampled,f1,10,"[42, 47, 53, 59, 71, 83, 97, 101, 113, 127]",0.9760579810579811,0.023537255050333442,0.9743589743589745,0.9444444444444444,1.0,descriptive stability across repeated leakage-safe stratified holdouts
+oversampled,precision,10,"[42, 47, 53, 59, 71, 83, 97, 101, 113, 127]",0.9804761904761904,0.03376142341878202,1.0,0.9047619047619048,1.0,descriptive stability across repeated leakage-safe stratified holdouts
+oversampled,recall_sensitivity,10,"[42, 47, 53, 59, 71, 83, 97, 101, 113, 127]",0.9736842105263159,0.044728241347305124,1.0,0.8947368421052632,1.0,descriptive stability across repeated leakage-safe stratified holdouts
+oversampled,roc_auc,10,"[42, 47, 53, 59, 71, 83, 97, 101, 113, 127]",0.998421052631579,0.003328713326493008,1.0,0.9894736842105264,1.0,descriptive stability across repeated leakage-safe stratified holdouts
+oversampled,specificity,10,"[42, 47, 53, 59, 71, 83, 97, 101, 113, 127]",0.9800000000000001,0.03496029493900505,1.0,0.9,1.0,descriptive stability across repeated leakage-safe stratified holdouts
+unbalanced,accuracy,10,"[42, 47, 53, 59, 71, 83, 97, 101, 113, 127]",0.9820512820512821,0.021109553906373413,0.9871794871794872,0.9487179487179488,1.0,descriptive stability across repeated leakage-safe stratified holdouts
+unbalanced,f1,10,"[42, 47, 53, 59, 71, 83, 97, 101, 113, 127]",0.9816135366135367,0.021733701367630136,0.9871794871794872,0.9444444444444444,1.0,descriptive stability across repeated leakage-safe stratified holdouts
+unbalanced,precision,10,"[42, 47, 53, 59, 71, 83, 97, 101, 113, 127]",0.9804761904761904,0.03376142341878202,1.0,0.9047619047619048,1.0,descriptive stability across repeated leakage-safe stratified holdouts
+unbalanced,recall_sensitivity,10,"[42, 47, 53, 59, 71, 83, 97, 101, 113, 127]",0.9842105263157895,0.035523608300555405,1.0,0.8947368421052632,1.0,descriptive stability across repeated leakage-safe stratified holdouts
+unbalanced,roc_auc,10,"[42, 47, 53, 59, 71, 83, 97, 101, 113, 127]",0.9986842105263157,0.0033402513622209887,1.0,0.9894736842105264,1.0,descriptive stability across repeated leakage-safe stratified holdouts
+unbalanced,specificity,10,"[42, 47, 53, 59, 71, 83, 97, 101, 113, 127]",0.9800000000000001,0.03496029493900505,1.0,0.9,1.0,descriptive stability across repeated leakage-safe stratified holdouts

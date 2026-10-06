@@ -1,0 +1,7 @@
+﻿criterion,status,detail
+multiple_random_seeds_available,PASS,Maximum recovered repeated seeds = 10.
+independent_datasets_or_external_test_replicates,MISSING,Repeated runs reuse the same 193-participant dataset.
+nonoverlapping_independent_test_sets,MISSING,Random holdout test sets overlap across seeds.
+predefined_inferential_unit,MISSING,Recovered protocol does not define each random seed as an independent scientific experimental unit.
+paired_seed_differences_available,PASS,10 paired descriptive comparison(s) could be reconstructed.
+formal_significance_claim_supported,NO,"Available repeated holdouts support descriptive stability analysis, not conventional independent-replicate significance claims."

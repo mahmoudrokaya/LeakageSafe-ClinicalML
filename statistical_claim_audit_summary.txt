@@ -1,0 +1,133 @@
+====================================================================================================
+HFAGM - STATISTICAL CLAIM / UNCERTAINTY FORENSIC AUDIT
+====================================================================================================
+
+Generated: 2026-09-02T23:49:41
+
+PURPOSE
+----------------------------------------------------------------------------------------------------
+Audit whether claims of statistical significance are supported by the corrected experimental design and recoverable raw repeated-run evidence.
+
+SOURCE AUDIT
+----------------------------------------------------------------------------------------------------
+Text/statistical sources scanned: 20314
+Statistical/significance language rows: 244
+Corrected result tables scanned: 116
+
+CORRECTED REPEATED-RUN EVIDENCE
+----------------------------------------------------------------------------------------------------
+Repeated metric values recovered: 3380
+Unique seeds recovered: 10
+Seeds: [42, 47, 53, 59, 71, 83, 97, 101, 113, 127]
+Paired descriptive comparison summaries: 10
+
+STATISTICAL INTERPRETATION
+----------------------------------------------------------------------------------------------------
+Repeated stratified holdouts reuse the same participant pool.
+Therefore the seed-level runs are not independent clinical datasets or independent experimental replicates.
+Mean, SD, ranges, and seed-level paired differences may be reported as descriptive stability evidence.
+Conventional claims that one condition is 'statistically significantly' better than another are not supported by this repeated-holdout design alone.
+
+VERIFICATION MATRIX
+----------------------------------------------------------------------------------------------------
+PASS: corrected_repeated_run_values_available
+    3380 repeated metric values recovered.
+PASS: multiple_corrected_seeds_available
+    10 unique seed(s): [42, 47, 53, 59, 71, 83, 97, 101, 113, 127]
+PASS: paired_condition_differences_available
+    10 paired descriptive summary row(s).
+MISSING: independent_experimental_replicates_available
+    Repeated holdouts reuse the same 193 participants.
+MISSING: formal_significance_claim_justified_by_corrected_protocol
+    The corrected repeated-holdout protocol provides stability evidence but not independent-replicate inferential significance.
+PASS: historical_significance_language_requires_revision
+    63 significance/p-value statement(s) require verification or removal.
+
+RECOVERED DESCRIPTIVE SUMMARIES
+----------------------------------------------------------------------------------------------------
+oversampled | di | n seeds=10 | mean=1.0035174681 | SD=0.4417243143 | descriptive interval=[0.7967865012, 1.2102484349]
+oversampled | eod | n seeds=10 | mean=0.0294754265 | SD=0.0481927986 | descriptive interval=[0.0069207617, 0.0520300913]
+oversampled | spd | n seeds=10 | mean=-0.0253674319 | SD=0.2041153145 | descriptive interval=[-0.1208952418, 0.0701603780]
+unbalanced | di | n seeds=10 | mean=0.9888215039 | SD=0.4501947701 | descriptive interval=[0.7781262873, 1.1995167205]
+unbalanced | eod | n seeds=10 | mean=0.0294754265 | SD=0.0481927986 | descriptive interval=[0.0069207617, 0.0520300913]
+unbalanced | spd | n seeds=10 | mean=-0.0341373681 | SD=0.2119727765 | descriptive interval=[-0.1333425411, 0.0650678049]
+oversampled | accuracy | n seeds=10 | mean=0.9786184918 | SD=0.0305165238 | descriptive interval=[0.9691613231, 0.9880756605]
+unbalanced | accuracy | n seeds=10 | mean=0.9854456449 | SD=0.0253500968 | descriptive interval=[0.9775895685, 0.9933017213]
+single_feature_repeated_seed_metrics | accuracy | n seeds=10 | mean=0.6615887381 | SD=0.1264501209 | descriptive interval=[0.6506140993, 0.6725633768]
+single_feature_repeated_seed_metrics | f1 | n seeds=10 | mean=0.5312327962 | SD=0.2365685458 | descriptive interval=[0.5107009508, 0.5517646415]
+single_feature_repeated_seed_metrics | roc_auc | n seeds=10 | mean=0.7045149639 | SD=0.1610906347 | descriptive interval=[0.6905338660, 0.7184960618]
+single_feature_repeated_seed_metrics_v2 | accuracy | n seeds=10 | mean=0.6615887381 | SD=0.1264501209 | descriptive interval=[0.6506140993, 0.6725633768]
+single_feature_repeated_seed_metrics_v2 | f1 | n seeds=10 | mean=0.5312327962 | SD=0.2365685458 | descriptive interval=[0.5107009508, 0.5517646415]
+single_feature_repeated_seed_metrics_v2 | roc_auc | n seeds=10 | mean=0.7045149639 | SD=0.1610906347 | descriptive interval=[0.6905338660, 0.7184960618]
+oversampled | accuracy | n seeds=10 | mean=0.9769230769 | SD=0.0224511548 | descriptive interval=[0.9608636041, 0.9929825497]
+oversampled | f1 | n seeds=10 | mean=0.9760579811 | SD=0.0235372551 | descriptive interval=[0.9592216129, 0.9928943492]
+oversampled | precision | n seeds=10 | mean=0.9804761905 | SD=0.0337614234 | descriptive interval=[0.9563264010, 1.0046259800]
+oversampled | recall_sensitivity | n seeds=10 | mean=0.9736842105 | SD=0.0447282413 | descriptive interval=[0.9416897771, 1.0056786439]
+oversampled | roc_auc | n seeds=10 | mean=0.9984210526 | SD=0.0033287133 | descriptive interval=[0.9960400000, 1.0008021053]
+oversampled | specificity | n seeds=10 | mean=0.9800000000 | SD=0.0349602949 | descriptive interval=[0.9549926491, 1.0050073509]
+unbalanced | accuracy | n seeds=10 | mean=0.9820512821 | SD=0.0211095539 | descriptive interval=[0.9669514660, 0.9971510981]
+unbalanced | f1 | n seeds=10 | mean=0.9816135366 | SD=0.0217337014 | descriptive interval=[0.9660672634, 0.9971598098]
+unbalanced | precision | n seeds=10 | mean=0.9804761905 | SD=0.0337614234 | descriptive interval=[0.9563264010, 1.0046259800]
+unbalanced | recall_sensitivity | n seeds=10 | mean=0.9842105263 | SD=0.0355236083 | descriptive interval=[0.9588002333, 1.0096208193]
+unbalanced | roc_auc | n seeds=10 | mean=0.9986842105 | SD=0.0033402514 | descriptive interval=[0.9962949047, 1.0010735164]
+unbalanced | specificity | n seeds=10 | mean=0.9800000000 | SD=0.0349602949 | descriptive interval=[0.9549926491, 1.0050073509]
+
+PAIRED SEED-LEVEL DIFFERENCES
+----------------------------------------------------------------------------------------------------
+oversampled - unbalanced | di | paired seeds=40 | mean difference=0.0146959642
+oversampled - unbalanced | eod | paired seeds=40 | mean difference=0.0000000000
+oversampled - unbalanced | spd | paired seeds=40 | mean difference=0.0087699362
+oversampled - unbalanced | accuracy | paired seeds=160 | mean difference=-0.0068271531
+oversampled - unbalanced | accuracy | paired seeds=10 | mean difference=-0.0051282051
+oversampled - unbalanced | f1 | paired seeds=10 | mean difference=-0.0055555556
+oversampled - unbalanced | precision | paired seeds=10 | mean difference=0.0000000000
+oversampled - unbalanced | recall_sensitivity | paired seeds=10 | mean difference=-0.0105263158
+oversampled - unbalanced | roc_auc | paired seeds=10 | mean difference=-0.0002631579
+oversampled - unbalanced | specificity | paired seeds=10 | mean difference=0.0000000000
+
+These are descriptive paired seed differences only; no formal significance p-value is asserted.
+
+FINAL VERDICT
+----------------------------------------------------------------------------------------------------
+DESCRIPTIVE_UNCERTAINTY_SUPPORTED_FORMAL_SIGNIFICANCE_NOT_SUPPORTED
+
+NEXT ACTION
+----------------------------------------------------------------------------------------------------
+REPORT_REPEATED_RUN_MEAN_SD_AND_REMOVE_UNSUPPORTED_SIGNIFICANCE_WORDING
+
+MANUSCRIPT ACTION
+----------------------------------------------------------------------------------------------------
+Report corrected repeated-holdout performance using descriptive mean and variability across seeds. Do not describe differences as statistically significant unless a separate valid inferential design with an appropriate independent experimental unit is available. Replace unsupported 'significant/significantly' language with descriptive wording.
+
+RECOMMENDED WORDING
+----------------------------------------------------------------------------------------------------
+Use wording such as: 'Performance remained stable across repeated leakage-safe stratified holdouts' and report the mean ± SD.
+Avoid wording such as: 'significantly outperformed', 'statistically superior', or 'significant improvement' unless supported by a separately valid inferential design.
+
+IMPORTANT LIMITATION
+----------------------------------------------------------------------------------------------------
+The original cohort contains 193 participants. Repeating train/test splits does not create additional independent participants.
+
+SAFETY CONFIRMATION
+----------------------------------------------------------------------------------------------------
+New model training performed: NO
+New synthetic data generated: NO
+New inferential experiment created: NO
+Historical files modified: NO
+
+PRIMARY OUTPUTS
+----------------------------------------------------------------------------------------------------
+statistical_source_inventory.csv
+significance_language_evidence.csv
+repeated_result_candidate_inventory.csv
+repeated_metric_long.csv
+repeated_metric_summary.csv
+paired_condition_differences.csv
+paired_difference_summary.csv
+inferential_test_eligibility.csv
+historical_statistical_claim_audit.csv
+statistical_verification_matrix.csv
+statistical_verdict.csv
+statistical_provenance.csv
+
+====================================================================================================

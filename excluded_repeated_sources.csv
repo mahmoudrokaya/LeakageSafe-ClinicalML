@@ -1,0 +1,86 @@
+﻿file,category,excluded_from_primary_statistics,reason
+outputs\revision_primary_metrics\array_candidates.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\canonical_prediction_files.csv,unreadable_csv,1,CSV_READ_FAILED
+outputs\revision_primary_metrics\confusion_matrices.csv,unreadable_csv,1,CSV_READ_FAILED
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\confusion_matrix_training_only_oversampled.csv,other_nonprimary,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\confusion_matrix_unbalanced_training.csv,other_nonprimary,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\corrected_evaluation_metrics.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\corrected_evaluation_provenance.csv,other_nonprimary,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\corrected_split_manifest.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\corrected_split_overlap_check.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\feature_mapping.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\metrics_training_only_oversampled.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\metrics_unbalanced_training.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\numeric_conversion_audit.csv,other_nonprimary,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\original_193_duplicate_audit.csv,other_nonprimary,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\predictions_training_only_oversampled.csv,other_nonprimary,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\predictions_unbalanced_training.csv,other_nonprimary,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\preserved_model_configuration.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\variant_comparison.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\X_test_corrected_scaled.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\X_train_corrected_scaled.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\X_train_corrected_training_only_balanced.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\y_test_corrected.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\y_train_corrected.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\corrected_leakage_safe_evaluation\y_train_corrected_training_only_balanced.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\experiment_metric_inventory.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\experiment_reconstruction_status.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\feature_chronology_proxy_audit\feature_chronology_classification.csv,single_feature_or_chronology_experiment,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\feature_chronology_proxy_audit\feature_mapping.csv,single_feature_or_chronology_experiment,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\feature_chronology_proxy_audit\feature_proxy_audit_provenance.csv,single_feature_or_chronology_experiment,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\feature_chronology_proxy_audit\feature_proxy_audit_verdict.csv,single_feature_or_chronology_experiment,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\feature_chronology_proxy_audit\feature_proxy_review_priority.csv,single_feature_or_chronology_experiment,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\feature_chronology_proxy_audit\feature_timing_evidence.csv,single_feature_or_chronology_experiment,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\feature_chronology_proxy_audit\numeric_conversion_audit.csv,single_feature_or_chronology_experiment,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\feature_chronology_proxy_audit\single_feature_repeated_seed_metrics.csv,single_feature_or_chronology_experiment,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\feature_chronology_proxy_audit\single_feature_repeated_summary.csv,single_feature_or_chronology_experiment,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\feature_chronology_proxy_audit\univariate_descriptive_statistics.csv,single_feature_or_chronology_experiment,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\feature_chronology_proxy_audit_v2\feature_chronology_classification_v2.csv,single_feature_or_chronology_experiment,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\feature_chronology_proxy_audit_v2\feature_mapping_v2.csv,single_feature_or_chronology_experiment,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\feature_chronology_proxy_audit_v2\feature_proxy_audit_provenance_v2.csv,single_feature_or_chronology_experiment,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\feature_chronology_proxy_audit_v2\feature_proxy_audit_verdict_v2.csv,single_feature_or_chronology_experiment,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\feature_chronology_proxy_audit_v2\feature_proxy_review_priority_v2.csv,single_feature_or_chronology_experiment,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\feature_chronology_proxy_audit_v2\feature_timing_evidence_v2.csv,single_feature_or_chronology_experiment,1,CSV_READ_FAILED
+outputs\revision_primary_metrics\feature_chronology_proxy_audit_v2\numeric_conversion_audit_v2.csv,single_feature_or_chronology_experiment,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\feature_chronology_proxy_audit_v2\scanner_file_inclusion_audit.csv,single_feature_or_chronology_experiment,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\feature_chronology_proxy_audit_v2\single_feature_repeated_seed_metrics_v2.csv,single_feature_or_chronology_experiment,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\feature_chronology_proxy_audit_v2\single_feature_repeated_summary_v2.csv,single_feature_or_chronology_experiment,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\feature_chronology_proxy_audit_v2\univariate_descriptive_statistics_v2.csv,single_feature_or_chronology_experiment,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\historical_vs_recomputed.csv,unreadable_csv,1,CSV_READ_FAILED
+outputs\revision_primary_metrics\prediction_code_evidence.csv,other_nonprimary,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\prediction_source_candidates.csv,other_nonprimary,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\recomputed_primary_metrics.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\reconstruction_candidates.csv,unreadable_csv,1,CSV_READ_FAILED
+outputs\revision_primary_metrics\regenerated_existing\model_provenance.csv,other_nonprimary,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\regenerated_existing\regenerated_confusion_matrix.csv,other_nonprimary,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\regenerated_existing\regenerated_existing_metrics.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\regenerated_existing\regenerated_existing_predictions.csv,other_nonprimary,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\regenerated_existing\test_data_audit.csv,other_nonprimary,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\feature_mapping.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\numeric_conversion_audit.csv,other_nonprimary,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\paired_variant_differences.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\paired_variant_tests.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\pooled_prediction_summary.csv,other_nonprimary,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\repeated_confusion_matrices.csv,other_nonprimary,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\repeated_evaluation_provenance.csv,other_nonprimary,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\repeated_predictions.csv,other_nonprimary,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\repeated_split_audit.csv,other_nonprimary,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\repeated_summary_statistics.csv,other_nonprimary,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\repeated_leakage_safe_evaluation\source_case_prediction_frequency.csv,other_nonprimary,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\source_file_inventory.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\split_leakage_audit\balancing_code_evidence.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\split_leakage_audit\code_operation_order.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\split_leakage_audit\dataset_inventory.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\split_leakage_audit\feature_target_correlations.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\split_leakage_audit\file_timestamp_audit.csv,other_nonprimary,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\split_leakage_audit\leakage_findings.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\split_leakage_audit\leakage_verdict.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\split_leakage_audit\scaling_code_evidence.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\split_leakage_audit\schema_comparison.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\split_leakage_audit\split_code_evidence.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\split_leakage_audit\synthetic_generation_code_evidence.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\split_leakage_audit\target_feature_audit.csv,other_nonprimary,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\split_leakage_audit\train_test_exact_overlap.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\split_leakage_audit\train_test_near_duplicate_summary.csv,other_nonprimary,1,Excluded from primary statistics because filename indicates a chronology/proxy/fairness/audit/non-primary experiment.
+outputs\revision_primary_metrics\split_leakage_audit\train_test_near_duplicates.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.
+outputs\revision_primary_metrics\split_leakage_audit\training_code_evidence.csv,other_nonprimary,1,Does not satisfy the exact corrected 02E primary schema.

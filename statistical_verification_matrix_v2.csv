@@ -1,0 +1,9 @@
+﻿criterion,passed,detail
+primary_02E_source_resolved,1,Corrected 02E repeated-seed classifier result was explicitly resolved.
+primary_metric_count_exact,1,Recovered 120 primary metric values; expected 120 = 10 seeds × 2 conditions × 6 metrics.
+primary_seed_pairing_exact,1,Each primary metric comparison contains exactly 10 one-to-one paired seeds.
+single_feature_experiments_excluded_from_primary,1,Primary statistics are restricted to the selected 02E classifier table.
+fairness_paired_without_cartesian_inflation,1,"Fairness pairing is grouped by sensitive attribute, comparison identifiers, metric, and seed."
+inferential_confidence_intervals_removed,1,"Only mean, SD, median, minimum, and maximum are reported."
+formal_p_values_not_generated,1,No p-value or inferential significance test is produced.
+independent_experimental_replicates_available,0,Repeated holdouts reuse the same 193 participants and are not independent datasets.
