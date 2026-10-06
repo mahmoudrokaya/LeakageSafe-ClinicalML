@@ -1,0 +1,112 @@
+================================================================================================
+HFAGM - REPEATED LEAKAGE-SAFE EVALUATION
+================================================================================================
+
+Generated: 2026-09-02T20:53:04
+
+PURPOSE
+------------------------------------------------------------------------------------------------
+Assess whether the perfect result obtained in the single corrected seed-42 evaluation remains stable across multiple leakage-safe stratified train/test partitions.
+
+DATA
+------------------------------------------------------------------------------------------------
+Source: D:\47\472\New-Papers\Array\Paper4-Under-Processing\HFAGM_Project\data\raw\covid_clinical.csv
+Source type: raw_csv
+Observations: 193
+Predictors: 51
+Target: status
+Target counts: {0: 100, 1: 93}
+
+REPEATED PROTOCOL
+------------------------------------------------------------------------------------------------
+Seeds: [42, 47, 53, 59, 71, 83, 97, 101, 113, 127]
+Number of seeds: 10
+Test size: 0.2
+Split performed before all learned preprocessing.
+Median imputation fitted on training only.
+MinMaxScaler fitted on training only.
+StandardScaler fitted on training only.
+Oversampling, when used, applied only to training records.
+Preserved ensemble architecture/hyperparameters cloned for every run.
+No hyperparameter tuning was performed.
+No seed was selected or excluded based on performance.
+
+SPLIT INTEGRITY
+------------------------------------------------------------------------------------------------
+Original feature-duplicate rows: 0
+Original feature+target duplicate rows: 0
+Cross-split exact overlaps across repeated runs: 0
+
+SUMMARY STATISTICS
+------------------------------------------------------------------------------------------------
+
+Variant: unbalanced_training
+  accuracy     mean=0.982051 SD=0.021110 95% CI=[0.966950, 0.997152] min=0.948718 max=1.000000
+  precision    mean=0.980476 SD=0.033761 95% CI=[0.956325, 1.000000] min=0.904762 max=1.000000
+  sensitivity  mean=0.984211 SD=0.035524 95% CI=[0.958798, 1.000000] min=0.894737 max=1.000000
+  specificity  mean=0.980000 SD=0.034960 95% CI=[0.954991, 1.000000] min=0.900000 max=1.000000
+  f1           mean=0.981614 SD=0.021734 95% CI=[0.966066, 0.997161] min=0.944444 max=1.000000
+  roc_auc      mean=0.998684 SD=0.003340 95% CI=[0.996295, 1.000000] min=0.989474 max=1.000000
+
+Variant: training_only_oversampled
+  accuracy     mean=0.976923 SD=0.022451 95% CI=[0.960862, 0.992984] min=0.948718 max=1.000000
+  precision    mean=0.980476 SD=0.033761 95% CI=[0.956325, 1.000000] min=0.904762 max=1.000000
+  sensitivity  mean=0.973684 SD=0.044728 95% CI=[0.941688, 1.000000] min=0.894737 max=1.000000
+  specificity  mean=0.980000 SD=0.034960 95% CI=[0.954991, 1.000000] min=0.900000 max=1.000000
+  f1           mean=0.976058 SD=0.023537 95% CI=[0.959220, 0.992896] min=0.944444 max=1.000000
+  roc_auc      mean=0.998421 SD=0.003329 95% CI=[0.996040, 1.000000] min=0.989474 max=1.000000
+
+PER-SEED RESULTS
+------------------------------------------------------------------------------------------------
+Seed= 42 Variant=training_only_oversampled  Acc=1.000000 F1=1.000000 AUC=1.000000 CM=[TN=20, FP=0, FN=0, TP=19]
+Seed= 42 Variant=unbalanced_training        Acc=1.000000 F1=1.000000 AUC=1.000000 CM=[TN=20, FP=0, FN=0, TP=19]
+Seed= 47 Variant=training_only_oversampled  Acc=0.974359 F1=0.974359 AUC=0.997368 CM=[TN=19, FP=1, FN=0, TP=19]
+Seed= 47 Variant=unbalanced_training        Acc=0.974359 F1=0.974359 AUC=0.997368 CM=[TN=19, FP=1, FN=0, TP=19]
+Seed= 53 Variant=training_only_oversampled  Acc=0.974359 F1=0.972973 AUC=1.000000 CM=[TN=20, FP=0, FN=1, TP=18]
+Seed= 53 Variant=unbalanced_training        Acc=0.948718 F1=0.944444 AUC=1.000000 CM=[TN=20, FP=0, FN=2, TP=17]
+Seed= 59 Variant=training_only_oversampled  Acc=0.948718 F1=0.950000 AUC=0.989474 CM=[TN=18, FP=2, FN=0, TP=19]
+Seed= 59 Variant=unbalanced_training        Acc=0.948718 F1=0.950000 AUC=0.989474 CM=[TN=18, FP=2, FN=0, TP=19]
+Seed= 71 Variant=training_only_oversampled  Acc=0.974359 F1=0.974359 AUC=1.000000 CM=[TN=19, FP=1, FN=0, TP=19]
+Seed= 71 Variant=unbalanced_training        Acc=0.974359 F1=0.974359 AUC=1.000000 CM=[TN=19, FP=1, FN=0, TP=19]
+Seed= 83 Variant=training_only_oversampled  Acc=1.000000 F1=1.000000 AUC=1.000000 CM=[TN=20, FP=0, FN=0, TP=19]
+Seed= 83 Variant=unbalanced_training        Acc=1.000000 F1=1.000000 AUC=1.000000 CM=[TN=20, FP=0, FN=0, TP=19]
+Seed= 97 Variant=training_only_oversampled  Acc=0.948718 F1=0.944444 AUC=0.997368 CM=[TN=20, FP=0, FN=2, TP=17]
+Seed= 97 Variant=unbalanced_training        Acc=1.000000 F1=1.000000 AUC=1.000000 CM=[TN=20, FP=0, FN=0, TP=19]
+Seed=101 Variant=training_only_oversampled  Acc=1.000000 F1=1.000000 AUC=1.000000 CM=[TN=20, FP=0, FN=0, TP=19]
+Seed=101 Variant=unbalanced_training        Acc=1.000000 F1=1.000000 AUC=1.000000 CM=[TN=20, FP=0, FN=0, TP=19]
+Seed=113 Variant=training_only_oversampled  Acc=1.000000 F1=1.000000 AUC=1.000000 CM=[TN=20, FP=0, FN=0, TP=19]
+Seed=113 Variant=unbalanced_training        Acc=1.000000 F1=1.000000 AUC=1.000000 CM=[TN=20, FP=0, FN=0, TP=19]
+Seed=127 Variant=training_only_oversampled  Acc=0.948718 F1=0.944444 AUC=1.000000 CM=[TN=20, FP=0, FN=2, TP=17]
+Seed=127 Variant=unbalanced_training        Acc=0.974359 F1=0.972973 AUC=1.000000 CM=[TN=20, FP=0, FN=1, TP=18]
+
+PAIRED VARIANT COMPARISON
+------------------------------------------------------------------------------------------------
+accuracy: mean delta=-0.005128; paired t p=0.44333185016966015; Wilcoxon p=0.4142161782425252
+precision: mean delta=0.000000; paired t p=1.0; Wilcoxon p=1.0
+sensitivity: mean delta=-0.010526; paired t p=0.4433318501696599; Wilcoxon p=0.4142161782425252
+specificity: mean delta=0.000000; paired t p=1.0; Wilcoxon p=1.0
+f1: mean delta=-0.005556; paired t p=0.4475945795063999; Wilcoxon p=0.4142161782425252
+roc_auc: mean delta=-0.000263; paired t p=0.34343639613791366; Wilcoxon p=0.31731050786291415
+
+INTERPRETATION
+------------------------------------------------------------------------------------------------
+The repeated-seed mean, SD, confidence interval, and range should be used to assess stability. A single perfect split must not be treated as evidence of universal perfect classification.
+
+pooled_prediction_summary.csv is DESCRIPTIVE ONLY because the same original subject can appear in the test partition for more than one seed. It must not be treated as an independent pooled sample.
+
+If repeated performance remains extremely high, the next scientific audit should examine feature-label separability and whether any clinically post-outcome or outcome-proxy variables are present among the 51 predictors.
+
+PRIMARY OUTPUTS
+------------------------------------------------------------------------------------------------
+repeated_seed_metrics.csv
+repeated_summary_statistics.csv
+repeated_predictions.csv
+repeated_confusion_matrices.csv
+repeated_split_audit.csv
+paired_variant_differences.csv
+paired_variant_tests.csv
+source_case_prediction_frequency.csv
+pooled_prediction_summary.csv
+repeated_evaluation_provenance.csv
+
+================================================================================================
