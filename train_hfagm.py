@@ -1,95 +1,78 @@
 import os
-import sys
 import torch
+import torch.nn as nn
+import torch.optim as optim
+from torch.utils.data import DataLoader, TensorDataset
 import numpy as np
 import pandas as pd
-import torch.nn as nn
-import matplotlib.pyplot as plt
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, f1_score, roc_auc_score
+import joblib
+from models.classifiers.hfagm import HFAGM
 
-# Set path to import from models/layers
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
-from models.classifiers.hfagm_model import HFAGM
+# ==== Paths ====
+base_path = r"E:/Mahmoud/Exams/46/462/New-papers/Paper4-Under-Processing/HFAGM_Project"
+data_path = os.path.join(base_path, "data", "preprocessed")
+saved_model_path = os.path.join(base_path, "saved_models", "classifiers", "hfagm_model.pt")
+results_path = os.path.join(base_path, "outputs", "evaluation", "hfagm_results.csv")
 
-# Load data
-features_path     = "E:/Mahmoud/Exams/46/462/New-papers/Paper4-Under-Processing/HFAGM_Project/data/preprocessed/graph_features.npy"
-contrastive_path  = "E:/Mahmoud/Exams/46/462/New-papers/Paper4-Under-Processing/HFAGM_Project/data/preprocessed/contrastive_embeddings.npy"
-adj_path          = "E:/Mahmoud/Exams/46/462/New-papers/Paper4-Under-Processing/HFAGM_Project/data/preprocessed/adj_matrix_fully_connected.npy"
-labels_path       = "E:/Mahmoud/Exams/46/462/New-papers/Paper4-Under-Processing/HFAGM_Project/data/preprocessed/y_train.csv"
+# ==== Load Data ====
+X = np.load(os.path.join(data_path, "graph_features.npy"))
+adj = np.load(os.path.join(data_path, "adj_matrix.npy"))
+contrastive = np.load(os.path.join(data_path, "contrastive_embeddings.npy"))
+y = pd.read_csv(os.path.join(data_path, "y_train.csv"))['status'].values
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-torch.manual_seed(42)
-np.random.seed(42)
+# ==== Convert to torch tensors ====
+X_tensor = torch.tensor(X, dtype=torch.float32)
+adj_tensor = torch.tensor(adj, dtype=torch.float32)
+contrastive_tensor = torch.tensor(contrastive, dtype=torch.float32)
+y_tensor = torch.tensor(y, dtype=torch.float32).unsqueeze(1)
 
-# Load tensors
-graph_features  = torch.tensor(np.load(features_path), dtype=torch.float32).to(device)
-contrastive_emb = torch.tensor(np.load(contrastive_path), dtype=torch.float32).to(device)
-adj_matrix      = torch.tensor(np.load(adj_path), dtype=torch.float32).to(device)
-labels          = torch.tensor(pd.read_csv(labels_path).values.squeeze(), dtype=torch.long).to(device)
+dataset = TensorDataset(X_tensor, adj_tensor, contrastive_tensor, y_tensor)
+dataloader = DataLoader(dataset, batch_size=32, shuffle=True)
 
-# Model config
-input_dim   = contrastive_emb.shape[1]
-graph_dim   = graph_features.shape[1]
-hidden_dim  = 64
-num_classes = len(torch.unique(labels))
-batch_size  = 16
-epochs      = 20
+# ==== Initialize Model ====
+model = HFAGM(input_dim=X.shape[1], contrastive_dim=contrastive.shape[1], hidden_dim=64)
+criterion = nn.BCEWithLogitsLoss()
+optimizer = optim.Adam(model.parameters(), lr=0.001)
 
-# Init model
-model = HFAGM(input_dim, graph_dim, hidden_dim, num_classes).to(device)
-optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
-criterion = nn.CrossEntropyLoss()
-
-# Logging
-train_losses = []
-train_accuracies = []
-
+# ==== Training Loop ====
+model.train()
+epochs = 20
 for epoch in range(epochs):
-    model.train()
-    permutation = torch.randperm(labels.size(0), device=device)
     epoch_loss = 0.0
-    epoch_preds = []
-    epoch_targets = []
-
-    for i in range(0, labels.size(0), batch_size):
-        indices = permutation[i:i+batch_size]
-        x_attr = contrastive_emb[indices]
-        x_graph = graph_features[indices]
-        adj_sub = adj_matrix[indices][:, indices]
-        target = labels[indices]
-
-        outputs, attn = model(x_attr, x_graph, adj_sub)
-        loss = criterion(outputs, target)
-
+    for X_batch, adj_batch, contrastive_batch, y_batch in dataloader:
         optimizer.zero_grad()
+        outputs = model(X_batch, adj_batch, contrastive_batch)
+        loss = criterion(outputs, y_batch)
         loss.backward()
         optimizer.step()
-
         epoch_loss += loss.item()
-        _, predicted = torch.max(outputs, 1)
-        epoch_preds.extend(predicted.cpu().numpy())
-        epoch_targets.extend(target.cpu().numpy())
+    print(f"Epoch {epoch+1}/{epochs}, Loss: {epoch_loss/len(dataloader):.4f}")
 
-    acc = accuracy_score(epoch_targets, epoch_preds)
-    train_losses.append(epoch_loss)
-    train_accuracies.append(acc)
-    print(f"Epoch {epoch+1}/{epochs} - Loss: {epoch_loss:.4f} - Accuracy: {acc:.4f}")
+# ==== Save Trained Model ====
+os.makedirs(os.path.dirname(saved_model_path), exist_ok=True)
+torch.save(model.state_dict(), saved_model_path)
+print(f"Model saved to: {saved_model_path}")
 
-# === Plotting Results ===
-plt.figure()
-plt.plot(range(1, epochs+1), train_losses, marker='o')
-plt.title("Training Loss")
-plt.xlabel("Epoch")
-plt.ylabel("Loss")
-plt.grid(True)
-plt.savefig("training_loss.png")
+# ==== Evaluation ====
+model.eval()
+with torch.no_grad():
+    logits = model(X_tensor, adj_tensor, contrastive_tensor)
+    probs = torch.sigmoid(logits).squeeze().numpy()
+    preds = (probs >= 0.5).astype(int)
 
-plt.figure()
-plt.plot(range(1, epochs+1), train_accuracies, marker='x')
-plt.title("Training Accuracy")
-plt.xlabel("Epoch")
-plt.ylabel("Accuracy")
-plt.grid(True)
-plt.savefig("training_accuracy.png")
+y_true = y_tensor.squeeze().numpy()
 
-print("Training complete. Plots saved as 'training_loss.png' and 'training_accuracy.png'")
+acc = accuracy_score(y_true, preds)
+f1 = f1_score(y_true, preds)
+auc = roc_auc_score(y_true, probs)
+
+print(f"Accuracy: {acc:.4f}, F1-score: {f1:.4f}, AUC: {auc:.4f}")
+
+# ==== Save Evaluation Results ====
+pd.DataFrame({
+    'Accuracy': [acc],
+    'F1-score': [f1],
+    'AUC': [auc]
+}).to_csv(results_path, index=False)
+print(f"Results saved to: {results_path}")

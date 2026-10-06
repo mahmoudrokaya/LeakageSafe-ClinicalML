@@ -1,111 +1,95 @@
-import numpy as np
-import torch
-import torch.nn as nn
-import torch.optim as optim
-from sklearn.metrics import classification_report, confusion_matrix
-import matplotlib.pyplot as plt
-import seaborn as sns
 import os
-import joblib
 import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
+import torch
+import numpy as np
+import pandas as pd
+import torch.nn as nn
+import matplotlib.pyplot as plt
+from sklearn.metrics import accuracy_score
 
-from models.classifiers.hfagm_model import HFAGM  # Ensure this path matches your project
+# Set path to import from models/layers
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+from models.classifiers.hfagm_model import HFAGM
 
-# === Load Data ===
-base_path = r"E:\Mahmoud\Exams\46\462\New-papers\Paper4-Under-Processing\HFAGM_Project"
-data_path = os.path.join(base_path, "data", "preprocessed")
+# Load data
+features_path     = "E:/Mahmoud/Exams/46/462/New-papers/Paper4-Under-Processing/HFAGM_Project/data/preprocessed/graph_features.npy"
+contrastive_path  = "E:/Mahmoud/Exams/46/462/New-papers/Paper4-Under-Processing/HFAGM_Project/data/preprocessed/contrastive_embeddings.npy"
+adj_path          = "E:/Mahmoud/Exams/46/462/New-papers/Paper4-Under-Processing/HFAGM_Project/data/preprocessed/adj_matrix_fully_connected.npy"
+labels_path       = "E:/Mahmoud/Exams/46/462/New-papers/Paper4-Under-Processing/HFAGM_Project/data/preprocessed/y_train.csv"
 
-X = np.load(os.path.join(data_path, "contrastive_embeddings.npy"))
-graph_features = np.load(os.path.join(data_path, "graph_features.npy"))
-adj_matrix = np.load(os.path.join(data_path, "adj_matrix_knn.npy"))
-y = np.loadtxt(os.path.join(data_path, "y_train.csv"), delimiter=",", skiprows=1)  # ensure no header row
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+torch.manual_seed(42)
+np.random.seed(42)
 
-# === Train/Val Split ===
-split = int(0.8 * len(X))
-X_train, X_val = X[:split], X[split:]
-graph_train, graph_val = graph_features[:split], graph_features[split:]
-y_train, y_val = y[:split], y[split:]
+# Load tensors
+graph_features  = torch.tensor(np.load(features_path), dtype=torch.float32).to(device)
+contrastive_emb = torch.tensor(np.load(contrastive_path), dtype=torch.float32).to(device)
+adj_matrix      = torch.tensor(np.load(adj_path), dtype=torch.float32).to(device)
+labels          = torch.tensor(pd.read_csv(labels_path).values.squeeze(), dtype=torch.long).to(device)
 
-# === Convert to Torch ===
-X_train = torch.tensor(X_train, dtype=torch.float32)
-graph_train = torch.tensor(graph_train, dtype=torch.float32)
-y_train = torch.tensor(y_train, dtype=torch.long)
+# Model config
+input_dim   = contrastive_emb.shape[1]
+graph_dim   = graph_features.shape[1]
+hidden_dim  = 64
+num_classes = len(torch.unique(labels))
+batch_size  = 16
+epochs      = 20
 
-X_val = torch.tensor(X_val, dtype=torch.float32)
-graph_val = torch.tensor(graph_val, dtype=torch.float32)
-y_val = torch.tensor(y_val, dtype=torch.long)
-
-adj_matrix = torch.tensor(adj_matrix, dtype=torch.float32)
-
-# === Model Setup ===
-input_dim = X_train.shape[1]
-graph_dim = graph_train.shape[1]
-hidden_dim = 64
-num_classes = len(np.unique(y))
-
-model = HFAGM(input_dim, graph_dim, hidden_dim, num_classes)
+# Init model
+model = HFAGM(input_dim, graph_dim, hidden_dim, num_classes).to(device)
+optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
 criterion = nn.CrossEntropyLoss()
-optimizer = optim.Adam(model.parameters(), lr=0.001)
 
-# === Train ===
-model.train()
-for epoch in range(50):
-    optimizer.zero_grad()
-    logits, attn_weights = model(X_train, graph_train, adj_matrix)
-    loss = criterion(logits, y_train)
-    loss.backward()
-    optimizer.step()
-    if epoch % 10 == 0:
-        print(f"Epoch {epoch}, Loss: {loss.item():.4f}")
+# Logging
+train_losses = []
+train_accuracies = []
 
-# === Eval ===
-model.eval()
-with torch.no_grad():
-    logits_val, attn_val = model(X_val, graph_val, adj_matrix)
-    preds = torch.argmax(logits_val, dim=1)
-    acc = (preds == y_val).float().mean().item()
-    print(f"\nValidation Accuracy: {acc:.4f}")
+for epoch in range(epochs):
+    model.train()
+    permutation = torch.randperm(labels.size(0), device=device)
+    epoch_loss = 0.0
+    epoch_preds = []
+    epoch_targets = []
 
-# === Save Attention Plot ===
-attn_dir = os.path.join(base_path, "outputs", "attention_weights")
-plt.figure(figsize=(10, 6))
-sns.heatmap(attn_val.numpy(), cmap='viridis')
-plt.title("Attention Weights")
-plt.xlabel("Head")
-plt.ylabel("Node Index")
-attn_path = os.path.join(attn_dir, "attention_weights.png")
-plt.tight_layout()
-plt.savefig(attn_path)
-plt.close()
-print(f"Saved attention weights to {attn_path}")
+    for i in range(0, labels.size(0), batch_size):
+        indices = permutation[i:i+batch_size]
+        x_attr = contrastive_emb[indices]
+        x_graph = graph_features[indices]
+        adj_sub = adj_matrix[indices][:, indices]
+        target = labels[indices]
 
-# === Save Confusion Matrix and Report ===
-conf_mat = confusion_matrix(y_val.numpy(), preds.numpy())
-report = classification_report(y_val.numpy(), preds.numpy(), output_dict=True)
+        outputs, attn = model(x_attr, x_graph, adj_sub)
+        loss = criterion(outputs, target)
 
-conf_dir = os.path.join(base_path, "outputs", "evaluation", "confusion_matrix")
-report_dir = os.path.join(base_path, "outputs", "evaluation", "classification_report")
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
 
-# Confusion Matrix Plot
-plt.figure(figsize=(6, 5))
-sns.heatmap(conf_mat, annot=True, fmt="d", cmap="Blues", xticklabels=np.unique(y), yticklabels=np.unique(y))
-plt.title("Confusion Matrix")
-plt.ylabel("True")
-plt.xlabel("Predicted")
-plt.tight_layout()
-conf_path = os.path.join(conf_dir, "confusion_matrix.png")
-plt.savefig(conf_path)
-plt.close()
-print(f"Saved confusion matrix to {conf_path}")
+        epoch_loss += loss.item()
+        _, predicted = torch.max(outputs, 1)
+        epoch_preds.extend(predicted.cpu().numpy())
+        epoch_targets.extend(target.cpu().numpy())
 
-# Classification Report
-report_path = os.path.join(report_dir, "classification_report.csv")
-report_df = pd.DataFrame(report).transpose()
-report_df.to_csv(report_path)
-print(f"Saved classification report to {report_path}")
+    acc = accuracy_score(epoch_targets, epoch_preds)
+    train_losses.append(epoch_loss)
+    train_accuracies.append(acc)
+    print(f"Epoch {epoch+1}/{epochs} - Loss: {epoch_loss:.4f} - Accuracy: {acc:.4f}")
 
-# === Save Model ===
-model_path = os.path.join(base_path, "saved_models", "classifiers", "hfagm_model.pth")
-torch.save(model.state_dict(), model_path)
-print(f"Model saved to {model_path}")
+# === Plotting Results ===
+plt.figure()
+plt.plot(range(1, epochs+1), train_losses, marker='o')
+plt.title("Training Loss")
+plt.xlabel("Epoch")
+plt.ylabel("Loss")
+plt.grid(True)
+plt.savefig("training_loss.png")
+
+plt.figure()
+plt.plot(range(1, epochs+1), train_accuracies, marker='x')
+plt.title("Training Accuracy")
+plt.xlabel("Epoch")
+plt.ylabel("Accuracy")
+plt.grid(True)
+plt.savefig("training_accuracy.png")
+
+print("Training complete. Plots saved as 'training_loss.png' and 'training_accuracy.png'")
